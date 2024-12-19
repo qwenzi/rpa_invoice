@@ -4,6 +4,18 @@
   "kind": "visual",
   "blocks": [
     {
+      "id": "ef2529eb-cc3e-4234-b4cd-c3b4aacd9c6e",
+      "name": "programing.comment",
+      "isEnabled": true,
+      "inputs": {
+        "content": {
+          "value": "10:增加git版本控制"
+        }
+      },
+      "outputs": {},
+      "isCommentBlockExpanded": true
+    },
+    {
       "id": "00ad558a-cefd-4235-ad23-4fb8b8835de3",
       "name": "process.run",
       "isEnabled": true,
@@ -47,7 +59,8 @@
           "value": "10:获取对应店铺账号密码"
         }
       },
-      "outputs": {}
+      "outputs": {},
+      "isCommentBlockExpanded": true
     },
     {
       "id": "4cd028a3-536b-471e-876c-829c899ec217",
@@ -216,7 +229,8 @@
           "value": "10:登录流程"
         }
       },
-      "outputs": {}
+      "outputs": {},
+      "isCommentBlockExpanded": true
     },
     {
       "id": "cdbad63c-3e08-46eb-8376-b0e5099bb231",
@@ -254,7 +268,8 @@
           "value": "10:发票流程"
         }
       },
-      "outputs": {}
+      "outputs": {},
+      "isCommentBlockExpanded": true
     },
     {
       "id": "c24e394b-e4c1-4bb6-8ef8-90cff0e64865",
@@ -575,7 +590,8 @@
           "value": "10:写入日志"
         }
       },
-      "outputs": {}
+      "outputs": {},
+      "isCommentBlockExpanded": true
     },
     {
       "id": "4fb0be97-549f-4ef7-ab29-d9927585aa90",
