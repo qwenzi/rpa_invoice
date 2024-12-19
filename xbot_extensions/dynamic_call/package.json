@@ -1,0 +1,64 @@
+{
+  "uuid": "6986eecc-6da2-47a4-944e-7c1071e5b784",
+  "name": "动态调用子流程",
+  "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/b1/a0/b1a01f7d55ef892cc57ed6d16ee35cd4.png",
+  "version": "1",
+  "tags": null,
+  "software": null,
+  "software_title": null,
+  "package_version": 2,
+  "description": "根据传入的流程名动态执行流程",
+  "instruction": null,
+  "use_latest_pip": false,
+  "videoName": null,
+  "startup": "main",
+  "robot_type": "activity",
+  "activity_code": "dynamic_call",
+  "flows": [
+    {
+      "name": "main",
+      "filename": "main",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "动态调用子流程",
+      "filename": "process1",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": null
+    },
+    {
+      "name": "invoke",
+      "filename": "invoke",
+      "kind": "Code",
+      "opened": false,
+      "groupName": ""
+    },
+    {
+      "name": "动态调用模块",
+      "filename": "process2",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": null
+    }
+  ],
+  "flow_groups": [],
+  "variables": [],
+  "external_dependencies": [],
+  "internaldependencies": [],
+  "internalautodependencies": [],
+  "databook_columns": [],
+  "authority": "use",
+  "internalautoupgrade": false,
+  "isbrief": false,
+  "uia_type": "PC",
+  "persist_databook": false,
+  "customItems": {
+    "videoUrl": null,
+    "imageUrl": null,
+    "imageName": null,
+    "gifUrl": null
+  }
+}

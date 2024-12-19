@@ -1,0 +1,392 @@
+{
+  "name": "B登录流程",
+  "memo": null,
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "8a8baba1-603f-4bc5-9b07-9a88e0c15c89",
+      "name": "web.get",
+      "isEnabled": false,
+      "comment": "在%web_type%中匹配当前选中的网页，将网页对象保存到%browser%，网页加载超时后重试此指令",
+      "inputs": {
+        "web_type": {
+          "value": "10:chrome",
+          "display": "Google Chrome浏览器"
+        },
+        "mode": {
+          "value": "10:activated",
+          "display": "匹配当前选中的网页"
+        },
+        "value": {
+          "value": "10:"
+        },
+        "use_wildcard": {
+          "value": "13:False"
+        },
+        "silent_running": {
+          "value": "13:False"
+        },
+        "wait_load_completed": {
+          "value": "13:True"
+        },
+        "load_timeout": {
+          "value": "10:20"
+        },
+        "stop_load_if_load_timeout": {
+          "value": "10:handleExcept",
+          "display": "执行\"错误处理\""
+        },
+        "open_page": {
+          "value": "13:False"
+        },
+        "url": {
+          "value": null
+        }
+      },
+      "outputs": {
+        "browser": {
+          "name": "web_page",
+          "isEnable": true
+        }
+      },
+      "exception_handling": {
+        "logging": true,
+        "mode": "retry",
+        "retryTime": 3,
+        "retryInterval": 3
+      }
+    },
+    {
+      "id": "93f7610f-3db0-4bf0-b4dd-22a5a3063b76",
+      "name": "xbot_extensions.activity_7bca6d.淘宝登录",
+      "isEnabled": true,
+      "inputs": {
+        "mode": {
+          "value": "10:chrome",
+          "display": "Google Chrome浏览器"
+        },
+        "userid": {
+          "value": "11:username.strip()"
+        },
+        "password": {
+          "value": "11:password.strip()"
+        },
+        "是否退出已登录": {
+          "value": "13:True"
+        },
+        "ym_token": {
+          "value": "10:"
+        },
+        "加载超时时间": {
+          "value": "10:20"
+        },
+        "path_to_chrome_exe": {
+          "value": "10:"
+        },
+        "重试次数": {
+          "value": "13:5"
+        }
+      },
+      "outputs": {
+        "web_page": {
+          "name": "web_page",
+          "isEnable": true
+        }
+      },
+      "block_title": "登录扩展操作/淘宝登录"
+    },
+    {
+      "id": "a0621e10-9fc1-4408-9033-4b292d59165d",
+      "name": "web.element.wait",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:首页_导航栏_财务",
+          "display": "首页_导航栏_财务"
+        },
+        "state": {
+          "value": "10:appear",
+          "display": "等待元素出现"
+        },
+        "iswait": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {
+        "wait_result": {
+          "name": "web_wait_result",
+          "variableLabel": "等待元素出现结果",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "6b2eb4e5-b0d4-42e7-91ef-7e8ae2d2f7be",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:首页_导航栏_财务",
+          "display": "首页_导航栏_财务"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "29a19b0a-f30f-41b5-aa88-2e1559057380",
+      "name": "web.element.wait",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:财务_权限申请",
+          "display": "财务_权限申请"
+        },
+        "state": {
+          "value": "10:appear",
+          "display": "等待元素出现"
+        },
+        "iswait": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {
+        "wait_result": {
+          "name": "web_wait_result",
+          "variableLabel": "等待元素出现结果",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "ed376c50-60a8-44f2-a244-15fd74828bd3",
+      "name": "web.browser.contains_element_or_text",
+      "isEnabled": true,
+      "comment": "检测网页%browser%中是否%content_type% %selector%",
+      "foldState": "UnFold",
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "content_type": {
+          "value": "10:contains_element",
+          "display": "包含元素"
+        },
+        "selector": {
+          "value": "12:财务_权限申请",
+          "display": "财务_权限申请"
+        },
+        "text": {
+          "value": "10:"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "049ec984-842c-469a-bdfb-5bca9d5646a4",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:财务_权限申请_关闭按钮",
+          "display": "财务_权限申请_关闭按钮"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "08f21168-2958-4db8-9833-8313ae0e4098",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "1a6f6580-ee17-4cc6-9fdf-935070c07cf6",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:首页_导航栏_财务_给买家开票",
+          "display": "首页_导航栏_财务_给买家开票"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5cb2caf1-ceab-4411-be4d-1eecefe0b02e",
+      "name": "programing.sleep",
+      "isEnabled": true,
+      "inputs": {
+        "random_number": {
+          "value": "13:False"
+        },
+        "seconds": {
+          "value": "10:3"
+        },
+        "start_number": {
+          "value": "10:1"
+        },
+        "stop_number": {
+          "value": "10:5"
+        }
+      },
+      "outputs": {}
+    }
+  ],
+  "parameters": [
+    {
+      "name": "username",
+      "direction": "In",
+      "type": "str",
+      "value": "",
+      "description": "",
+      "kind": "Text"
+    },
+    {
+      "name": "password",
+      "direction": "In",
+      "type": "str",
+      "value": "",
+      "description": "",
+      "kind": "Text"
+    }
+  ]
+}

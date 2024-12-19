@@ -1,0 +1,262 @@
+<root>
+  <item name="xbot_extensions.activity_7bca6d" display="activity_7bca6d" kind="module">
+    <item.method />
+    <item.desc>登录扩展操作
+淘宝登录，京东登录，抖音登录，有赞登录，支付宝登录，抖音罗盘登录，拖动滑块，巨量登录等</item.desc>
+    <item name="xbot_extensions.activity_7bca6d.process1" display="process1" kind="function" help="yddoc/language/zh-cn/指令文档/自定义指令使用说明/登录扩展指令集/巨量登录.html">
+      <item.method>process1(username,password,tj_username,tj_password,web_type)</item.method>
+      <item.desc>巨量登录
+该指令实现自动登录巨量引擎后台
+* @param username，
+* @param password，
+* @param tj_username，
+* @param tj_password，
+* @param web_type，
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process4" display="process4" kind="function" help="yddoc/language/zh-cn/指令文档/自定义指令使用说明/登录扩展指令集/抖店登录.html">
+      <item.method>process4(username,password,验证邮箱,邮箱授权码,获取授权码间隔时长,验证码失败最大重试次数,退出已登录账户,retry_cnt)</item.method>
+      <item.desc>抖店登录
+该指令实现自动登录抖店后台（若报错，请考虑切换至“抖店操作 - 抖店多店铺登录”）
+* @param username，登录邮箱
+* @param password，登录密码
+* @param 验证邮箱，
+* @param 邮箱授权码，
+* @param 获取授权码间隔时长，
+* @param 验证码失败最大重试次数，
+* @param 退出已登录账户，
+* @param retry_cnt，登录流程失败重试次数
+* @return web_page，网页对象
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process5" display="process5" kind="function" help="/yddoc/rpa/740026154233942016">
+      <item.method>process5(username,password,tj_username,tj_password,web_type)</item.method>
+      <item.desc>有赞登录
+该指令实现自动登录有赞后台
+* @param username，
+* @param password，
+* @param tj_username，
+* @param tj_password，
+* @param web_type，
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process6" display="process6" kind="function" help="yddoc/language/zh-cn/指令文档/自定义指令使用说明/登录扩展指令集/京东登录.html">
+      <item.method>process6(username,password,web_mode,tj_username,tj_password,rec_count,login_url)</item.method>
+      <item.desc>京东登录
+该指令实现自动登录京东（在滑动验证码的时候可能会产生额外的费用)
+* @param username，
+* @param password，
+* @param web_mode，
+* @param tj_username，
+* @param tj_password，
+* @param rec_count，
+* @param login_url，自定义登录网址
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process7" display="process7" kind="function" help="yddoc/language/zh-cn/指令文档/自定义指令使用说明/网页登录、图标隐藏/淘宝登录.html">
+      <item.method>process7(userid,password,mode,path_to_chrome_exe,加载超时时间,ym_token,是否退出已登录,重试次数)</item.method>
+      <item.desc>淘宝登录
+该指令实现自动登录淘宝后台
+* @param userid，
+* @param password，
+* @param mode，
+* @param path_to_chrome_exe，
+* @param 加载超时时间，加载登录页面的超时时间
+* @param ym_token，
+* @param 是否退出已登录，
+* @param 重试次数，
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process11" display="process11" kind="function" help="yddoc/rpa/712285394124824576">
+      <item.method>process11(web_page,drag_start_element,background_element)</item.method>
+      <item.desc>滑块拖动
+该指令实现模拟人工拖动滑块
+* @param web_page，
+* @param drag_start_element，
+* @param background_element，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process12" display="process12" kind="function" help="/yddoc/rpa/712285473832955904">
+      <item.method>process12(username,password,tj_username,tj_password,web_type)</item.method>
+      <item.desc>巨量纵横登录
+该指令实现自动登录巨量纵横后台
+* @param username，
+* @param password，
+* @param tj_username，
+* @param tj_password，
+* @param web_type，
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process15" display="process15" kind="function" help="/yddoc/rpa/712285550384168960">
+      <item.method>process15(网页对象,username,password,tj_username,tj_password,登录的店铺名称,是否要退出已登录账号)</item.method>
+      <item.desc>电商罗盘登录
+该指令实现自动登录电商罗盘后台
+* @param 网页对象，
+* @param username，
+* @param password，
+* @param tj_username，
+* @param tj_password，
+* @param 登录的店铺名称，选择要登录的店铺名称(可为空，若空值则不做处理)
+* @param 是否要退出已登录账号，勾选会进行自动退出当前已经的登录的账号操作
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process20" display="process20" kind="function" help="yddoc/language/zh-cn/指令文档/自定义指令使用说明/网页登录、图标隐藏/支付宝登录.html">
+      <item.method>process20(浏览器类型,登录账号,登录密码,百度OCR账号,百度OCR密码,重试次数)</item.method>
+      <item.desc>支付宝登录
+该指令实现自动登录支付宝后台
+* @param 浏览器类型，
+* @param 登录账号，
+* @param 登录密码，
+* @param 百度OCR账号，
+* @param 百度OCR密码，
+* @param 重试次数，
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process21" display="process21" kind="function" help="yddoc/language/zh-cn/指令文档/自定义指令使用说明/登录扩展指令集/拼多多登录.html">
+      <item.method>process21(浏览器类型,账号,密码,识别引擎)</item.method>
+      <item.desc>拼多多登录
+该指令实现自动登录拼多多后台（注:登录验证码识别会产生额外费用）
+* @param 浏览器类型，
+* @param 账号，请输入拼多多账号
+* @param 密码，请输入拼多多密码
+* @param 识别引擎，
+* @return 网页对象，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process33" display="process33" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/zetow32dqmfonolv">
+      <item.method>process33(验证重试次数,账号,密码,浏览器类型)</item.method>
+      <item.desc>爱库存登录
+在新打开的网页窗口中登录爱库存
+* @param 验证重试次数，
+* @param 账号，
+* @param 密码，
+* @param 浏览器类型，
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process39" display="process39" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/qyfzpv2243ifz2wb/edit?toc_node_uuid=thDXK3ddNiOQTCiV">
+      <item.method>process39(用户名,密码)</item.method>
+      <item.desc>登录旺店通
+该指令实现自动登录旺店通
+* @param 用户名，
+* @param 密码，
+* @return process_result，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process40" display="process40" kind="function" help="/yddoc/rpa/711827929529004032">
+      <item.method>process40(登录用户名,登录密码,子平台,退出已登录账户,短信验证码获取接口,识别引擎)</item.method>
+      <item.desc>京东登录-京准通
+支持【京速推, 商智-品牌版, 商智-商家版, 京东快车, 京东联盟, 购物触点, 京东展位, 京东数坊, 京东直投, 京东海投】登录成功后跳转到对应主页即可(该指令识别验证码登录会产生额外费用)
+* @param 登录用户名，
+* @param 登录密码，
+* @param 子平台，
+* @param 退出已登录账户，
+* @param 短信验证码获取接口，
+* @param 识别引擎，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process42" display="process42" kind="function" help="/yddoc/rpa/712285652470632448">
+      <item.method>process42(账户,密码,短信验证码接口,退出已登录账户,浏览器类型)</item.method>
+      <item.desc>阿里妈妈数智登录
+
+* @param 账户，
+* @param 密码，
+* @param 短信验证码接口，
+* @param 退出已登录账户，
+* @param 浏览器类型，
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process47" display="process47" kind="function" help="/yddoc/rpa/712285736014704640">
+      <item.method>process47(登录邮箱,登录密码,验证邮箱,邮箱授权码,获取授权码间隔时长,验证码失败最大重试次数,退出已登录账户,retry_cnt)</item.method>
+      <item.desc>巨量引擎邮箱登录
+使用邮箱账号登录到巨量引擎
+* @param 登录邮箱，登录邮箱
+* @param 登录密码，登录密码
+* @param 验证邮箱，
+* @param 邮箱授权码，
+* @param 获取授权码间隔时长，
+* @param 验证码失败最大重试次数，
+* @param 退出已登录账户，
+* @param retry_cnt，登录流程失败自动重试次数
+* @return web_page，网页对象
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process56" display="process56" kind="function" help="/yddoc/rpa/711828904958464000">
+      <item.method>process56(京麦账号,京麦密码,图鉴账号,图鉴密码,重试次数,识别引擎)</item.method>
+      <item.desc>京麦登录
+京麦登录指令，目前只支持chrome浏览器(该指令实现滑动验证码时会产生费用)
+* @param 京麦账号，
+* @param 京麦密码，
+* @param 图鉴账号，
+* @param 图鉴密码，
+* @param 重试次数，
+* @param 识别引擎，
+* @return 保存网页对象，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.process59" display="process59" kind="function" help="/yddoc/rpa/712285835562737664">
+      <item.method>process59(是否要退出已登陆账号,网页对象,账号,密码,登录的店铺名称)</item.method>
+      <item.desc>电商罗盘策略登陆
+
+* @param 是否要退出已登陆账号，
+* @param 网页对象，
+* @param 账号，
+* @param 密码，
+* @param 登录的店铺名称，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.qn_login" display="qn_login" kind="function" help="yddoc/rpa/742655584789909504">
+      <item.method />
+      <item.desc />
+      <item name="xbot_extensions.activity_7bca6d.qn_login.login" display="login" kind="function" help="yddoc/rpa/742655584789909504">
+        <item.method />
+        <item.desc />
+      </item>
+      <item name="xbot_extensions.activity_7bca6d.qn_login.main" display="main" kind="function" help="yddoc/rpa/742655584789909504">
+        <item.method>main(args)</item.method>
+        <item.desc>千牛登录
+该指令实现了账号密码登录千牛的功能（注：验证码产生费用）
+* @param username，登录账号
+* @param password，登录密码
+* @param mode，浏览器类型
+* @param token，云码Token
+* @param retry_count，验证码重试次数
+* @param engine，识别引擎
+* @return web_page，
+</item.desc>
+      </item>
+    </item>
+    <item name="xbot_extensions.activity_7bca6d.taobao_mini" display="taobao_mini" kind="function" help="yddoc/rpa/743079364612616192">
+      <item.method />
+      <item.desc />
+      <item name="xbot_extensions.activity_7bca6d.taobao_mini.verify" display="verify" kind="function" help="yddoc/rpa/743079364612616192">
+        <item.method />
+        <item.desc />
+      </item>
+      <item name="xbot_extensions.activity_7bca6d.taobao_mini.login" display="login" kind="function" help="yddoc/rpa/743079364612616192">
+        <item.method />
+        <item.desc />
+      </item>
+      <item name="xbot_extensions.activity_7bca6d.taobao_mini.main" display="main" kind="function" help="yddoc/rpa/743079364612616192">
+        <item.method>main(args)</item.method>
+        <item.desc>淘宝mini登录
+该指令实现了账号密码登录淘宝的功能（注：验证码产生费用）
+* @param username，账号
+* @param password，密码
+* @param mode，浏览器类型
+* @param token，云码Token
+* @param retry_count，重试次数
+* @param engine，识别引擎选择
+</item.desc>
+      </item>
+    </item>
+  </item>
+</root>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository xmlns:x="rpa://selector/core" xmlns:regex="rpa://selector/operator/regex" xmlns:wildcard="rpa://selector/operator/wildcard">
+  <group id="ef1c2fdf-2a02-411c-84fe-6ddfb9a898b9" name="巨量百应Buyin" type="Web" processName="chrome" icon="" criteria="file:///C:/Users/10994/Downloads/%E5%B7%A8%E9%87%8F%E7%99%BE%E5%BA%94Buyin%20(2024_3_26%2010_27_16).html">
+    <selector id="03210495-df4b-47db-b76c-3ab047d80dfc" name="块元素_auxo-picker-body" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="巨量百应Buyin" screenshot=".dev\screenshot\7687dbe4-2311-417f-aa48-aa8352d0e4b6.jpg">
+      <web x:name="div">
+        <optional elementtiming="element-timing" index="9" index-of-type="7" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" class="auxo-picker-dropdown auxo-picker-dropdown-placement-bottomleft auxo-picker-dropdown-range sp-range-picker-join-dropdown" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" class="auxo-picker-date-range-wrapper auxo-picker-range-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" class="auxo-picker-panel-container" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" class="sp-picker-range" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" class="sp-picker-range-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="daren-element-timing" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" class="auxo-picker-dropdown auxo-picker-dropdown-placement-bottomleft auxo-picker-dropdown-range" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" class="auxo-picker-date-range-wrapper auxo-picker-range-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional elementtiming="element-timing" class="auxo-picker-panel-container" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div" class="auxo-picker-panels">
+        <optional elementtiming="element-timing" index="0" index-of-type="0" />
+      </web>
+    </selector>
+  </group>
+  <group id="021b801e-4dec-4367-8960-d20ff6145dc5" name="日期选择框 DatePicker - Ant Design" type="Web" processName="chrome" icon=".dev\icon\45359ef2-eb0d-4a04-8cae-38dba7c75202.png" criteria="https://ant.design">
+    <selector id="a14f7194-36eb-4438-9c4d-daf5a609990f" name="二" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="日期选择框 DatePicker - Ant Design" screenshot=".dev\screenshot\8603e75f-9e1c-4bde-8021-9b07c0a919c4.jpg">
+      <web x:name="div" index="19">
+        <optional index-of-type="10" />
+      </web>
+      <web x:name="div">
+        <optional class="ant-picker-css-var ant-picker-dropdown ant-picker-dropdown-placement-bottomleft css-var-r2albtj5cm" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional tabindex="-1" class="ant-picker-datetime-panel-container ant-picker-panel-container" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ant-picker-panel-layout" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional tabindex="0" class="ant-picker-panel" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div" class="ant-picker-datetime-panel">
+        <optional index="0" index-of-type="0" />
+      </web>
+    </selector>
+  </group>
+  <group id="f28190d5-cdf2-4786-9bb6-4ff84cfad8e9" name="Arco Design Pro - 开箱即用的中台前端/设计解决方案" type="Web" processName="msedge" icon=".dev\icon\d1208774-b9fc-4e73-995e-79b69d881f14.png" criteria="https://vue-pro.arco.design">
+    <selector name="auto_drop_selector" type="simple" framework="edge" processName="msedge" productName="Microsoft Edge" winTitle="Arco Design Pro - 开箱即用的中台前端/设计解决方案" screenshot=".dev\screenshot\7cfc7570-75b5-4f5a-a316-870b0e9acb7b.jpg">
+      <web x:name="div">
+        <optional id="app" data-v-app="" index="0" index-of-type="0" />
+      </web>
+      <web x:name="section">
+        <optional data-v-5424861c="" class="arco-layout layout" index="0" index-of-type="0" />
+      </web>
+      <web x:name="section">
+        <optional data-v-5424861c="" class="arco-layout" index="1" index-of-type="0" />
+      </web>
+      <web x:name="section">
+        <optional data-v-5424861c="" class="arco-layout arco-layout-has-sider" index="0" index-of-type="0" />
+      </web>
+      <web x:name="section">
+        <optional data-v-5424861c="" class="arco-layout layout-content" index="1" index-of-type="0" />
+      </web>
+      <web x:name="main">
+        <optional data-v-5424861c="" class="arco-layout-content" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-55c5dc10="" data-v-5424861c="" class="container" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-55c5dc10="" class="arco-card arco-card-bordered arco-card-size-medium general-card" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="arco-card-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional data-v-55c5dc10="" class="arco-row arco-row-align-start arco-row-justify-start" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-55c5dc10="" class="arco-col" index="0" index-of-type="0" />
+      </web>
+      <web x:name="form">
+        <optional data-v-55c5dc10="" class="arco-form arco-form-layout-horizontal arco-form-size-medium" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-v-55c5dc10="" class="arco-row arco-row-align-start arco-row-justify-start" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div" index="3">
+        <optional data-v-55c5dc10="" class="arco-col arco-col-8" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional data-v-55c5dc10="" class="arco-form-item arco-form-item-layout-horizontal arco-row arco-row-align-start arco-row-justify-start" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="arco-col arco-col-18 arco-form-item-wrapper-col" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="arco-form-item-content-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="arco-form-item-content arco-form-item-content-flex" index="0" index-of-type="0" />
+      </web>
+      <web x:name="span">
+        <optional class="arco-select arco-select-view arco-select-view-focus arco-select-view-opened arco-select-view-single arco-select-view-size-medium" index="0" index-of-type="0" />
+      </web>
+      <web x:name="input" class="arco-select-view-input">
+        <optional readonly="" placeholder="全部" index="0" index-of-type="0" />
+      </web>
+    </selector>
+  </group>
+</repository>

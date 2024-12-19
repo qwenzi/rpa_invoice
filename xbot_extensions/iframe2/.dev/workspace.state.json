@@ -1,0 +1,91 @@
+{
+  "openedFlows": [
+    "main",
+    "_core",
+    "api",
+    "js_code",
+    "C1-点击元素",
+    "D1-获取元素信息",
+    "D2-获取元素属性",
+    "测试"
+  ],
+  "activeBottomPanel": "运行日志",
+  "activeFlow": "_core",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "_core",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "A0-初始化iframe",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "A1-切换iframe",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "A2-切换至父iframe",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "B1-获取元素对象",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "B2-获取相似元素",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "api",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "js_code",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "C1-点击元素",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "C2-填写输入框",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "C3-等待元素",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "D1-获取元素信息",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "D2-获取元素属性",
+      "Lines": null,
+      "BlockIds": []
+    }
+  ]
+}

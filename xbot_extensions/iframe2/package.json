@@ -1,0 +1,156 @@
+{
+  "uuid": "63y62s2j-3kly-507i-258z-3wzb6s6qoz92",
+  "name": "XPath跨域获取网页元素",
+  "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/06/c1/06c16b0ca19804962ef0741536c6999c.png",
+  "version": "1",
+  "tags": "official",
+  "software": null,
+  "software_title": null,
+  "package_version": 2,
+  "description": "改指令集实现了通过XPath跨域的操作",
+  "instruction": null,
+  "use_latest_pip": false,
+  "videoName": null,
+  "startup": "main",
+  "robot_type": "activity",
+  "activity_code": "iframe2",
+  "flows": [
+    {
+      "name": "main",
+      "filename": "main",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "_core",
+      "filename": "_core",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "py"
+    },
+    {
+      "name": "A0-初始化iframe",
+      "filename": "init_iframe",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "A"
+    },
+    {
+      "name": "A1-切换iframe",
+      "filename": "to_iframe",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "A"
+    },
+    {
+      "name": "A2-切换至父iframe",
+      "filename": "parent",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": "A"
+    },
+    {
+      "name": "B1-获取元素对象",
+      "filename": "find_ele",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "B"
+    },
+    {
+      "name": "B2-获取相似元素",
+      "filename": "find_all_ele",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "B"
+    },
+    {
+      "name": "api",
+      "filename": "api",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "py"
+    },
+    {
+      "name": "js_code",
+      "filename": "js_code",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "py"
+    },
+    {
+      "name": "C1-点击元素",
+      "filename": "click_by_xpath",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "C"
+    },
+    {
+      "name": "C2-填写输入框",
+      "filename": "input_by_xpath",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "C"
+    },
+    {
+      "name": "C3-等待元素",
+      "filename": "wait_by_xpath",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "C"
+    },
+    {
+      "name": "测试",
+      "filename": "process1",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": "测试"
+    },
+    {
+      "name": "D1-获取元素信息",
+      "filename": "process2",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "D"
+    },
+    {
+      "name": "D2-获取元素属性",
+      "filename": "process3",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "D"
+    }
+  ],
+  "flow_groups": [
+    {
+      "name": "A"
+    },
+    {
+      "name": "B"
+    },
+    {
+      "name": "py"
+    },
+    {
+      "name": "C"
+    },
+    {
+      "name": "测试"
+    },
+    {
+      "name": "D"
+    }
+  ],
+  "variables": [],
+  "external_dependencies": [],
+  "internaldependencies": [],
+  "selectordependencies": [],
+  "internalautodependencies": [],
+  "databook_columns": [],
+  "authority": "use",
+  "internalautoupgrade": false,
+  "isbrief": false,
+  "uia_type": "PC",
+  "persist_databook": false,
+  "customItems": {}
+}

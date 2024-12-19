@@ -1,0 +1,169 @@
+<root>
+  <item name="xbot_extensions.web_action" display="web_action" kind="module">
+    <item.method />
+    <item.desc>网页扩展操作
+该指令集实现了网页元素相关的扩展操作，如：滚动元素、显示隐藏元素等</item.desc>
+    <item name="xbot_extensions.web_action.select_date" display="select_date" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_action_select_date">
+      <item.method />
+      <item.desc />
+      <item name="xbot_extensions.web_action.select_date.select_date" display="select_date" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_action_select_date">
+        <item.method />
+        <item.desc />
+      </item>
+      <item name="xbot_extensions.web_action.select_date.main" display="main" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_action_select_date">
+        <item.method>main(args)</item.method>
+        <item.desc>智能日期选择器
+该指令实现了智能识别日期控件，然后选择指定日期的操作
+* @param web_page，
+* @param date_elem，
+* @param date_start，
+* @param date_end，
+</item.desc>
+      </item>
+    </item>
+    <item name="xbot_extensions.web_action.process1" display="process1" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_scroll_into_view">
+      <item.method>process1(网页对象,操作目标)</item.method>
+      <item.desc>滚动元素至可视区域
+该指令实现了将网页元素滚动至可视区域
+* @param 网页对象，
+* @param 操作目标，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process2" display="process2" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_hide_element">
+      <item.method>process2(网页对象,操作目标)</item.method>
+      <item.desc>隐藏元素
+该指令实现了将网页中的元素隐藏
+* @param 网页对象，
+* @param 操作目标，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process3" display="process3" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_show_element">
+      <item.method>process3(网页对象,操作目标)</item.method>
+      <item.desc>显示元素
+该指令实现了将网页中的元素显示
+* @param 网页对象，
+* @param 操作目标，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process12" display="process12" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/remove_element">
+      <item.method>process12(网页对象,操作目标)</item.method>
+      <item.desc>删除元素
+
+* @param 网页对象，
+* @param 操作目标，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process14" display="process14" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/long_screenshot">
+      <item.method>process14(网页对象,操作目标,保存路径)</item.method>
+      <item.desc>元素长截图
+该指令实现了对元素长截图的操作
+* @param 网页对象，
+* @param 操作目标，
+* @param 保存路径，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process4" display="process4" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_background_color">
+      <item.method>process4(网页对象,操作目标)</item.method>
+      <item.desc>获取元素背景颜色
+该指令实现了获取元素背景颜色操作
+* @param 网页对象，
+* @param 操作目标，
+* @return 背景色，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process6" display="process6" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_color">
+      <item.method>process6(网页对象,操作目标)</item.method>
+      <item.desc>获取元素字体颜色
+该指令实现了获取元素字体颜色的操作
+* @param 网页对象，
+* @param 操作目标，
+* @return 字体颜色，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process7" display="process7" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/import_js_lib">
+      <item.method>process7(网页对象,JS库)</item.method>
+      <item.desc>导入常用JS库
+该指令实现了在网页中导入JS库的操作
+* @param 网页对象，
+* @param JS库，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process11" display="process11" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/import_js_lib_by_src">
+      <item.method>process11(网页对象,JS来源类型,JS来源)</item.method>
+      <item.desc>导入JS库
+该指令实现了在网页中导入JS库的操作
+* @param 网页对象，
+* @param JS来源类型，
+* @param JS来源，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process8" display="process8" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/get_active_by_web_page">
+      <item.method>process8(网页对象)</item.method>
+      <item.desc>获取当前激活的网页对象
+该指令实现了根据指定网页对象的浏览器类型获取当前激活的网页对象
+* @param 网页对象，
+* @return web_page，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process10" display="process10" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/close_other_web_page">
+      <item.method>process10(保留网页对象)</item.method>
+      <item.desc>关闭其他网页
+该指令实现了保留当前网页，关闭相同浏览器其他网页的操作
+* @param 保留网页对象，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process13" display="process13" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/chromium_options">
+      <item.method>process13(禁用图片,指定端口,用户数据,指定用户,最大化,无痕模式,设置UA,隐藏崩溃弹窗)</item.method>
+      <item.desc>浏览器启动配置
+该指令实现了配置浏览器启动命令行的操作
+* @param 禁用图片，
+* @param 指定端口，
+* @param 用户数据，
+* @param 指定用户，
+* @param 最大化，
+* @param 无痕模式，
+* @param 设置UA，
+* @param 隐藏崩溃弹窗，
+* @return 命令行，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.process15" display="process15" kind="function" help="">
+      <item.method>process15(粗细,样式,颜色,网页对象,操作目标)</item.method>
+      <item.desc>元素增加边框
+该指令实现了给元素增加边框的功能
+* @param 粗细，
+* @param 样式，
+* @param 颜色，
+* @param 网页对象，
+* @param 操作目标，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.web_action.auto_drop_selector" display="auto_drop_selector" kind="function" help="">
+      <item.method />
+      <item.desc />
+      <item name="xbot_extensions.web_action.auto_drop_selector.set_dropdown" display="set_dropdown" kind="function" help="">
+        <item.method />
+        <item.desc />
+      </item>
+      <item name="xbot_extensions.web_action.auto_drop_selector.main" display="main" kind="function" help="">
+        <item.method>main(args)</item.method>
+        <item.desc>通用设置下拉框
+该指令实现了触发下拉框点击目标文本的功能
+* @param web_page，待操作的网页对象
+* @param drop_ele，触发下拉框的元素
+* @param click_flag，是否点击元素
+* @param target_text，待点击的目标文本
+* @param simulative，
+* @return css_path，
+</item.desc>
+      </item>
+    </item>
+    <item name="xbot_extensions.web_action.process18" display="process18" kind="function" help="">
+      <item.method>process18(网页对象)</item.method>
+      <item.desc>取消HTML缩放
+该指令实现了取消网页中HTML缩放的操作
+* @param 网页对象，
+</item.desc>
+    </item>
+  </item>
+</root>

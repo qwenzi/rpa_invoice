@@ -1,0 +1,135 @@
+{
+  "types": [],
+  "blocks": [
+    {
+      "name": "xbot_extensions.activity_ea8fd401.main",
+      "statement": "process.invoke_activity",
+      "title": "主流程",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": null,
+      "function": "xbot_extensions.activity_ea8fd401.main",
+      "helpUrl": null,
+      "extension": "跨域获取网页元素",
+      "hidden": true,
+      "canDebug": false,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.activity_ea8fd401._core",
+      "statement": "process.invoke_activity",
+      "title": "_core",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": null,
+      "function": "xbot_extensions.activity_ea8fd401._core",
+      "helpUrl": null,
+      "extension": "跨域获取网页元素",
+      "hidden": true,
+      "canDebug": false,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.activity_ea8fd401.iframeElement",
+      "statement": "process.invoke_activity",
+      "title": "跨全局查找xpath元素",
+      "keywords": "",
+      "description": null,
+      "comment": "查找%xpathSelector%保存为%元素对象%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/icons/activity-icons/07%E5%85%B6%E4%BB%96/share.png",
+      "function": "xbot_extensions.activity_ea8fd401.iframeElement",
+      "helpUrl": null,
+      "extension": "跨域获取网页元素",
+      "hidden": false,
+      "canDebug": false,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "web_page",
+          "label": "web_page",
+          "required": false,
+          "tips": "为None时自动匹配当前激活页面",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "xpathSelector",
+          "label": "xpathSelector",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "异常处理",
+          "label": "异常处理",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:停止运行",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "停止运行",
+                "value": "停止运行",
+                "Unicode": null
+              },
+              {
+                "display": "忽略异常",
+                "value": "忽略异常",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "失败返回值",
+          "label": "失败返回值",
+          "required": false,
+          "tips": "",
+          "type": "any",
+          "default": "13:None",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "元素对象",
+          "label": "元素对象",
+          "name": "元素对象",
+          "type": "xbot._web.element.WebElement"
+        }
+      ]
+    }
+  ]
+}

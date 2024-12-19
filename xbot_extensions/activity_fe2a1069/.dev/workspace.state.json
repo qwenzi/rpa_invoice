@@ -1,0 +1,86 @@
+{
+  "openedFlows": [
+    "main",
+    "PopupBlocker",
+    "ClickByXpath",
+    "InputByXpath",
+    "GetDownloadPath",
+    "GetShopName",
+    "URL检查",
+    "HoverByXpath"
+  ],
+  "activeBottomPanel": "运行日志",
+  "activeFlow": "GetShopName",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "Start",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "PopupBlocker",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "ClickByXpath",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "InputByXpath",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "DataSelection",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "GetElementInnerText",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "GetDownloadPath",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "打开下载文件询问",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "IsElementExists",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "GetShopName",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "URL检查",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "HoverByXpath",
+      "Lines": [],
+      "BlockIds": null
+    }
+  ]
+}

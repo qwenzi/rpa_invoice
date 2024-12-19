@@ -1,0 +1,83 @@
+{
+  "openedFlows": [
+    "main",
+    "DownAndMoveFile",
+    "MoveToPardir",
+    "解压文件到当前目录",
+    "下载一个文件",
+    "快捷日期转换",
+    "测试",
+    "DateStringCheck",
+    "latest_email",
+    "get_SMS_code"
+  ],
+  "activeBottomPanel": "流程参数",
+  "activeFlow": "get_SMS_code",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "DownAndMoveFile",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "CreateDir",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "test",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "MoveToPardir",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "解压文件到当前目录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "下载一个文件",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "快捷日期转换",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "入参校验",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "DateStringCheck",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "latest_email",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "get_SMS_code",
+      "Lines": [],
+      "BlockIds": null
+    }
+  ]
+}

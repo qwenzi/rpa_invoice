@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="aplus-waiting" content="MAN">
+    <meta name="spm-id" content="a2d11y.26846566">
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <link rel="icon" type="image/png" href="https://img.alicdn.com/tfs/TB1CZ0ARpXXXXX7XXXXXXXXXXXX-32-32.png">
+    <title>菜鸟统一登录</title>
+</head>
+<body><script>
+with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&trid=2136517917289737884617784e1178&asid=AQAAAADcCw5nFefEGgAAAACrJ38rEIulZw==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
+</script>
+
+    <link href=https://cn.alicdn.com/cn-member/cp-cnlogin/0.0.82/template/layout/theme.css rel="stylesheet" charset="utf-8">
+<script src="//g.alicdn.com/cn/??jquery/1.8.1/jquery.js,seajs/2.3.0/sea.js,seajs/2.3.0/seajs-combo.js"></script>
+
+<link href=https://cn.alicdn.com/cn-member/cp-cnlogin/0.0.82/template/layout/theme.css rel="stylesheet" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="//cn.alicdn.com/cn-member/cp-cnlogin/0.1.22/template/screen/common-login/index.css">
+<link rel="stylesheet" type="text/css" href="//cn.alicdn.com/cn-member/cp-cnlogin/0.1.22/template/screen/login/index.css">
+<link rel="stylesheet" type="text/css"
+      href=https://cn.alicdn.com/cn-member/cnm-mid-pages-group/0.1.50/css/loginmaintheme.css>
+
+<script src="//g.alicdn.com/cn/??jquery/1.8.1/jquery.js,seajs/2.3.0/sea.js,seajs/2.3.0/seajs-combo.js"></script>
+
+<div class="login-wrapper">
+    <!-- 菜鸟官网吊顶 start -->
+    <!-- 菜鸟官网吊顶 end -->
+    <div class="login-header">
+        <div id="cn_logo"></div>
+    </div>
+    <!-- 菜鸟登录背景 start -->
+    <!-- <div class="videocontainer">
+        <video class="fullscreenvideo" poster="//img.alicdn.com/imgextra/i2/O1CN015aLjtA1vGSUV7I5t6_!!6000000006145-2-tps-1400-788.png" id="bgvid" playsinline="" autoplay="" muted="" loop="">
+            <source src="//cn.alicdn.com/cn-member/cp-cnlogin/0.0.58/resource/login-bg.mp4" type="video/mp4">
+        </video>
+    </div> -->
+    <!-- 菜鸟登录背景 end -->
+    <div class="login-content">
+        <!-- 菜鸟登录吊顶 start -->
+        <div class="login-top-nav" id="login-top-nav">
+            <img class="login-nav-image"
+                src="https://img.alicdn.com/imgextra/i2/O1CN01nCVxUb1avaNqWZRib_!!6000000003392-1-tps-1200-620.gif"/>
+        </div>
+        <!-- 菜鸟登录吊顶 end -->
+        <div class="login-part">
+            <!-- <div class="login-ad-content">
+                <a class="login-ad-href" href="#">
+                    <img class="login-ad-image"
+                         src="https://img.alicdn.com/tfs/TB16otWXs4IxuRkSO3gXXaAoXXa-610-385.png"/>
+                </a>
+            </div> -->
+            <!-- 淘宝登录框 -->
+                        <!-- 钉钉登录框 -->
+                        <!-- 菜鸟登录框 -->
+            <div id="J_cainiao" class="login-frames active">
+                <div id="login-code-body" class="login-code-body none-box">
+                    <img class="login-code-image"
+                        src="https://img.alicdn.com/imgextra/i4/O1CN01HVdB2S1OKgpNHkDqH_!!6000000001687-2-tps-106-114.png"/>
+                </div>
+                <div id="login-swich-body" class="login-code-body none-box">
+                    <img class="login-code-image"
+                        src="https://img.alicdn.com/imgextra/i3/O1CN01SrBP1d1GUICosL4Rx_!!6000000000625-2-tps-106-114.png"/>
+                </div>
+                <div id="alibaba-login-iframe">
+                    <div id="alibaba-login-title">
+                        <span id="alibaba-login-title-icon"></span>
+                        <span id="alibaba-login-title-text" style="font-size: 16px;">菜鸟账号登录</span>
+                                                    <a class="question-icon" target="_blank" title="遇到问题" href="https://xl-web.cainiao.com/xlPcPage.html?channel=1000000525">?</a>
+                                            </div>
+                    <div id="alibaba-login-iframe-loading"></div>
+                </div>
+                <div id="code-login-iframe" class="none-box code-login-iframe">
+
+                </div>
+                                                        <div class="reg-box">
+                        还没有账号？
+                        <a class="theme-color" href="https://cnlogin.cainiao.com/register?redirectURL=http%3A%2F%2Fcnlogin.cainiao.com%2Ffavicon.ico&cnSite=CAINIAO&lang=zh_CN" target="_blank">免费注册</a>
+                    </div>
+                                                            <!-- 国外环境加空行撑高-->
+                                        <div class="other-user-option" id="other-user-option">
+                        <!-- 国外环境注册-->
+                                                    <!-- 国内环境注册-->
+                            <div class="forget-box">
+                                 <a class="theme-color" href="https://cnlogin.cainiao.com/usercenter/findPassword?redirectURL=http%3A%2F%2Fcnlogin.cainiao.com%2Ffavicon.ico&cnSite=CAINIAO&lang=zh_CN" target="_blank">忘记密码</a>                                  <a class="theme-color" href="https://cnlogin.cainiao.com/usercenter/findNick?redirectURL=http%3A%2F%2Fcnlogin.cainiao.com%2Ffavicon.ico&cnSite=CAINIAO&lang=zh_CN" target="_blank">忘记会员名</a>                             </div>
+                                            </div>
+                            </div>
+
+            <!-- 菜鸟saoma登录框 -->
+        </div>
+    </div>
+    </div>
+<script>
+    window.currentLang = 'zh';
+    window.showcode = '';
+    window.codeUrl = '';
+    window.regURL = 'https://cnlogin.cainiao.com/register?redirectURL=http%3A%2F%2Fcnlogin.cainiao.com%2Ffavicon.ico&cnSite=CAINIAO&lang=zh_CN';
+    window.cainiaoAccountLogin = '菜鸟账号登录';
+    window.otherLoginType = '其他方式';
+    window.faqRobotGuestText = '遇到问题';
+    window.faqRobotGuestUrl = 'https://xl-web.cainiao.com/xlPcPage.html?channel=1000000525';
+    window.hasFaq = 'true';
+    window.cnSelfBuild= 'false';
+    window.scriptTool = 'com.cainiao.cnlogin.velocity.ScriptTool@12228f85';
+    window.cnMemberCpCnloginVersion = '0.1.11';
+    window.newCpCnloginVersion = '0.1.22';
+</script>
+<script src="https://g.alicdn.com/vip/havana-login/0.3.2/js/mini-login-embedder-min.js"></script>
+<script src="https://cn.alicdn.com/cn-member/cnm-mid-pages-group/0.1.74/js/cnlogin.js"></script>
+
+<!-- 埋点 -->
+<script crossorigin src="https://o.alicdn.com/cn-arch-fe/cone-arms-stable/index.umd.es5.production.js"></script>
+<script>
+    window.coneArms && window.coneArms.initTrace({
+    // 必填, arms 平台上申请的的 pid，命名规则需要以 cn-cone- 或者 cn_cone_ 作为前缀
+    pid: "cn-cplogin",
+    checkPid: true,
+    // pv 采集插件的配置 https://yuque.antfin-inc.com/ali_arms/lav0sg/dy6gxb
+    pvPluginOptions: {
+      // 组件默认关闭了自动上报PV功能，需要使用的话需手动开启
+      autoPV: true,
+      // 单页应用如果开启了PV自动上报功能，需要根据项目实际情况配置监控hash （enableHash）或history（enableHistory）变化来触发单页应用页面跳转时进行PV上报
+      enableHash: true,
+      // enableHistory: true,
+    },
+  });
+</script>
+
+<script src="https://g.alicdn.com/dingding/dinglogin/0.0.5/ddLogin.js"></script>
+<script>
+        function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+        function checkHash(hash, istb) {
+        var defaultHash = istb == "true" ? "#taobao" : "#cainiao";
+        var allowList = ['#taobao', '#cainiao', '#dingding'];
+        if (allowList.includes(hash)) {
+            return hash
+        } else {
+            return defaultHash;
+        }
+    }
+
+        function loadDingDingScript() {
+            }
+
+        function onHashChange() {
+        var istb = getQueryVariable("istb");
+        tbHash = istb == "true" ? "#taobao" : "";
+        var hash = location.hash || tbHash || '#cainiao';
+                hash = checkHash(hash, istb)
+        $('.login-frames a[href~="' + hash + '"]')
+                .addClass('active').siblings().removeClass('active');
+
+        $('#J_' + hash.substr(1)).addClass('active').siblings().removeClass('active');
+
+                loadDingDingScript()
+    }
+    $(window).on('hashchange', onHashChange);
+    onHashChange();
+
+        var miniLoginEmbedder = new window.MiniLoginEmbedder();
+         //监听登录完成后的消息，resize已被监听
+     miniLoginEmbedder.addEvent('onMessage', function (args) {
+        //hasLoginResult:免登成功事件;loginResult:登录成功事件
+        if (args.action && (args.action == "hasLoginResult" || args.action == "loginResult")) {
+            if (args.st) {   // stSite为 ValidateSt 的时候传的site参数
+                location.href = "https://cnlogin.cainiao.com/doLogin?stSite=" + args.stSite + "&st=" + args.st + "&loginChannel=pc" + "&account=" + encodeURIComponent(args.loginId)
+                        + "&redirectURL=http%3A%2F%2Fcnlogin.cainiao.com%2Ffavicon.ico";
+            }
+        }
+    });
+    
+    miniLoginEmbedder.init({
+        targetId: 'alibaba-login-iframe',
+        appName: 'cainiao',   // 需要自己申请，这个只是用来展示测试的
+        iframeUrl:'https://passport.cainiao.com/mini_login.htm',
+        // iframeUrl: 'https://passport.cainiao.com/mini_login.htm',
+        // 日常域名：passport.daily.alibaba.com  预发和线上环境替换url为 https://cnpassport.alibaba.com/mini_login.htm,
+        // 重要：如果应用有中美部署(非中美部署的，千万不要使用，否则引发故障)，线上请使用 https://passport.alibaba.com/mini_login.htm
+        lang: 'zh_CN',
+        notLoadSsoView: 'true',
+        isMobile: 'false',  // boolean 类型 true or false
+        appEntrance: 'cainiao',
+        iframeWidth: 350,
+        iframeHeight: 300,
+        queryStr: '&cssUrl=https%3A%2F%2Fcn.alicdn.com%2Fcn-member%2Fcp-cnlogin%2F0.1.22%2Ftemplate%2Fscreen%2Fhavana-login%2Findex.css&returnUrl=https%3A%2F%2Fcnlogin.cainiao.com%2FdoLogin%3FredirectURL%3Dhttp%253A%252F%252Fcnlogin.cainiao.com%252Ffavicon.ico&loginRegAgreementTextId=view-smslogin-reg-protocol.cainiao.china&defaultCountryCode=&loginBizSource='
+    });
+
+        var ddLogin = DDLogin({
+        id:"dingding_login_cont",
+        goto: encodeURIComponent("https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid="+$('#J_dingding').data('app-id')+"&response_type=code&scope=snsapi_login&state=STATE&redirect_uri="
+                +encodeURIComponent($('#J_dingding').data('scan-code-url')+"?redirectURL="+$('#J_dingding').data('redirect-url')+"&showdd="+$('#J_dingding').data('if-showdd')+"&ddBindType="+$('#J_dingding').data('dd-bind-type'))),
+        style: "border:none;background-color:#FFFFFF;transform:scale(0.7,0.7);margin-top:-30px",
+        width : "350",
+        height: "350"
+    });
+    var hanndleMessage = function (event) {
+        var origin = event.origin;
+        console.log("origin", event.origin);
+        if( origin == "https://login.dingtalk.com" ) { //判断是否来自ddLogin扫码事件。
+            var loginTmpCode = event.data; //拿到loginTmpCode后就可以在这里构造跳转链接进行跳转了
+            window.location.href="https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid="+$('#J_dingding').data('app-id')+"&response_type=code&scope=snsapi_login&state=STATE&redirect_uri="
+                    +encodeURIComponent($('#J_dingding').data('scan-code-url')+"?redirectURL="+$('#J_dingding').data('redirect-url')+"&showdd="+$('#J_dingding').data('if-showdd')+"&ddBindType="+$('#J_dingding').data('dd-bind-type'))+"&loginTmpCode="+loginTmpCode;
+        }
+    };
+    if (typeof window.addEventListener != 'undefined') {
+        window.addEventListener('message', hanndleMessage, false);
+    } else if (typeof window.attachEvent != 'undefined') {
+        window.attachEvent('onmessage', hanndleMessage);
+    }
+
+    function isEmpty(obj){
+        if(typeof obj == "undefined" || obj == null || obj == ""){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    var showToast = function (message, time) {
+        if (!time) {
+            time = 1000;
+        }
+        var maxWidth = $(document.body).width();
+        var fontSize = 14;
+        var toast = $("<div>").css({
+            "margin": "0 auto",
+            "position": "fixed",
+            "left": 0,
+            "top": "24px",
+            "font-size": fontSize,
+            "padding": "14px 18px",
+            "border-radius": "4px",
+            "background": "#000",
+            "opacity": 0.7,
+            "color": "#fff",
+            "line-height": "22px",
+            "z-index": 1000
+        });
+        toast.text(message);
+
+        $(document.body).append(toast);
+        var width = toast.outerWidth();
+        var left = (maxWidth - width) / 2;
+        if (left < 0) {
+            left = 0;
+        }
+        toast.css("left", left);
+        setTimeout(function () {
+            toast.remove();
+        }, time);
+    }
+
+    function toShowToast() {
+        var errMsg=$('#J_dingding').data('err-msg')
+        if(!isEmpty(errMsg)){
+            showToast(errMsg, 3000);
+        }
+    }
+    toShowToast();
+
+    
+</script>
+<style type="text/css">
+        .icon-cainiao:before {
+        content: '.';
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background-size: 20px 20px;
+        color: transparent;
+        background-image: url("https://img.alicdn.com/tfs/TB15O3XtnM11u4jSZPxXXahcXXa-200-200.png_200x200xzco0.jpg");
+    }
+
+    .login-frames {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .login-type-title {
+        height: 16px;
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        background: #fff;
+        color: #333;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 500;
+        padding: 2px 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .none-box{
+        display: none;
+    }
+    .login-wrapper {
+        background: url(https://img.alicdn.com/imgextra/i4/O1CN01FFMRit1CfVi2wPtVv_!!6000000000108-0-tps-3200-1800.jpg) no-repeat;
+        background-size: cover;
+    }
+    .blank-line {
+        height: 30px;
+        width: 100%;
+    }
+</style>
+
+
+
+    <!-- <script src="//g.alicdn.com/cn-global/spm-apply-sdk/index.js"></script> -->
+</body>
+</html>

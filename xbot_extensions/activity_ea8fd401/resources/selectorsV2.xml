@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<repository xmlns:regex="rpa://selector/operator/regex" xmlns:wildcard="rpa://selector/operator/wildcard" xmlns:x="rpa://selector/core"><group id="驿站" name="iframe" type="Web"><selector name="list-iframe" type="simple"><web diy-uid="1687158886896" x:name="iframe" /><web diy-uid="1687159348789" x:name="SPAN" /></selector></group></repository>

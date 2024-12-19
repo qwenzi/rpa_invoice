@@ -1,0 +1,209 @@
+{
+  "uuid": "066729ec-4e96-424c-b466-9f56969d407d",
+  "name": "网页扩展操作",
+  "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/e7/3a/e73a32fc92d06ec538e8332d681838d0.png",
+  "version": "1",
+  "tags": "official",
+  "software": null,
+  "software_title": null,
+  "package_version": 2,
+  "description": "该指令集实现了网页元素相关的扩展操作，如：滚动元素、显示隐藏元素等",
+  "instruction": null,
+  "use_latest_pip": false,
+  "videoName": null,
+  "startup": "main",
+  "robot_type": "activity",
+  "activity_code": "web_action",
+  "flows": [
+    {
+      "name": "main",
+      "filename": "main",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "select_date",
+      "filename": "select_date",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "滚动元素至可视区域",
+      "filename": "process1",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "隐藏元素",
+      "filename": "process2",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "显示元素",
+      "filename": "process3",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "删除元素",
+      "filename": "process12",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "元素长截图",
+      "filename": "process14",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "获取元素背景颜色",
+      "filename": "process4",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "元素属性获取"
+    },
+    {
+      "name": "测试",
+      "filename": "process5",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": "测试"
+    },
+    {
+      "name": "获取元素字体颜色",
+      "filename": "process6",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "元素属性获取"
+    },
+    {
+      "name": "js_utility",
+      "filename": "js_utility",
+      "kind": "Code",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "element_core",
+      "filename": "element_core",
+      "kind": "Code",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "导入常用JS库",
+      "filename": "process7",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "导入JS库"
+    },
+    {
+      "name": "导入JS库",
+      "filename": "process11",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "导入JS库"
+    },
+    {
+      "name": "web_page_core",
+      "filename": "web_page_core",
+      "kind": "Code",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "获取当前激活的网页对象",
+      "filename": "process8",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "网页操作"
+    },
+    {
+      "name": "关闭其他网页",
+      "filename": "process10",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "网页操作"
+    },
+    {
+      "name": "浏览器启动配置",
+      "filename": "process13",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "网页操作"
+    },
+    {
+      "name": "元素增加边框",
+      "filename": "process15",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "获取伪元素内容",
+      "filename": "process16",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "获取伪元素属性",
+      "filename": "process17",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "auto_drop_selector",
+      "filename": "auto_drop_selector",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "元素操作"
+    },
+    {
+      "name": "取消HTML缩放",
+      "filename": "process18",
+      "kind": "Visual",
+      "opened": true,
+      "groupName": "网页操作"
+    }
+  ],
+  "flow_groups": [
+    {
+      "name": "元素操作"
+    },
+    {
+      "name": "元素属性获取"
+    },
+    {
+      "name": "测试"
+    },
+    {
+      "name": "导入JS库"
+    },
+    {
+      "name": "网页操作"
+    }
+  ],
+  "variables": [],
+  "external_dependencies": [],
+  "internaldependencies": [],
+  "selectordependencies": [],
+  "internalautodependencies": [],
+  "databook_columns": [],
+  "authority": "use",
+  "internalautoupgrade": false,
+  "isbrief": false,
+  "uia_type": "PC",
+  "persist_databook": false,
+  "customItems": {}
+}

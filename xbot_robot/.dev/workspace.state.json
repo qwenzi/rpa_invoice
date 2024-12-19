@@ -1,0 +1,62 @@
+{
+  "openedFlows": [
+    "main",
+    "ZRPA_Log",
+    "D发票2_首次上传",
+    "F发票4_重新上传",
+    "B登录流程",
+    "C发票1_同意申请",
+    "E发票3_点冲红",
+    "A初始化配置",
+    "C发票1_同意申请v1"
+  ],
+  "activeBottomPanel": "运行日志",
+  "activeFlow": "A初始化配置",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "ZRPA_Log",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "D发票2_首次上传",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "F发票4_重新上传",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "B登录流程",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "C发票1_同意申请",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "E发票3_点冲红",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "A初始化配置",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "C发票1_同意申请v1",
+      "Lines": null,
+      "BlockIds": []
+    }
+  ]
+}

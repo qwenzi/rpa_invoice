@@ -1,0 +1,1141 @@
+{
+  "types": [],
+  "blocks": [
+    {
+      "name": "xbot_extensions.web_action.main",
+      "statement": "process.invoke_activity",
+      "title": "网页扩展操作",
+      "keywords": "",
+      "description": "该指令集实现了网页元素相关的扩展操作，如：滚动元素、显示隐藏元素等",
+      "comment": "",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/e7/3a/e73a32fc92d06ec538e8332d681838d0.png",
+      "function": "xbot_extensions.web_action.main",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.select_date",
+      "statement": "process.invoke_activity",
+      "title": "智能日期选择器",
+      "keywords": "",
+      "description": "该指令实现了智能识别日期控件，然后选择指定日期的操作",
+      "comment": "在网页%web_page%中查找日期框元素%date_elem%，选择日期%date_start%~%date_end%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/icons/activity-icons/01%E9%80%9A%E7%94%A8/calendar.png",
+      "function": "xbot_extensions.web_action.select_date",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_action_select_date",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "web_page",
+          "label": "网页对象",
+          "required": true,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "date_elem",
+          "label": "日期框",
+          "required": true,
+          "tips": "要包含年月日元素以及切换按钮元素的大框，单个元素，不是相似元素组",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        },
+        {
+          "name": "date_start",
+          "label": "开始日期",
+          "required": false,
+          "tips": "字符串，格式：yyyy-mm-dd",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "字符串，格式：yyyy-mm-dd"
+          },
+          "category": "general"
+        },
+        {
+          "name": "date_end",
+          "label": "结束日期",
+          "required": false,
+          "tips": "非必填，字符串，格式：yyyy-mm-dd",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "非必填，字符串，格式：yyyy-mm-dd"
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.滚动元素至可视区域",
+      "statement": "process.invoke_activity",
+      "title": "滚动元素至可视区域",
+      "keywords": "",
+      "description": "该指令实现了将网页元素滚动至可视区域",
+      "comment": "在网页%网页对象%中，将元素%操作目标%滚动至可视区域",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/d2/97/d29742317fdc4619008c52c456a145f3.png",
+      "function": "xbot_extensions.web_action.process1",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_scroll_into_view",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "操作目标",
+          "label": "操作目标",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.隐藏元素",
+      "statement": "process.invoke_activity",
+      "title": "隐藏元素",
+      "keywords": "",
+      "description": "该指令实现了将网页中的元素隐藏",
+      "comment": "在网页%网页对象%中，将元素%操作目标%隐藏",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/icons/activity-icons/04%E7%95%8C%E9%9D%A2/hide.png",
+      "function": "xbot_extensions.web_action.process2",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_hide_element",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "操作目标",
+          "label": "操作目标",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.显示元素",
+      "statement": "process.invoke_activity",
+      "title": "显示元素",
+      "keywords": "",
+      "description": "该指令实现了将网页中的元素显示",
+      "comment": "在网页%网页对象%中，将元素%操作目标%显示",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/6f/e2/6fe256bbdca5418c46cdcfbe4bfae8e6.png",
+      "function": "xbot_extensions.web_action.process3",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_show_element",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "操作目标",
+          "label": "操作目标",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.删除元素",
+      "statement": "process.invoke_activity",
+      "title": "删除元素",
+      "keywords": "",
+      "description": null,
+      "comment": "在网页%网页对象%中，删除元素%操作目标%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/87/b2/87b2346d3816da61006e32f0b063c003.png",
+      "function": "xbot_extensions.web_action.process12",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/remove_element",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "操作目标",
+          "label": "操作目标",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.元素长截图",
+      "statement": "process.invoke_activity",
+      "title": "元素长截图",
+      "keywords": "",
+      "description": "该指令实现了对元素长截图的操作",
+      "comment": "在网页%网页对象%中，对元素%操作目标%进行长截图，保存至%保存路径%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/35/78/357844dec32008a455e919fd086e7620.png",
+      "function": "xbot_extensions.web_action.process14",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/long_screenshot",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "操作目标",
+          "label": "操作目标",
+          "required": true,
+          "tips": "",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        },
+        {
+          "name": "保存路径",
+          "label": "保存路径",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "选择保存图片路径",
+            "dialog": {
+              "type": "OpenFile",
+              "filter": "图像文件|*.png;*.jpg;*.bmp",
+              "defaultFileName": null
+            }
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.获取元素背景颜色",
+      "statement": "process.invoke_activity",
+      "title": "获取元素背景颜色",
+      "keywords": "",
+      "description": "该指令实现了获取元素背景颜色操作",
+      "comment": "在网页%网页对象%中，获取元素%操作目标%的背景色，输出至%背景色%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/c9/b1/c9b16a091091aca63edc0ca51a24a42f.png",
+      "function": "xbot_extensions.web_action.process4",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_background_color",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "操作目标",
+          "label": "操作目标",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "背景色",
+          "label": "背景色",
+          "name": "背景色",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.web_action.测试",
+      "statement": "process.invoke_activity",
+      "title": "子流程1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": null,
+      "function": "xbot_extensions.web_action.process5",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.获取元素字体颜色",
+      "statement": "process.invoke_activity",
+      "title": "获取元素字体颜色",
+      "keywords": "",
+      "description": "该指令实现了获取元素字体颜色的操作",
+      "comment": "在网页%网页对象%中，获取元素%操作目标%上的字体颜色，输出至%字体颜色%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/8a/90/8a90be555046123a4283dd3a8f16defe.png",
+      "function": "xbot_extensions.web_action.process6",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/web_element_color",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "操作目标",
+          "label": "操作目标",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "字体颜色",
+          "label": "字体颜色",
+          "name": "字体颜色",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.web_action.js_utility",
+      "statement": "process.invoke_activity",
+      "title": "module1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": null,
+      "function": "xbot_extensions.web_action.js_utility",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.element_core",
+      "statement": "process.invoke_activity",
+      "title": "module1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": null,
+      "function": "xbot_extensions.web_action.element_core",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.导入常用JS库",
+      "statement": "process.invoke_activity",
+      "title": "导入常用JS库",
+      "keywords": "",
+      "description": "该指令实现了在网页中导入JS库的操作",
+      "comment": "在网页%网页对象%中导入JS库%JS库%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/55/72/5572922f802fba40a2d078d80f72ec10.png",
+      "function": "xbot_extensions.web_action.process7",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/import_js_lib",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "JS库",
+          "label": "JS库",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "html2canvas.min.js",
+                "value": "html2canvas.min.js",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.导入JS库",
+      "statement": "process.invoke_activity",
+      "title": "导入JS库",
+      "keywords": "",
+      "description": "该指令实现了在网页中导入JS库的操作",
+      "comment": "在网页%网页对象%导入JS库 %JS来源%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/4f/86/4f86098dd2a399a8c5938d655b8240ef.png",
+      "function": "xbot_extensions.web_action.process11",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/import_js_lib_by_src",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": true,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "JS来源类型",
+          "label": "JS来源类型",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "在线地址",
+                "value": "在线地址",
+                "Unicode": null
+              },
+              {
+                "display": "文件路径",
+                "value": "文件路径",
+                "Unicode": null
+              },
+              {
+                "display": "字符串",
+                "value": "字符串",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "general"
+        },
+        {
+          "name": "JS来源",
+          "label": "JS来源",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "在线地址 | 本地文件 | 字符串",
+            "dialog": {
+              "type": "OpenFile",
+              "filter": "JS文件|*.js",
+              "defaultFileName": null
+            }
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.web_page_core",
+      "statement": "process.invoke_activity",
+      "title": "module1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": null,
+      "function": "xbot_extensions.web_action.web_page_core",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.获取当前激活的网页对象",
+      "statement": "process.invoke_activity",
+      "title": "获取当前激活的网页对象",
+      "keywords": "",
+      "description": "该指令实现了根据指定网页对象的浏览器类型获取当前激活的网页对象",
+      "comment": "根据网页%网页对象%的类型获取当前激活的网页对象，输出至%web_page%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/0a/f2/0af2768c77685c3fe747dca0b1d26810.png",
+      "function": "xbot_extensions.web_action.process8",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/get_active_by_web_page",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "web_page",
+          "label": "web_page",
+          "name": "web_page",
+          "type": "xbot._web.browser.WebBrowser"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.web_action.关闭其他网页",
+      "statement": "process.invoke_activity",
+      "title": "关闭其他网页",
+      "keywords": "",
+      "description": "该指令实现了保留当前网页，关闭相同浏览器其他网页的操作",
+      "comment": "保留网页%保留网页对象%，关闭其他网页",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/06/0a/060ab057a8894c027a41627c205df183.png",
+      "function": "xbot_extensions.web_action.process10",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/close_other_web_page",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "保留网页对象",
+          "label": "保留网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.浏览器启动配置",
+      "statement": "process.invoke_activity",
+      "title": "浏览器启动配置",
+      "keywords": "",
+      "description": "该指令实现了配置浏览器启动命令行的操作",
+      "comment": "将浏览器启动配置输出至%命令行%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/icons/activity-icons/01%E9%80%9A%E7%94%A8/settings.png",
+      "function": "xbot_extensions.web_action.process13",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/chromium_options",
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "指定端口",
+          "label": "指定端口",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "用户数据",
+          "label": "用户数据",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null,
+            "dialog": {
+              "type": "SelectFolder",
+              "filter": "所有文件|*.*",
+              "defaultFileName": null
+            }
+          },
+          "category": "general"
+        },
+        {
+          "name": "指定用户",
+          "label": "指定用户",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "设置UA",
+          "label": "设置UA",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "禁用图片",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "禁用图片"
+          },
+          "category": "general"
+        },
+        {
+          "name": "最大化",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "最大化"
+          },
+          "category": "general"
+        },
+        {
+          "name": "无痕模式",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "无痕模式"
+          },
+          "category": "general"
+        },
+        {
+          "name": "隐藏崩溃弹窗",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "隐藏崩溃弹窗"
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "命令行",
+          "label": "命令行",
+          "name": "命令行",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.web_action.元素增加边框",
+      "statement": "process.invoke_activity",
+      "title": "元素增加边框",
+      "keywords": "",
+      "description": "该指令实现了给元素增加边框的功能",
+      "comment": "在网页%网页对象%中，给元素%操作目标%添加%颜色%颜色的边框",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/e9/7b/e97b00dfb5ca1357b42b017e313265c9.png",
+      "function": "xbot_extensions.web_action.process15",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "操作目标",
+          "label": "操作目标",
+          "required": true,
+          "tips": "",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        },
+        {
+          "name": "粗细",
+          "label": "粗细",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:2",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "样式",
+          "label": "样式",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "直线",
+                "value": "直线",
+                "Unicode": null
+              },
+              {
+                "display": "虚线",
+                "value": "虚线",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "general"
+        },
+        {
+          "name": "颜色",
+          "label": "颜色",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "支持三种格式：red、#FF0000、rgb(255,0,0)"
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.获取伪元素内容",
+      "statement": "process.invoke_activity",
+      "title": "子流程1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": null,
+      "function": "xbot_extensions.web_action.process16",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.获取伪元素属性",
+      "statement": "process.invoke_activity",
+      "title": "子流程1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": null,
+      "function": "xbot_extensions.web_action.process17",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.web_action.auto_drop_selector",
+      "statement": "process.invoke_activity",
+      "title": "通用设置下拉框",
+      "keywords": "",
+      "description": "该指令实现了触发下拉框点击目标文本的功能",
+      "comment": "在%web_page%网页对象上点击%drop_ele%触发下拉框选择%target_text%选项",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/icons/activity-icons/05%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/edit_property.png",
+      "function": "xbot_extensions.web_action.auto_drop_selector",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "web_page",
+          "label": "网页对象",
+          "required": false,
+          "tips": "待操作的网页对象",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        },
+        {
+          "name": "target_text",
+          "label": "点击文本",
+          "required": false,
+          "tips": "待点击的目标文本",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "drop_ele",
+          "label": "触发元素",
+          "required": false,
+          "tips": "触发下拉框的元素",
+          "type": "xbot._web.element.WebElement",
+          "default": "13:None",
+          "editor": {
+            "kind": "uitarget",
+            "selectorType": "simple",
+            "onlySelector": false
+          },
+          "category": "general"
+        },
+        {
+          "name": "click_flag",
+          "label": "",
+          "required": false,
+          "tips": "是否点击元素",
+          "type": "bool",
+          "default": "13:True",
+          "editor": {
+            "kind": "checkbox",
+            "label": "是否点击"
+          },
+          "category": "general"
+        },
+        {
+          "name": "simulative",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:True",
+          "editor": {
+            "kind": "checkbox",
+            "label": "模拟人工点击"
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "css_path",
+          "label": "CSS 选择器",
+          "name": "css_path",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.web_action.取消HTML缩放",
+      "statement": "process.invoke_activity",
+      "title": "取消HTML缩放",
+      "keywords": "",
+      "description": "该指令实现了取消网页中HTML缩放的操作",
+      "comment": "取消网页%网页对象%中的HTML缩放",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/icons/activity-icons/01%E9%80%9A%E7%94%A8/restart.png",
+      "function": "xbot_extensions.web_action.process18",
+      "helpUrl": null,
+      "extension": "网页扩展操作",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "网页对象",
+          "label": "网页对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": []
+    }
+  ]
+}

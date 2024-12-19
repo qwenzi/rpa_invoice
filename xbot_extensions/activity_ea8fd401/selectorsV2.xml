@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository xmlns:x="rpa://selector/core" xmlns:regex="rpa://selector/operator/regex" xmlns:wildcard="rpa://selector/operator/wildcard">
+  <group id="58f417df-7e14-42b4-afcc-f192dc772427" name="iframe" type="Web" processName="msedge" icon=".dev\icon\c4802bee-de99-4e56-87a9-20011ad2b857.png" criteria="https://mail.qq.com">
+    <selector name="list-iframe" type="simple" framework="edge" processName="msedge" productName="" winTitle="登录QQ邮箱" screenshot=".dev\screenshot\59955cb4-e42e-4335-bdd8-afe2296e799d.png">
+      <web x:name="iframe">
+        <optional />
+      </web>
+      <web x:name="body">
+        <optional />
+      </web>
+      <web x:name="iframe">
+        <optional />
+      </web>
+      <web x:name="body">
+        <optional />
+      </web>
+      <web x:name="iframe">
+        <optional />
+      </web>
+      <web x:name="body">
+        <optional />
+      </web>
+      <web x:name="iframe">
+        <optional />
+      </web>
+      <web x:name="body">
+        <optional />
+      </web>
+      <web x:name="iframe">
+        <optional />
+      </web>
+      <web x:name="body">
+        <optional />
+      </web>
+      <web x:name="iframe">
+        <optional />
+      </web>
+      <web x:name="body">
+        <optional />
+      </web>
+    </selector>
+    <selector name="iframe_temp" type="simple" framework="unknown" processName="" productName="" winTitle="" screenshot="">
+      <web x:name="iframe">
+        <optional diy-uid="2" />
+      </web>
+      <web x:name="body">
+        <optional />
+      </web>
+    </selector>
+    <selector name="输入框_u" type="simple" framework="edge" processName="msedge" productName="Microsoft Edge" winTitle="登录QQ邮箱" screenshot=".dev\screenshot\69d67da9-7603-4db5-97c7-7dba6815e4fd.png">
+      <web x:name="div">
+        <optional class="container" index="2" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="content_wrapper_id" class="content_wrapper" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="login" class="login_container xm_login_container" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="qqmailsdktool_login_loginbox" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="qqmailsdktool_login_loginbox_body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="QQMailSdkTool_login_loginBox_qq" class="qqmailsdktool_login_loginbox_qq" index="1" index-of-type="1" />
+      </web>
+      <web x:name="iframe" class="qqmailsdktool_login_loginbox_qq_iframe">
+        <optional frameborder="no" scrolling="no" src="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=102013353&amp;scope=get_user_info%2Cget_app_friends&amp;theme=10&amp;redirect_uri=https%3A%2F%2Fwx.mail.qq.com%2Flist%2Freadtemplate%3Fname%3Dlogin_jump.html%26scene%3D1%26login_type%3Dqq" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="combine_page" class="vertical" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="align combine_page_children page_login" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="lay_login_form" index="0" index-of-type="0" />
+      </web>
+      <web x:name="iframe">
+        <optional frameborder="0" width="370" height="318" id="ptlogin_iframe" name="ptlogin_iframe" src="https://xui.ptlogin2.qq.com/cgi-bin/xlogin?appid=716027609&amp;daid=383&amp;style=33&amp;login_text=%E7%99%BB%E5%BD%95&amp;hide_title_bar=1&amp;hide_border=1&amp;target=self&amp;s_url=https%3A%2F%2Fgraph.qq.com%2Foauth2.0%2Flogin_jump&amp;pt_3rd_aid=102013353&amp;pt_feedback_link=https%3A%2F%2Fsupport.qq.com%2Fproducts%2F77942%3FcustomInfo%3D.appid102013353&amp;theme=10&amp;verify_theme=" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="login" class="login" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="web_qr_login" class="web_qr_login" index="4" index-of-type="4" />
+      </web>
+      <web x:name="div" class="web_qr_login_show">
+        <optional id="web_qr_login_show" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div" class="web_login">
+        <optional id="web_login" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="login_form" index="2" index-of-type="2" />
+      </web>
+      <web x:name="form" id="loginform" name="loginform">
+        <optional autocomplete="off" action="" method="post" target="0" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div" index="0">
+        <optional id="uinArea" class="uinarea" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="inputouter_focus" index="1" index-of-type="0" />
+      </web>
+    </selector>
+    <selector name="块元素_web_login" type="simple" framework="edge" processName="msedge" productName="Microsoft Edge" winTitle="登录QQ邮箱" screenshot=".dev\screenshot\46226724-ef7f-485c-8113-8701ca6a09d7.png">
+      <web x:name="div">
+        <optional class="container" index="2" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="content_wrapper_id" class="content_wrapper" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="login" class="login_container xm_login_container" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="qqmailsdktool_login_loginbox" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="qqmailsdktool_login_loginbox_body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="QQMailSdkTool_login_loginBox_qq" class="qqmailsdktool_login_loginbox_qq" index="1" index-of-type="1" />
+      </web>
+      <web x:name="iframe" class="qqmailsdktool_login_loginbox_qq_iframe">
+        <optional frameborder="no" scrolling="no" src="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=102013353&amp;scope=get_user_info%2Cget_app_friends&amp;theme=10&amp;redirect_uri=https%3A%2F%2Fwx.mail.qq.com%2Flist%2Freadtemplate%3Fname%3Dlogin_jump.html%26scene%3D1%26login_type%3Dqq" diy-uid="1683875215338" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="combine_page" class="vertical" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="align combine_page_children page_login" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="lay_login_form" index="0" index-of-type="0" />
+      </web>
+      <web x:name="iframe" src="https://xui.ptlogin2.qq.com/cgi-bin/xlogin?appid=716027609&amp;daid=383&amp;style=33&amp;login_text=%E7%99%BB%E5%BD%95&amp;hide_title_bar=1&amp;hide_border=1&amp;target=self&amp;s_url=https%3A%2F%2Fgraph.qq.com%2Foauth2.0%2Flogin_jump&amp;pt_3rd_aid=102013353&amp;pt_feedback_link=https%3A%2F%2Fsupport.qq.com%2Fproducts%2F77942%3FcustomInfo%3D.appid102013353&amp;theme=10&amp;verify_theme=">
+        <optional frameborder="0" width="370" height="318" id="ptlogin_iframe" name="ptlogin_iframe" diy-uid="1683875215368" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector name="输入框_父元素" type="simple" framework="edge" processName="msedge" productName="Microsoft Edge" winTitle="登录QQ邮箱" screenshot=".dev\screenshot\665de1e0-0734-4c45-ab65-5d5f40e7f7d8.png">
+      <web x:name="div">
+        <optional class="container" index="2" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="content_wrapper_id" class="content_wrapper" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="login" class="login_container xm_login_container" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="qqmailsdktool_login_loginbox" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="qqmailsdktool_login_loginbox_body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="QQMailSdkTool_login_loginBox_qq" class="qqmailsdktool_login_loginbox_qq" index="1" index-of-type="1" />
+      </web>
+      <web x:name="iframe" class="qqmailsdktool_login_loginbox_qq_iframe">
+        <optional frameborder="no" scrolling="no" src="https://graph.qq.com/oauth2.0/authorize?response_type=code&amp;client_id=102013353&amp;scope=get_user_info%2Cget_app_friends&amp;theme=10&amp;redirect_uri=https%3A%2F%2Fwx.mail.qq.com%2Flist%2Freadtemplate%3Fname%3Dlogin_jump.html%26scene%3D1%26login_type%3Dqq" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="combine_page" class="vertical" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="align combine_page_children page_login" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="lay_login_form" index="0" index-of-type="0" />
+      </web>
+      <web x:name="iframe">
+        <optional frameborder="0" width="370" height="318" id="ptlogin_iframe" name="ptlogin_iframe" src="https://xui.ptlogin2.qq.com/cgi-bin/xlogin?appid=716027609&amp;daid=383&amp;style=33&amp;login_text=%E7%99%BB%E5%BD%95&amp;hide_title_bar=1&amp;hide_border=1&amp;target=self&amp;s_url=https%3A%2F%2Fgraph.qq.com%2Foauth2.0%2Flogin_jump&amp;pt_3rd_aid=102013353&amp;pt_feedback_link=https%3A%2F%2Fsupport.qq.com%2Fproducts%2F77942%3FcustomInfo%3D.appid102013353&amp;theme=10&amp;verify_theme=" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="login" class="login" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="web_qr_login" class="web_qr_login" index="4" index-of-type="4" />
+      </web>
+      <web x:name="div">
+        <optional id="web_qr_login_show" class="web_qr_login_show" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="web_login" class="web_login" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="login_form" index="2" index-of-type="2" />
+      </web>
+      <web x:name="form">
+        <optional id="loginform" autocomplete="off" name="loginform" action="" method="post" target="0" index="0" index-of-type="0" />
+      </web>
+    </selector>
+  </group>
+</repository>

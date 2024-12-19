@@ -1,0 +1,680 @@
+{
+  "name": "main",
+  "memo": "我的自动化应用",
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "00ad558a-cefd-4235-ad23-4fb8b8835de3",
+      "name": "process.run",
+      "isEnabled": true,
+      "comment": "执行流程%process%，将结果保存到%process_result%",
+      "inputs": {
+        "process": {
+          "value": "10:process8",
+          "display": "A初始化配置"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": "16:[]"
+        },
+        "outputs": {
+          "value": "10:[{\"name\":\"开始执行时间\",\"type\":\"datetime\"},{\"name\":\"对话框信息\",\"type\":\"any\"},{\"name\":\"处理总量\",\"type\":\"int\"}]"
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "初始化配置信息",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "9295c7a2-d3c5-43ff-bf18-29b5b1e8ff04",
+      "name": "programing.try",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "974957e0-eb0c-4fb0-81b3-7aaa77ebced2",
+      "name": "programing.comment",
+      "isEnabled": true,
+      "inputs": {
+        "content": {
+          "value": "10:获取对应店铺账号密码"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "4cd028a3-536b-471e-876c-829c899ec217",
+      "name": "programing.region",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "content": {
+          "value": "10:获取对应店铺账号密码"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "f90854f7-78c8-489b-b2ee-6f85e2bf9dd5",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "13:初始化配置信息.对话框信息.店铺名称"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:官旗"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "15a3a3bf-b17b-41fb-a30d-fd222b5e2895",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:账号 = \"小熊电器官方旗舰店:小熊软糖\"\r\n密码 = \"130681Jia\"\r\n"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "cb4f69b1-9971-4d88-88df-9b42f4ece947",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "Fold",
+      "inputs": {
+        "operand1": {
+          "value": "13:初始化配置信息.对话框信息.店铺名称"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:生旗"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "90f34f5e-5d32-4dea-bcdc-fd31f384479d",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:账号 = \"小熊生活电器旗舰店:小熊软糖\"\r\n密码 = \"130681Jia\"\r\n"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "c3caca67-c4b9-4832-9c4f-8289e3dbf6af",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "Fold",
+      "inputs": {
+        "operand1": {
+          "value": "13:初始化配置信息.对话框信息.店铺名称"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:母旗"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "fe4c8db3-f96c-45cd-8c26-3f23c9ae4836",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:账号 = \"小熊母婴旗舰店:小熊软糖\"\r\n密码 = \"130681Jia\"\r\n"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "741c68cc-ff7f-4857-ab07-1ae9ee7b0050",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "Fold",
+      "inputs": {
+        "operand1": {
+          "value": "13:初始化配置信息.对话框信息.店铺名称"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:厨旗"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "4bce19ad-4e12-43ab-a1a7-d3d93ea118ac",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:账号 = \"小熊厨房电器旗舰店:小熊软糖\"\r\n密码 = \"chufang123\"\r\n"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "22a236be-8b79-4585-b807-9ae678d6d3f6",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "7eb2b1d7-d8ca-4ebc-bb7d-26bf3672bc39",
+      "name": "programing.endregion",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "efae78c4-af13-41ab-924b-415240cb8578",
+      "name": "programing.comment",
+      "isEnabled": true,
+      "inputs": {
+        "content": {
+          "value": "10:登录流程"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "cdbad63c-3e08-46eb-8376-b0e5099bb231",
+      "name": "process.run",
+      "isEnabled": true,
+      "comment": "执行流程%process%并传入参数%inputs:WyJ1c2VybmFtZeWAvOS4uiV1c2VybmFtZSXvvIwiLCJwYXNzd29yZOWAvOS4uiVwYXNzd29yZCXvvIwiXQ==%无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process3",
+          "display": "B登录流程"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": "16:[{\"username\":\"13:账号\"},{\"password\":\"13:密码\"}]"
+        },
+        "outputs": {
+          "value": "10:[]"
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result3",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "40d2f616-e43c-47f5-8d53-3d5570a52890",
+      "name": "programing.comment",
+      "isEnabled": false,
+      "inputs": {
+        "content": {
+          "value": "10:发票流程"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "c24e394b-e4c1-4bb6-8ef8-90cff0e64865",
+      "name": "programing.region",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "content": {
+          "value": "10:发票流程"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "793a5aa5-698e-4c7b-bcce-a8c8408c1e88",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "13:初始化配置信息.对话框信息.发票流程"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:发票1_点同意"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "45fe7ec9-d3f3-4b1f-9188-8b44f6c01073",
+      "name": "programing.variable",
+      "isEnabled": true,
+      "comment": "设置字符串变量%variable%=%value%",
+      "inputs": {
+        "value_type": {
+          "value": "10:str"
+        },
+        "value": {
+          "value": "13:初始化配置信息.对话框信息.发票流程"
+        }
+      },
+      "outputs": {
+        "variable": {
+          "name": "流程名称",
+          "variableLabel": "字符串",
+          "type": "str",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "aad3978b-3b40-4970-83fa-91ed701f840c",
+      "name": "process.run",
+      "isEnabled": true,
+      "comment": "执行流程%process%并传入参数%inputs:WyLlj7DotKbmlofku7blgLzkuLol5Y+w6LSm5paH5Lu2Je+8jCIsIuW6l+mTuuWQjeensOWAvOS4uiXlupfpk7rlkI3np7Al77yMIl0=%无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process4",
+          "display": "C发票1_同意申请"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": "16:[{\"台账文件\":\"13:初始化配置信息.对话框信息.台账文件\"},{\"店铺名称\":\"13:初始化配置信息.对话框信息.店铺名称\"}]"
+        },
+        "outputs": {
+          "value": "10:[]"
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result4",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "ca3da1a9-060a-4ca2-b860-75d80c4bc53a",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "13:初始化配置信息.对话框信息.发票流程"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:发票2_首次上传"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "98d36468-b8f1-4f4e-ab96-96a023faba54",
+      "name": "programing.variable",
+      "isEnabled": true,
+      "comment": "设置字符串变量%variable%=%value%",
+      "inputs": {
+        "value_type": {
+          "value": "10:str"
+        },
+        "value": {
+          "value": "13:初始化配置信息.对话框信息.发票流程"
+        }
+      },
+      "outputs": {
+        "variable": {
+          "name": "流程名称",
+          "variableLabel": "字符串",
+          "type": "str",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "0ce85326-dd6f-427b-9a3f-dc6c43306efc",
+      "name": "process.run",
+      "isEnabled": true,
+      "comment": "执行流程%process%并传入参数%inputs:WyLlj7DotKbmlofku7blgLzkuLol5Y+w6LSm5paH5Lu2Je+8jCIsIuWPkeelqOaWh+S7tuWkueWAvOS4uiXlj5Hnpajmlofku7blpLkl77yMIiwi5bqX6ZO65ZCN56ew5YC85Li6JeW6l+mTuuWQjeensCXvvIwiXQ==%无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process1",
+          "display": "D发票2_首次上传"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": "16:[{\"台账文件\":\"13:初始化配置信息.对话框信息.台账文件\"},{\"发票文件夹\":\"13:初始化配置信息.对话框信息.发票文件夹\"},{\"店铺名称\":\"13:初始化配置信息.对话框信息.店铺名称\"}]"
+        },
+        "outputs": {
+          "value": "10:[]"
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "57c4ec55-6a4e-406d-8287-fc5e247073f4",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "13:初始化配置信息.对话框信息.发票流程"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:发票3_点冲红"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "ce75ef38-2ee1-40d3-bbcb-ff535ee28f89",
+      "name": "programing.variable",
+      "isEnabled": true,
+      "comment": "设置字符串变量%variable%=%value%",
+      "inputs": {
+        "value_type": {
+          "value": "10:str"
+        },
+        "value": {
+          "value": "13:初始化配置信息.对话框信息.发票流程"
+        }
+      },
+      "outputs": {
+        "variable": {
+          "name": "流程名称",
+          "variableLabel": "字符串",
+          "type": "str",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "de7f30d7-ed31-498a-9bb4-34ddc6e6927e",
+      "name": "process.run",
+      "isEnabled": true,
+      "comment": "执行流程%process%并传入参数%inputs:WyLlj7DotKbmlofku7blgLzkuLol5Y+w6LSm5paH5Lu2Je+8jCIsIuW6l+mTuuWQjeensOWAvOS4uiXlupfpk7rlkI3np7Al77yMIl0=%无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process6",
+          "display": "E发票3_点冲红"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": "16:[{\"台账文件\":\"13:初始化配置信息.对话框信息.台账文件\"},{\"店铺名称\":\"13:初始化配置信息.对话框信息.店铺名称\"}]"
+        },
+        "outputs": {
+          "value": "10:[]"
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result5",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "100339b5-d272-43b6-94b2-1d7579fc6d0f",
+      "name": "workflow.elseif",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "13:初始化配置信息.对话框信息.发票流程"
+        },
+        "operator": {
+          "value": "10:==",
+          "display": "等于"
+        },
+        "operand2": {
+          "value": "10:发票4_重新上传"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "03803562-3fbb-4cf7-9e2e-f918dc28effa",
+      "name": "programing.variable",
+      "isEnabled": true,
+      "comment": "设置字符串变量%variable%=%value%",
+      "inputs": {
+        "value_type": {
+          "value": "10:str"
+        },
+        "value": {
+          "value": "13:初始化配置信息.对话框信息.发票流程"
+        }
+      },
+      "outputs": {
+        "variable": {
+          "name": "流程名称",
+          "variableLabel": "字符串",
+          "type": "str",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "9a03051e-95f8-42f2-8cc7-f608fd6d0d34",
+      "name": "process.run",
+      "isEnabled": true,
+      "comment": "执行流程%process%并传入参数%inputs:WyLlj7DotKbmlofku7blgLzkuLol5Y+w6LSm5paH5Lu2Je+8jCIsIuWPkeelqOaWh+S7tuWkueWAvOS4uiXlj5Hnpajmlofku7blpLkl77yMIiwi5bqX6ZO65ZCN56ew5YC85Li6JeW6l+mTuuWQjeensCXvvIwiXQ==%无返回结果",
+      "inputs": {
+        "process": {
+          "value": "10:process2",
+          "display": "F发票4_重新上传"
+        },
+        "package": {
+          "value": "11:__name__"
+        },
+        "inputs": {
+          "value": "16:[{\"台账文件\":\"13:初始化配置信息.对话框信息.台账文件\"},{\"发票文件夹\":\"13:初始化配置信息.对话框信息.发票文件夹\"},{\"店铺名称\":\"13:初始化配置信息.对话框信息.店铺名称\"}]"
+        },
+        "outputs": {
+          "value": "10:[]"
+        }
+      },
+      "outputs": {
+        "process_result": {
+          "name": "process_result2",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "e47e0b37-e231-4c7c-9863-bb1afc3757c4",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "23be725a-097c-4475-b619-fbf577d40234",
+      "name": "programing.endregion",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "3e78e754-0dec-4b5a-867d-9c1643d8652c",
+      "name": "programing.comment",
+      "isEnabled": true,
+      "inputs": {
+        "content": {
+          "value": "10:写入日志"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "4fb0be97-549f-4ef7-ab29-d9927585aa90",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:import json\r\nrun_result ={\"deal_sum\":初始化配置信息.处理总量,\"deal_num\":glv['处理单量'],\"status\":\"SUCCESS!\",\"exception\":\"None\"}       \r\ndescription = json.dumps(run_result,ensure_ascii=False)\r\n"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "54102342-efa9-45c1-972b-e2c197e852a3",
+      "name": "process.invoke_module",
+      "isEnabled": true,
+      "comment": "调用模块%module%中的%function%方法并传入参数%params:WyJhcHBfbmFtZeWAvOS4uiVhcHBfbmFtZSXvvIwiLCJzdGFydF90aW1l5YC85Li6JXN0YXJ0X3RpbWUl77yMIiwic2hvcOWAvOS4uiVzaG9wJe+8jCIsImNyZWF0b3LlgLzkuLolY3JlYXRvciXvvIwiLCJkZXNjcmlwdGlvbuWAvOS4uiVkZXNjcmlwdGlvbiXvvIwiLCJyZW1hcmvlgLzkuLolcmVtYXJrJe+8jCJd%将结果保存到%invoke_result%",
+      "inputs": {
+        "module": {
+          "value": "10:ZRPA_Log",
+          "display": "ZRPA_Log"
+        },
+        "function": {
+          "value": "10:log_rpa_app_state"
+        },
+        "params": {
+          "value": "16:[{\"app_name\":\"11:glv['应用名称'].strip()\"},{\"start_time\":\"13:初始化配置信息.开始执行时间\"},{\"shop\":\"13:初始化配置信息.对话框信息.店铺名称\"},{\"creator\":\"11:glv['创建人'].strip()\"},{\"description\":\"13:description \"},{\"remark\":\"10:END\"}]"
+        },
+        "returnType": {
+          "value": "10:any"
+        }
+      },
+      "outputs": {
+        "invoke_result": {
+          "name": "执行结果",
+          "type": "any",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "08997143-4ff7-432c-85a4-6e2d53ae1611",
+      "name": "programing.catch",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {},
+      "outputs": {
+        "exception": {
+          "name": "exception",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "96a77bda-ee9e-4258-af65-47759acaf052",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:import json\r\nrun_result ={\"deal_sum\":初始化配置信息.处理总量,\"deal_num\":glv['处理单量'],\"status\":\"FAIL!\",\"exception\":exception.strip()}       \r\ndescription = json.dumps(run_result,ensure_ascii=False)\r\n"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "195f4a6d-d39c-48ae-bdbd-4359d092442c",
+      "name": "process.invoke_module",
+      "isEnabled": true,
+      "comment": "调用模块%module%中的%function%方法并传入参数%params:WyJhcHBfbmFtZeWAvOS4uiVhcHBfbmFtZSXvvIwiLCJzdGFydF90aW1l5YC85Li6JXN0YXJ0X3RpbWUl77yMIiwic2hvcOWAvOS4uiVzaG9wJe+8jCIsImNyZWF0b3LlgLzkuLolY3JlYXRvciXvvIwiLCJkZXNjcmlwdGlvbuWAvOS4uiVkZXNjcmlwdGlvbiXvvIwiLCJyZW1hcmvlgLzkuLolcmVtYXJrJe+8jCJd%将结果保存到%invoke_result%",
+      "inputs": {
+        "module": {
+          "value": "10:ZRPA_Log",
+          "display": "ZRPA_Log"
+        },
+        "function": {
+          "value": "10:log_rpa_app_state"
+        },
+        "params": {
+          "value": "16:[{\"app_name\":\"11:glv['应用名称'].strip()\"},{\"start_time\":\"13:初始化配置信息.开始执行时间\"},{\"shop\":\"13:初始化配置信息.对话框信息.店铺名称\"},{\"creator\":\"11:glv['创建人'].strip()\"},{\"description\":\"13:description \"},{\"remark\":\"10:EXCEPTION\"}]"
+        },
+        "returnType": {
+          "value": "10:any"
+        }
+      },
+      "outputs": {
+        "invoke_result": {
+          "name": "执行结果",
+          "type": "any",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "29b37e96-3146-43f4-a7c1-8639632aad61",
+      "name": "programing.endtry",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    }
+  ],
+  "parameters": []
+}

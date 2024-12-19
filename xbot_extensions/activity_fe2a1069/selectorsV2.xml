@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository xmlns:x="rpa://selector/core" xmlns:regex="rpa://selector/operator/regex" xmlns:wildcard="rpa://selector/operator/wildcard">
+  <group id="925fece6-1e91-4500-ab00-e971aa096a78" name="设置 - 下载内容 - Google Chrome" type="Win32" processName="chrome" icon=".dev\icon\417dc912-8276-4003-988a-61b3fa4c270d.png" criteria="">
+    <selector name="设置_下载设置_下载前询问每个文件的保存位置_按钮" type="simple" framework="acc" processName="chrome" productName="" winTitle="设置 - 下载内容 - Google Chrome" screenshot=".dev\screenshot\ae087461-e6dd-4e01-a047-8ad4ca2ac514.png">
+      <wnd x:name="Window" cls="Chrome_WidgetWin_1" title="设置 - 下载内容 - Google Chrome" app="chrome">
+        <optional />
+      </wnd>
+      <wnd x:name="Document" cls="Chrome_RenderWidgetHostHWND" uia-name="设置 - 下载内容">
+        <optional title="Chrome Legacy Window" index="1" />
+      </wnd>
+      <acc x:name="Document" acc-name="设置 - 下载内容">
+        <optional index="0" />
+      </acc>
+      <acc x:name="Grouping">
+        <optional index="2" />
+      </acc>
+      <acc x:name="Grouping">
+        <optional index="1" />
+      </acc>
+      <acc x:name="Grouping">
+        <optional index="0" />
+      </acc>
+      <acc x:name="Grouping">
+        <optional index="1" />
+      </acc>
+      <acc x:name="Grouping">
+        <optional index="1" />
+      </acc>
+      <acc x:name="PushButton" acc-name="下载前询问每个文件的保存位置">
+        <optional index="0" acc-local-name="按下按钮_下载前询问每个文件的保存位置" />
+      </acc>
+    </selector>
+    <selector name="版本_个人资料路径" type="simple" framework="acc" processName="chrome" productName="" winTitle="关于版本 - Google Chrome" screenshot=".dev\screenshot\75516c88-f1d2-4752-8879-31b03410d35e.png">
+      <wnd x:name="Window" wildcard:title="关于版本*">
+        <optional cls="Chrome_WidgetWin_1" wildcard:app="chrome*" />
+      </wnd>
+      <wnd x:name="Document" uia-name="关于版本">
+        <optional cls="Chrome_RenderWidgetHostHWND" title="Chrome Legacy Window" index="1" />
+      </wnd>
+      <acc x:name="Document" acc-name="关于版本">
+        <optional index="0" />
+      </acc>
+      <acc x:name="Grouping">
+        <optional index="0" />
+      </acc>
+      <acc x:name="Table">
+        <optional index="1" />
+      </acc>
+      <acc x:name="Row" index="7">
+        <optional />
+      </acc>
+      <acc x:name="Cell" index="1">
+        <optional wildcard:acc-name="C:\Users\45124\AppData\Local\Google\Chrome\User Da*" />
+      </acc>
+      <acc x:name="StaticText">
+        <optional wildcard:acc-name="C:\Users\45124\AppData\Local\Google\Chrome\User Da*" index="0" acc-local-name="文字_CUsers45124AppDataLocalGoogleChromeUser DataDefault" />
+      </acc>
+    </selector>
+  </group>
+</repository>

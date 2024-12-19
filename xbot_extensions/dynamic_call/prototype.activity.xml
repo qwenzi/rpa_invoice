@@ -1,0 +1,28 @@
+<root>
+  <item name="xbot_extensions.dynamic_call" display="dynamic_call" kind="module">
+    <item.method />
+    <item.desc>动态调用子流程
+根据传入的流程名动态执行流程</item.desc>
+    <item name="xbot_extensions.dynamic_call.process1" display="process1" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/tz8aw3y9qi3bf1vi">
+      <item.method>process1(流程名,流程参数,file_path)</item.method>
+      <item.desc>动态调用子流程
+根据传入的流程名动态执行流程
+* @param 流程名，
+* @param 流程参数，
+* @param file_path，
+* @return process_result，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.dynamic_call.process2" display="process2" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/gtvays6trry6qbl8">
+      <item.method>process2(module,func_name,inputs,file_path)</item.method>
+      <item.desc>动态调用模块
+动态调用应用内其他模块
+* @param module，
+* @param func_name，
+* @param inputs，
+* @param file_path，
+* @return invoke_result，
+</item.desc>
+    </item>
+  </item>
+</root>

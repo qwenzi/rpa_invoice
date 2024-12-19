@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository xmlns:x="rpa://selector/core" xmlns:regex="rpa://selector/operator/regex" xmlns:wildcard="rpa://selector/operator/wildcard">
+  <group id="a4ab1ba2-bb9e-496a-8008-5fa1cd7bec8c" name="给买家开票" type="Web" processName="chrome" icon=".dev\icon\7446756b-d2c3-4394-8f31-8b97bf4192ec.png" criteria="https://myseller.taobao.com">
+    <selector id="35d2f5ee-e446-44bb-a28e-e2f2640842bb" name="给买家开票_全部申请" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="给买家开票" screenshot=".dev\screenshot\630aefdc-5bfb-44a8-9786-1c1948e3fea7.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-bar ww_invoice_tabcon" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-nav-container" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-nav-wrap" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-nav-scroll" index="0" index-of-type="0" />
+      </web>
+      <web x:name="ul">
+        <optional role="tablist" class="next-disable-animation next-tabs-nav" index="0" index-of-type="0" />
+      </web>
+      <web x:name="li">
+        <optional role="tab" aria-hidden="false" aria-selected="false" tabindex="-1" class="next-tabs-tab" index="5" index-of-type="5" />
+      </web>
+      <web x:name="div" innerText="全部申请">
+        <optional data-spm-anchor-id="a21dvs.27181032.0.i0.2a722d69ZBwHFj" class="next-tabs-tab-inner" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="d3cb0c66-7ac0-4589-b1c5-8741baddc6ae" name="首页_导航栏_财务" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="天猫商家中心" screenshot=".dev\screenshot\e7e6d1ec-a4f6-4363-9fac-d6d3ccec583b.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="3" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef basiclayout--homecontainer--2c9ejgg" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional class="firstclassmenu--container--2fhmuhr" index="4" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="firstclassmenu--firstclassmenu--2qqbjfl" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="firstclassmenu--navcontent--2-kr2by" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="firstclassmenu--navlist--lwmjejl" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="firstclassmenu--navlistwrap--4ka30jr" index="0" index-of-type="0" />
+      </web>
+      <web x:name="a">
+        <optional data-index="10" target="_blank" href="/home.htm/_firstmenuid_/2548" role="button" rel="noreferrer" class="firstclassmenu--navitem--izq9hlb" index="10" index-of-type="10" />
+      </web>
+      <anchor text="财务" targetRectangle="[9,505,90,42]" anchorRectangle="[57,505,28,42]" version="1" threshold="0.6" />
+    </selector>
+    <selector id="5c50db95-8d5d-4c89-843a-e1a23407ec43" name="财务_权限申请" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="总览" screenshot=".dev\screenshot\fe628d86-8576-441a-983b-ea5c3d255466.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="2" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="opened wn-overlay-wrapper" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-labelledby="dialog-title-m4qqhrdj" data-name="Dialog" language="zh-CN" id="wui-dialog-1" aria-hidden="false" class="wn-closeable wn-dialog wn-overlay-inner wui-dialog wui-dialog-small" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div" class="wn-dialog-body">
+        <optional index="1" index-of-type="1" />
+      </web>
+    </selector>
+    <selector id="b3fb8fb4-8253-46a5-8479-2d037518081e" name="财务_权限申请_关闭按钮" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="总览" screenshot=".dev\screenshot\8a81580c-e693-4681-8f6b-e2e699cf0918.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="2" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="opened wn-overlay-wrapper" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-labelledby="dialog-title-m4qqhrdj" data-name="Dialog" language="zh-CN" id="wui-dialog-1" aria-hidden="false" class="wn-closeable wn-dialog wn-overlay-inner wui-dialog wui-dialog-small" index="1" index-of-type="1" />
+      </web>
+      <web x:name="a">
+        <optional role="button" aria-label="关闭" class="wn-dialog-close" index="3" index-of-type="0" />
+      </web>
+      <web x:name="i">
+        <optional class="wn-dialog-close-icon wn-icon wn-icon-close wn-medium" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="23fe0daa-f1e5-4ef1-8a83-cfc7a89a44de" name="首页_导航栏_财务_给买家开票" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="总览" screenshot=".dev\screenshot\4a69de29-bdee-40dd-bd66-b35160826ee7.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="2" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional data-theme-immutable-shallow="true" class="secondclassmenu--container--12py7e_" index="5" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional class="secondclassmenu--wrap--1r2q_p5" index="0" index-of-type="0" />
+      </web>
+      <web x:name="ul">
+        <optional role="listbox" aria-multiselectable="false" class="next-menu next-menu-selectable-single next-nav next-nav-embeddable next-normal next-ver secondclassmenu--menucontainer--2i02ad-" index="1" index-of-type="0" />
+      </web>
+      <web x:name="li">
+        <optional role="option" title="发票管理" class="next-menu-sub-menu-wrapper next-nav-sub-nav-item secondclassmenu--subnav--tqvkadk" index="4" index-of-type="4" />
+      </web>
+      <web x:name="ul">
+        <optional role="listbox" class="next-menu-sub-menu" index="1" index-of-type="0" />
+      </web>
+      <web x:name="li">
+        <optional role="option" tabindex="-1" class="next-menu-item next-nav-item secondclassmenu--navitem--20ha9ej" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-menu-item-inner" index="0" index-of-type="0" />
+      </web>
+      <web x:name="span">
+        <optional aria-selected="false" class="next-menu-item-text" index="0" index-of-type="0" />
+      </web>
+      <web x:name="a" innerText="给买家开票">
+        <optional data-index="2827" target="_blank" href="/home.htm/merchant-invoice/" rel="noreferrer" class="secondclassmenu--navitemtext--2vq6pfs secondclassmenu--submenuinner--2zb1nhj" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="5741ade6-54fb-44df-8732-ee367869c7ba" name="给买家开票_全部申请_订单编号输入框" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\23477674-af2d-4284-acfc-a2396465650c.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_applymain__0util" index="2" index-of-type="2" />
+      </web>
+      <web x:name="form">
+        <optional role="grid" popupcontainer="qn-worbench-container" class="next-form next-medium searchcontent_searchcontainer__tjmmn" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-form-item next-left next-small searchcontent_search_formitem__w-jif" index="5" index-of-type="5" />
+      </web>
+      <web x:name="div">
+        <optional class="next-form-item-control" index="0" index-of-type="0" />
+      </web>
+      <web x:name="span">
+        <optional data-meta="Field" class="next-input next-small searchcontent_search_input__omeit" index="0" index-of-type="0" />
+      </web>
+      <web x:name="input" id="tid">
+        <optional height="100%" autocomplete="off" value="" index="1" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="21349523-94dc-4199-b21c-8072b0b59d83" name="给买家开票_全部申请_搜索按钮" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\3701f164-661c-483d-8d43-39ca3031c698.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_applymain__0util" index="2" index-of-type="2" />
+      </web>
+      <web x:name="form">
+        <optional role="grid" popupcontainer="qn-worbench-container" class="next-form next-medium searchcontent_searchcontainer__tjmmn" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-form-item next-left next-small searchcontent_searchbox__fq4el" index="6" index-of-type="6" />
+      </web>
+      <web x:name="div">
+        <optional class="next-form-item-control" index="0" index-of-type="0" />
+      </web>
+      <web x:name="button" type="submit">
+        <optional class="next-btn next-btn-normal next-small searchcontent_searchbutton__f0uth" index="0" index-of-type="0" />
+      </web>
+      <anchor text="搜索" targetRectangle="[582,402,80,30]" anchorRectangle="[610,411,24,12]" version="1" threshold="0.6" />
+    </selector>
+    <selector id="1b6f5aa2-8a1c-4148-99ff-0a8a41b1de2a" name="全部申请_第一行_发票抬头" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\d2176cfd-9e41-46a7-bb0f-6b5cc7e23288.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_applymain__0util" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table next-table-lock next-table-medium next-table-stickylock only-bottom-border" index="2" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="table">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="tbody">
+        <optional index="1" index-of-type="0" />
+      </web>
+      <web x:name="tr" index="0">
+        <optional role="row" class="first last next-table-row" index-of-type="0" />
+      </web>
+      <web x:name="td" index="3">
+        <optional data-next-table-col="3" data-next-table-row="0" role="gridcell" class="next-table-cell" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional data-next-table-row="0" class="next-table-cell-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div" index="0">
+        <optional class="onlineall_payernametext__hcunt" innerText="邓宫华" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="8e4c9cc9-d650-4958-9f73-adba64b3616a" name="全部申请_表格" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="给买家开票" screenshot=".dev\screenshot\5423dd4e-96aa-43d0-9d9f-fe7a26ef96c9.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_applymain__0util" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table next-table-lock next-table-medium next-table-stickylock only-bottom-border" index="2" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="table">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="tbody">
+        <optional index="1" index-of-type="0" />
+      </web>
+      <web x:name="tr">
+        <optional role="row" regex:class="next-table-row" />
+      </web>
+    </selector>
+    <selector id="2c1be970-132d-4f44-a093-cb1c7c3762ff" name="全部申请_发票申请状态_相似元素组" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\5493b028-75b4-4a68-b3f4-c0779314b99c.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_applymain__0util" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table next-table-lock next-table-medium next-table-stickylock only-bottom-border" index="2" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="table">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="tbody">
+        <optional index="1" index-of-type="0" />
+      </web>
+      <web x:name="tr">
+        <optional role="row" class="first last next-table-row" index="0" index-of-type="0" />
+      </web>
+      <web x:name="td" index="5">
+        <optional data-next-table-col="5" data-next-table-row="0" role="gridcell" class="next-table-cell" index-of-type="5" />
+      </web>
+    </selector>
+    <selector id="c6a2cf55-8ed2-4e01-8934-08f303db27c7" name="详情_相似元素组" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\07fb07a6-acb7-4702-af44-10ae7dccb05e.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_applymain__0util" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table next-table-lock next-table-medium next-table-stickylock only-bottom-border" index="2" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="table">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="tbody">
+        <optional index="1" index-of-type="0" />
+      </web>
+      <web x:name="tr">
+        <optional role="row" class="first last next-table-row" index="0" index-of-type="0" />
+      </web>
+      <web x:name="td" class="last next-table-cell next-table-fix-right next-table-fix-right-first">
+        <optional data-next-table-col="7" data-next-table-row="0" role="gridcell" index="7" index-of-type="7" />
+      </web>
+      <web x:name="div">
+        <optional data-next-table-row="0" class="next-table-cell-wrapper" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="34e0c0ff-d5b3-4b8c-8e6f-72e70e5a0bc6" name="发票申请详情_录入发票" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\32fa35a4-d29e-4f87-bd39-ab3f53f16fc7.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_footeraction__tb358" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_footeractionbox__txbn6" index="1" index-of-type="1" />
+      </web>
+      <web x:name="button" type="button">
+        <optional class="next-btn next-btn-primary next-large" index="0" index-of-type="0" />
+      </web>
+      <anchor text="录入发票" targetRectangle="[1551,812,120,42]" anchorRectangle="[1579,825,64,16]" version="1" threshold="0.6" />
+    </selector>
+    <selector id="8bbb31f7-3c01-40fc-9828-3dc3412f523c" name="发票申请详情_订单号" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\8e3b5877-39b6-49c0-a482-5a48449b1f0b.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="tiddetail_orderdetail__gu8et" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="tiddetail_left__tkhf-" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="tiddetail_ordertext__ikf8c" index="0" index-of-type="0" />
+      </web>
+      <web x:name="span">
+        <optional innerText="4167704954285962521" index="1" index-of-type="0" />
+      </web>
+      <anchor text="发票申请详情" targetRectangle="[1395,98,223,26]" anchorRectangle="[1321,1,598,72]" version="1" threshold="0.85" />
+    </selector>
+    <selector id="e9ca0545-baef-4a8b-a8f8-dd89dcad5758" name="录入发票信息_全电普通发票" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\a32bddd5-ea6c-47be-8318-58a6fb84817a.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="record-invoice-modal_main__5le62" index="1" index-of-type="1" />
+      </web>
+      <web x:name="form">
+        <optional role="grid" popupcontainer="qn-worbench-container" class="next-form next-medium record-invoice-modal_recordform__vwgyp" index="1" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="row" popupcontainer="qn-worbench-container" class="next-form-item next-medium next-row record-invoice-modal_selecttagcon__dlke4" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="gridcell" popupcontainer="qn-worbench-container" class="next-col next-col-21 next-form-item-control" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional data-meta="Field" id="invoiceKind" popupcontainer="qn-worbench-container" class="next-tag-group" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-responsive-grid" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional tabindex="0" role="checkbox" aria-disabled="false" aria-checked="false" popupcontainer="qn-worbench-container" class="next-tag next-tag-checkable next-tag-level-normal next-tag-medium record-invoice-modal_selecttag__8y0uf" index="0" index-of-type="0" />
+      </web>
+      <anchor text="全电普通发票" targetRectangle="[1737,265,153,36]" anchorRectangle="[1762,266,102,34]" version="1" threshold="0.6" />
+    </selector>
+    <selector id="acc44c9b-d5ff-4b2f-93fa-75cedbd7f693" name="录入发票信息_上传发票PDF/OFD" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\ba93606e-3af4-44da-b93f-a2a8ca005901.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="record-invoice-modal_main__5le62" index="1" index-of-type="1" />
+      </web>
+      <web x:name="form">
+        <optional role="grid" popupcontainer="qn-worbench-container" class="next-form next-medium record-invoice-modal_recordform__vwgyp" index="1" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="row" popupcontainer="qn-worbench-container" class="next-form-item next-medium next-row" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="gridcell" popupcontainer="qn-worbench-container" class="next-col next-col-21 next-form-item-control" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional data-meta="Field" class="next-upload" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional role="application" tabindex="0" class="next-upload-inner" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div" class="record-invoice-modal_uploadpdf__fl+sv">
+        <optional index="1" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="4bf84809-6c62-4ae7-9b70-1257ac962b85" name="录入发票信息_发票号码" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\555288c5-bebe-4b45-9d97-cc734eddf849.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="record-invoice-modal_main__5le62" index="1" index-of-type="1" />
+      </web>
+      <web x:name="form">
+        <optional role="grid" popupcontainer="qn-worbench-container" class="next-form next-medium record-invoice-modal_recordform__vwgyp" index="1" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="record-invoice-modal_mainform__foq-a" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="row" popupcontainer="qn-worbench-container" class="halfrow match next-form-item next-medium next-row" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="gridcell" popupcontainer="qn-worbench-container" class="next-col next-col-18 next-form-item-control" index="1" index-of-type="1" />
+      </web>
+      <web x:name="span">
+        <optional data-meta="Field" class="next-input next-medium" index="0" index-of-type="0" />
+      </web>
+      <web x:name="input">
+        <optional id="invoiceNo" placeholder="请输入" height="100%" autocomplete="off" value="" index="0" index-of-type="0" />
+      </web>
+      <anchor text="发票号码" targetRectangle="[1394,561,203,34]" anchorRectangle="[1325,567,56,21]" version="1" threshold="0.6" />
+    </selector>
+    <selector id="af5e5c17-3960-4255-a8e3-f13168e453ac" name="录入发票信息_开票日期" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\03b7714e-db0b-4828-acd5-1d2b170ff7a1.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="record-invoice-modal_main__5le62" index="1" index-of-type="1" />
+      </web>
+      <web x:name="form">
+        <optional role="grid" popupcontainer="qn-worbench-container" class="next-form next-medium record-invoice-modal_recordform__vwgyp" index="1" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="record-invoice-modal_mainform__foq-a" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="row" popupcontainer="qn-worbench-container" class="match next-form-item next-medium next-row record-invoice-modal_strech__ww89d" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="gridcell" popupcontainer="qn-worbench-container" class="next-col next-col-18 next-form-item-control" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional data-meta="Field" id="invoiceDate" class="next-date-picker2" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional role="button" tabindex="0" aria-haspopup="true" aria-expanded="false" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-date-picker2-input next-date-picker2-input-date next-date-picker2-input-medium" index="0" index-of-type="0" />
+      </web>
+      <web x:name="span">
+        <optional class="next-input next-medium next-noborder" index="0" index-of-type="0" />
+      </web>
+      <web x:name="input">
+        <optional placeholder="请选择" height="100%" size="12" autocomplete="off" value="" index="0" index-of-type="0" />
+      </web>
+      <anchor text="开票日期" targetRectangle="[1394,618,182,34]" anchorRectangle="[1325,624,56,21]" version="1" threshold="0.6" />
+    </selector>
+    <selector id="fd312d9e-fdd7-4688-88e1-c6b6d5980257" name="录入发票信息_完成开票" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\c8addad5-6350-4623-9de5-867b3a85daa1.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="record-invoice-modal_footercont__gb3pn" index="4" index-of-type="3" />
+      </web>
+      <web x:name="button" type="button" class="next-btn next-btn-normal next-medium record-invoice-modal_subbox__ren38">
+        <optional index="1" index-of-type="1" />
+      </web>
+      <anchor text="完成开票" targetRectangle="[1807,815,88,36]" anchorRectangle="[1823,826,56,14]" version="1" threshold="0.85" />
+    </selector>
+    <selector id="83b12e4d-47e9-471c-a597-75f33dd7fba9" name="录入发票信息_关闭按钮" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\bf3cf7b5-168e-47a5-a791-4729bd85d760.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional role="heading" aria-level="1" class="next-drawer-header" index="0" index-of-type="0" />
+      </web>
+      <web x:name="a" index="1">
+        <optional role="button" aria-label="关闭" class="next-drawer-close" index-of-type="0" />
+      </web>
+      <web x:name="i">
+        <optional class="next-drawer-close-icon next-icon next-icon-close next-medium" index="0" index-of-type="0" />
+      </web>
+      <anchor text="操作指南" targetRectangle="[1882,21,15,15]" anchorRectangle="[1798,25,67,31]" version="1" threshold="0.85" />
+    </selector>
+    <selector id="89ddd05d-a5d5-48a3-8123-25f8c4cf0145" name="发票申请详情_关闭按钮" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\d30f6f14-8f9d-4242-974b-4e17fcd0c107.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional role="heading" aria-level="1" class="next-drawer-header" index="0" index-of-type="0" />
+      </web>
+      <web x:name="a">
+        <optional role="button" aria-label="关闭" class="next-drawer-close" index="0" index-of-type="0" />
+      </web>
+      <web x:name="i">
+        <optional class="next-drawer-close-icon next-icon next-icon-close next-medium" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="86511916-8c2f-4ffb-9bb2-450649b5ef58" name="录入发票信息_无法识别发票提示" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/success" screenshot=".dev\screenshot\433a017e-f977-4bd8-b88e-4ad9e5dc858d.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="record-invoice-modal_main__5le62" index="1" index-of-type="1" />
+      </web>
+      <web x:name="form">
+        <optional role="grid" popupcontainer="qn-worbench-container" class="next-form next-medium record-invoice-modal_recordform__vwgyp" index="1" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="row" popupcontainer="qn-worbench-container" class="has-error next-form-item next-medium next-row" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional dir="ltr" role="gridcell" popupcontainer="qn-worbench-container" class="next-col next-col-21 next-form-item-control" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-form-item-help" index="1" index-of-type="1" />
+      </web>
+      <web x:name="span">
+        <optional innerText="您上传的发票文件暂不支持自动识别发票代码号码等信息，请手动录入" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="e5889cd1-e448-4d32-86c1-5f99b39e5a06" name="搜索后没有数据" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\2e0175c0-b03e-4d1c-888a-0d7499faeff7.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" data-spm-anchor-id="a21dvs.27181032.0.i65.2a7270e1sToLpy" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_applymain__0util" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table next-table-lock next-table-medium next-table-stickylock next-table-wrap-empty only-bottom-border" index="2" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="table">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="tbody">
+        <optional index="1" index-of-type="0" />
+      </web>
+      <web x:name="tr">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="td">
+        <optional colspan="8" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-empty" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-spm-anchor-id="a21dvs.27181032.0.i88.2a7270e1sToLpy" class="common_error__g13qv" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="common_errorbox__994kz" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="common_errortext__75uoj" innerText="没有数据" index="1" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="1ed0903a-b177-4538-95cb-4b97f8757648" name="发票申请详情_同意" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\23ab5b76-c6cb-46ed-9a45-204f8bafd139.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_footeraction__tb358" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_footeractionbox__txbn6" index="1" index-of-type="1" />
+      </web>
+      <web x:name="button" type="button">
+        <optional class="next-btn next-btn-primary next-large" index="0" index-of-type="0" />
+      </web>
+      <anchor text="同意" targetRectangle="[1695,812,88,42]" anchorRectangle="[1723,825,32,16]" version="1" threshold="0.6" />
+    </selector>
+    <selector id="ea16ca7f-a3a4-4f94-bdbf-36fb82ba5162" name="手动上传发票选项" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="给买家开票" screenshot=".dev\screenshot\c0867b3c-e717-44e2-ba26-a494a2a0134b.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-labelledby="dialog-title-m4tlavoq" aria-hidden="false" class="next-closeable next-dialog next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-dialog-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional role="radiogroup" class="agree-modal_radiogroup__jyw9f next-radio-group next-radio-group-ver" index="1" index-of-type="1" />
+      </web>
+      <web x:name="label">
+        <optional dir="ltr" aria-checked="false" class="agree-modal_radio__pxouv next-radio-wrapper" index="1" index-of-type="1" />
+      </web>
+      <web x:name="span">
+        <optional class="next-radio" index="0" index-of-type="0" />
+      </web>
+      <web x:name="input" type="radio">
+        <optional tabindex="-1" aria-checked="false" class="next-radio-input" index="1" index-of-type="0" />
+      </web>
+      <anchor text="在【待录入开票列表】中手动上传发票" targetRectangle="[843,494,18,18]" anchorRectangle="[867,495,204,16]" version="1" threshold="0.8269267567315993" />
+    </selector>
+    <selector id="4d04ce45-2ec8-41b7-885d-0b3866c2462b" name="请选择开票方式_确定按钮" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/all" screenshot=".dev\screenshot\9e1eed5c-6048-4ad0-8c74-0feeb6c46853.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-labelledby="dialog-title-m4qqo837" aria-hidden="false" class="next-closeable next-dialog next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-align-right next-dialog-footer" index="2" index-of-type="2" />
+      </web>
+      <web x:name="button" type="button">
+        <optional class="next-btn next-btn-primary next-dialog-btn next-medium" index="0" index-of-type="0" />
+      </web>
+      <anchor text="确定" targetRectangle="[1028,527,60,36]" anchorRectangle="[1044,538,28,14]" version="1" threshold="0.6" />
+    </selector>
+    <selector id="211fafd3-9137-4218-be45-438f79604df5" name="给买家开票_开票成功" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/success" screenshot=".dev\screenshot\33099eda-9d1a-4fa5-ba5b-ecd57432efa3.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" data-spm-anchor-id="a21dvs.27181032.0.i65.2a7270e1sToLpy" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-spm-anchor-id="a21dvs.27181032.0.i99.2a7270e1sToLpy" class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-bar ww_invoice_tabcon" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-nav-container" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-nav-wrap" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-nav-scroll" index="0" index-of-type="0" />
+      </web>
+      <web x:name="ul">
+        <optional role="tablist" data-spm-anchor-id="a21dvs.27181032.0.i2.2a7270e1sToLpy" class="next-disable-animation next-tabs-nav" index="0" index-of-type="0" />
+      </web>
+      <web x:name="li">
+        <optional role="tab" aria-hidden="false" aria-selected="true" tabindex="0" class="active next-tabs-tab" index="4" index-of-type="4" />
+      </web>
+      <web x:name="div" innerText="开票成功">
+        <optional data-spm-anchor-id="a21dvs.27181032.0.i31.2a7270e1sToLpy" class="next-tabs-tab-inner" index="0" index-of-type="0" />
+      </web>
+    </selector>
+    <selector id="7d739ff2-d110-42ce-ad7d-6a7616b2d15d" name="全电普通发票蓝票" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/success" screenshot=".dev\screenshot\f4d41fc0-5e75-43b7-8cee-8c951fd5e87b.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" data-spm-anchor-id="a21dvs.27181032.0.i65.2a7270e1sToLpy" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-spm-anchor-id="a21dvs.27181032.0.i99.2a7270e1sToLpy" class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="onlinesuccess_applymain__zzndu" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table next-table-lock next-table-medium next-table-stickylock only-bottom-border" index="3" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="table">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="tbody">
+        <optional index="1" index-of-type="0" />
+      </web>
+      <web x:name="tr" class="first next-table-row">
+        <optional role="row" index="0" index-of-type="0" />
+      </web>
+      <web x:name="td">
+        <optional data-next-table-col="6" data-next-table-row="0" role="gridcell" class="next-table-cell" index="6" index-of-type="6" />
+      </web>
+      <web x:name="div">
+        <optional data-next-table-row="0" class="next-table-cell-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div" class="onlinesuccess_invoicekindtext__xfrps">
+        <optional index="1" index-of-type="1" />
+      </web>
+    </selector>
+    <selector id="2b451b51-6885-4697-82ef-1880e1a2e0b0" name="发票类型_相似元素组" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="myseller.taobao.com/home.htm/merchant-invoice/#/invoice/success" screenshot=".dev\screenshot\1473a070-038b-46be-8436-4bdb524aa68a.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" data-spm-anchor-id="a21dvs.27181032.0.i65.2a7270e1sToLpy" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional data-spm-anchor-id="a21dvs.27181032.0.i99.2a7270e1sToLpy" class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="onlinesuccess_applymain__zzndu" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table next-table-lock next-table-medium next-table-stickylock only-bottom-border" index="3" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="table">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="tbody">
+        <optional index="1" index-of-type="0" />
+      </web>
+      <web x:name="tr">
+        <optional role="row" regex:class="next-table-row" />
+      </web>
+      <web x:name="td" index="6">
+        <optional data-next-table-col="6" role="gridcell" class="next-table-cell" index-of-type="6" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-cell-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="onlinesuccess_invoicekindtext__xfrps" index="1" index-of-type="1" />
+      </web>
+      <web x:name="span" index="1">
+        <optional class="onlinesuccess_invoicestatus_blue__oiqn9" innerText="蓝票" index-of-type="1" />
+      </web>
+    </selector>
+    <selector id="7984a6ed-ebd3-427c-816e-0d2fe4a222de" name="发票状态_相似元素组" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="给买家开票" screenshot=".dev\screenshot\4a28dfa3-3adb-4a88-ac5d-8a0fe4d73e26.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlinesuccess_applymain__zzndu" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table next-table-lock next-table-medium next-table-stickylock only-bottom-border" index="3" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="table">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="tbody">
+        <optional index="1" index-of-type="0" />
+      </web>
+      <web x:name="tr" regex:class="next-table-row">
+        <optional role="row" />
+      </web>
+      <web x:name="td">
+        <optional data-next-table-col="6" role="gridcell" class="next-table-cell" index="6" index-of-type="6" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-cell-wrapper" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div" class="onlinesuccess_invoicekindtext__xfrps" index="1">
+        <optional index-of-type="1" />
+      </web>
+    </selector>
+    <selector id="c6f0c1cb-f4bc-4e9b-a7e6-cbf8b67db527" name="发票申请详情_冲红按钮" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="给买家开票" screenshot=".dev\screenshot\238e13c1-65eb-459e-84c3-24cb98d2fb70.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-overlay-wrapper opened" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="dialog" aria-modal="true" aria-hidden="false" class="invoicedetaildrawer next-closeable next-drawer next-drawer-right next-overlay-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-drawer-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="moremodal_footeraction__aazxn" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional index="1" index-of-type="1" />
+      </web>
+      <web x:name="button" type="button">
+        <optional class="next-btn next-btn-normal next-large" index="0" index-of-type="0" />
+      </web>
+      <anchor text="冲红" targetRectangle="[1695,812,88,42]" anchorRectangle="[1723,825,32,16]" version="1" threshold="0.6" />
+    </selector>
+    <selector id="e4626365-3480-476b-9cc6-77c237aef369" name="发票申请状态_相似元素组" type="simple" framework="chrome" processName="chrome" productName="Google Chrome" winTitle="给买家开票" screenshot=".dev\screenshot\ca5b3178-5578-45bb-bbfa-f2a473eb0a0d.jpg">
+      <web x:name="div">
+        <optional id="icestark-container" index="6" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="basiclayout--container--3mhy6ef" index="3" index-of-type="3" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-worbench-container" class="container--container--mfb4pnb" index="3" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional id="qn-workbench-inner-container" class="container--containerwrap--1hmfjto" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ice-stark-loaded" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional id="icestarkNode" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="ww_invoice_homepage" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="main_main__l4mii" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="main_mainlist__+cbqi" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional popupcontainer="qn-worbench-container" class="next-medium next-tabs next-tabs-pure next-tabs-scrollable" index="0" index-of-type="0" />
+      </web>
+      <web x:name="div">
+        <optional class="next-tabs-content" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional role="tabpanel" aria-hidden="false" class="active next-tabs-tabpane" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="onlineall_applymain__0util" index="2" index-of-type="2" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table next-table-lock next-table-medium next-table-stickylock only-bottom-border" index="2" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-inner" index="1" index-of-type="1" />
+      </web>
+      <web x:name="div">
+        <optional class="next-table-body" index="1" index-of-type="1" />
+      </web>
+      <web x:name="table">
+        <optional index="0" index-of-type="0" />
+      </web>
+      <web x:name="tbody">
+        <optional index="1" index-of-type="0" />
+      </web>
+      <web x:name="tr" regex:class="next-table-row">
+        <optional role="row" />
+      </web>
+      <web x:name="td" class="next-table-cell" index="5">
+        <optional data-next-table-col="5" role="gridcell" index-of-type="5" />
+      </web>
+    </selector>
+  </group>
+</repository>

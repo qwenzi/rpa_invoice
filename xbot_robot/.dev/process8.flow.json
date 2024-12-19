@@ -1,0 +1,295 @@
+{
+  "name": "A初始化配置",
+  "memo": null,
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "8048acdd-dc9d-4a5b-b6fe-f32a2740a31c",
+      "name": "dialog.show_custom_dialog",
+      "isEnabled": true,
+      "inputs": {
+        "settings": {
+          "value": "10:{\"dialogTitle\":null,\"height\":0,\"width\":0,\"timeout\":0,\"autoCloseButton\":null,\"use_wait_timeout\":false,\"canRememberContent\":false,\"settings\":{\"editors\":[{\"type\":\"Select\",\"label\":\"选择流程\",\"VariableName\":\"发票流程\",\"value\":\"发票1_点同意\",\"nullText\":null,\"isTextEditable\":false,\"options\":[\"发票1_点同意\",\"发票2_首次上传\",\"发票3_点冲红\",\"发票4_重新上传\"],\"autoCloseOnSelected\":false},{\"type\":\"Select\",\"label\":\"选择店铺\",\"VariableName\":\"店铺名称\",\"value\":\"官旗\",\"nullText\":null,\"isTextEditable\":false,\"options\":[\"官旗\",\"生旗\",\"母旗\",\"厨旗\"],\"autoCloseOnSelected\":false},{\"type\":\"File\",\"label\":\"选择台账表格\",\"VariableName\":\"台账文件\",\"kind\":0,\"filter\":\"所有文件|*.*\",\"value\":null,\"nullText\":\"请选择路径\"},{\"type\":\"File\",\"label\":\"选择发票文件夹\",\"VariableName\":\"发票文件夹\",\"kind\":2,\"filter\":\"所有文件|*.*\",\"value\":null,\"nullText\":\"请选择路径\"}],\"buttons\":[{\"type\":\"Button\",\"label\":\"确定\",\"theme\":\"white\",\"hotKey\":\"Return\"},{\"type\":\"Button\",\"label\":\"取消\",\"theme\":\"white\",\"hotKey\":\"Escape\"}]}}"
+        },
+        "dialog_title": {
+          "value": "10:"
+        },
+        "default_btn": {
+          "value": "10:确定",
+          "display": "确定"
+        },
+        "is_auto_click": {
+          "value": "13:False"
+        },
+        "timeout": {
+          "value": null
+        },
+        "globals": {
+          "value": "13:globals()"
+        },
+        "locals": {
+          "value": "13:locals()"
+        },
+        "storage_key": {
+          "value": "13:`block_id`"
+        }
+      },
+      "outputs": {
+        "dialog_result": {
+          "name": "对话框信息",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "d7c1af34-cf16-4eca-804c-e7ec58689aff",
+      "name": "programing.comment",
+      "isEnabled": true,
+      "inputs": {
+        "content": {
+          "value": "10:获取流程开始执行时间"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "2c119cd5-3a32-49fd-ace2-1013c2506f0c",
+      "name": "datetime.now",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {
+        "datetime_instance": {
+          "name": "开始执行时间",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "1eadc154-f3ca-4950-a9fe-2b0d99ad1a8d",
+      "name": "programing.comment",
+      "isEnabled": true,
+      "inputs": {
+        "content": {
+          "value": "10:获取台账总条数"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "0f35698e-3a93-415a-97d8-79baaac06975",
+      "name": "excel.launch",
+      "isEnabled": true,
+      "inputs": {
+        "launch_way": {
+          "value": "10:open",
+          "display": "打开已有的Excel"
+        },
+        "driver_way": {
+          "value": "10:auto_check",
+          "display": "自动检测"
+        },
+        "open_filename": {
+          "value": "13:对话框信息.台账文件"
+        },
+        "save_filename": {
+          "value": "10:"
+        },
+        "isvisible": {
+          "value": "13:True"
+        },
+        "ignoreformula": {
+          "value": "13:False"
+        },
+        "password": {
+          "value": null
+        },
+        "write_password": {
+          "value": null
+        },
+        "update_links": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "excel_instance": {
+          "name": "excel_instance",
+          "variableLabel": "打开的Excel对象",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "881e78d8-7711-4acf-ab3b-473f25d97fb1",
+      "name": "excel.get_row_count",
+      "isEnabled": true,
+      "inputs": {
+        "workbook": {
+          "value": "11:excel_instance",
+          "display": "excel_instance"
+        },
+        "sheet_name": {
+          "value": "10:"
+        }
+      },
+      "outputs": {
+        "row_count": {
+          "name": "处理总量",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "205d62fc-0b00-4b45-b0ad-dbf27d55b9e9",
+      "name": "excel.get_first_free_row_on_column",
+      "isEnabled": true,
+      "inputs": {
+        "workbook": {
+          "value": "11:excel_instance",
+          "display": "excel_instance"
+        },
+        "column_name": {
+          "value": "10:H"
+        },
+        "sheet_name": {
+          "value": "10:"
+        }
+      },
+      "outputs": {
+        "row_num": {
+          "name": "处理单量",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "e695e8a1-529b-43c7-8bb4-dc620a72f9f3",
+      "name": "programing.variable",
+      "isEnabled": true,
+      "comment": "设置整数变量%variable%=%value%",
+      "inputs": {
+        "value_type": {
+          "value": "10:int"
+        },
+        "value": {
+          "value": "13:glv['处理单量']-1"
+        }
+      },
+      "outputs": {
+        "variable": {
+          "name": "处理单量",
+          "variableLabel": "整数",
+          "type": "int",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "38c8e6ac-0c1b-45dc-a00d-f8f968c29969",
+      "name": "excel.close",
+      "isEnabled": true,
+      "inputs": {
+        "operation": {
+          "value": "10:close_specified",
+          "display": "关闭指定Excel文件"
+        },
+        "excel_instance": {
+          "value": "11:excel_instance"
+        },
+        "close_way": {
+          "value": "10:save",
+          "display": "保存"
+        },
+        "filename": {
+          "value": null
+        },
+        "overwrite_file": {
+          "value": "13:True"
+        },
+        "close_process": {
+          "value": "10:office",
+          "display": "office"
+        },
+        "task_kill": {
+          "value": "13:True"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5f49bb7c-ed85-4faf-943f-112464ca2c98",
+      "name": "programing.comment",
+      "isEnabled": true,
+      "inputs": {
+        "content": {
+          "value": "10:初始化"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "f0137209-61f3-44b5-971e-501e0d1f7beb",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:import platform\r\nimport json\r\nrun_result ={\"deal_sum\":处理总量,\"deal_num\":glv['处理单量'],\"status\":\"SUCCESS!\",\"exception\":\"None\"}       \r\ndescription = json.dumps(run_result,ensure_ascii=False)\r\nglv['创建人'] = platform.node()\r\n"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "040d53b7-c9e0-4adc-8d7e-c03476138d0f",
+      "name": "process.invoke_module",
+      "isEnabled": true,
+      "comment": "调用模块%module%中的%function%方法并传入参数%params:WyJhcHBfbmFtZeWAvOS4uiVhcHBfbmFtZSXvvIwiLCJzdGFydF90aW1l5YC85Li6JXN0YXJ0X3RpbWUl77yMIiwic2hvcOWAvOS4uiVzaG9wJe+8jCIsImNyZWF0b3LlgLzkuLolY3JlYXRvciXvvIwiLCJkZXNjcmlwdGlvbuWAvOS4uiVkZXNjcmlwdGlvbiXvvIwiLCJyZW1hcmvlgLzkuLolcmVtYXJrJe+8jCJd%将结果保存到%invoke_result%",
+      "inputs": {
+        "module": {
+          "value": "10:ZRPA_Log",
+          "display": "ZRPA_Log"
+        },
+        "function": {
+          "value": "10:log_rpa_app_state"
+        },
+        "params": {
+          "value": "16:[{\"app_name\":\"11:glv['应用名称']\"},{\"start_time\":\"11:开始执行时间\"},{\"shop\":\"13:对话框信息.店铺名称\"},{\"creator\":\"11:glv['创建人'].strip()\"},{\"description\":\"13:description\"},{\"remark\":\"10:START\"}]"
+        },
+        "returnType": {
+          "value": "10:any"
+        }
+      },
+      "outputs": {
+        "invoke_result": {
+          "name": "invoke_result",
+          "type": "any",
+          "isEnable": true
+        }
+      }
+    }
+  ],
+  "parameters": [
+    {
+      "name": "开始执行时间",
+      "direction": "Out",
+      "type": "datetime",
+      "value": "None",
+      "description": "",
+      "kind": "Expression"
+    },
+    {
+      "name": "对话框信息",
+      "direction": "Out",
+      "type": "any",
+      "value": "None",
+      "description": "",
+      "kind": "Expression"
+    },
+    {
+      "name": "处理总量",
+      "direction": "Out",
+      "type": "int",
+      "value": "0",
+      "description": "",
+      "kind": "Expression"
+    }
+  ]
+}

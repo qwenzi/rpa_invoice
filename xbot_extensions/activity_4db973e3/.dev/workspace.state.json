@@ -1,0 +1,164 @@
+{
+  "openedFlows": [
+    "main",
+    "utils",
+    "京东风控滑块验证",
+    "jd_utiles",
+    "test",
+    "测试-京东风控滑动验证"
+  ],
+  "activeBottomPanel": "流程参数",
+  "activeFlow": "jd_utiles",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "utils",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "计算滑块距离",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "拖动滑块",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "图片旋转验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "推理拼图验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "获取当前屏幕缩放比例",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "滑动拼图验证（去除界面 bug）",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "超级鹰验证码识别",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "emphasize_color",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "坐标点选验证（去除界面 bug）",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-突出验证码颜色",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "超级鹰本地验证码识别",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-超级鹰本地验证码识别",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-滑动拼图验证码",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-获取屏幕缩放",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-图片旋转验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-坐标点选验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-推理图片验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "test_invoke_modules",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "淘宝新滑动验证-禁用",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "A 单次运行",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "B_Tools",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "taobo_object_reg",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "测试-淘宝物体识别",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "模拟人工拖拽",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "京东风控滑块验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "jd_utiles",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "test",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-京东风控滑动验证",
+      "Lines": null,
+      "BlockIds": []
+    }
+  ]
+}

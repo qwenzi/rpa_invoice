@@ -1,0 +1,119 @@
+<root>
+  <item name="xbot_extensions.iframe2" display="iframe2" kind="module">
+    <item.method />
+    <item.desc>XPath跨域获取网页元素
+改指令集实现了通过XPath跨域的操作</item.desc>
+    <item name="xbot_extensions.iframe2.init_iframe" display="init_iframe" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/init_iframe">
+      <item.method>init_iframe(web_page)</item.method>
+      <item.desc>初始化IFrame
+初始化IFrame，获取IFrame对象，帮助实现跨域操作
+* @param web_page，
+* @return iframe_instance，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.iframe2.to_iframe" display="to_iframe" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/to_iframe">
+      <item.method>to_iframe(iframe_instance,iframe_xpath,全局查找,超时时间)</item.method>
+      <item.desc>切换IFrame
+根据XPath切换IFrame
+* @param iframe_instance，
+* @param iframe_xpath，
+* @param 全局查找，
+* @param 超时时间，
+* @return new_iframe_instance，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.iframe2.find_ele" display="find_ele" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/find_ele">
+      <item.method>find_ele(iframe_instance,xpath,全局查找,超时时间)</item.method>
+      <item.desc>获取元素对象-XPath跨域
+获取元素对象-XPath跨域
+* @param iframe_instance，
+* @param xpath，
+* @param 全局查找，
+* @param 超时时间，
+* @return web_element，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.iframe2.find_all_ele" display="find_all_ele" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/find_all_ele">
+      <item.method>find_all_ele(iframe_instance,xpath,全局查找,超时时间)</item.method>
+      <item.desc>获取相似元素列表-XPath跨域
+获取相似元素列表-XPath跨域
+* @param iframe_instance，
+* @param xpath，
+* @param 全局查找，
+* @param 超时时间，
+* @return web_element_list，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.iframe2.click_by_xpath" display="click_by_xpath" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/click_by_xpath">
+      <item.method>click_by_xpath(iframe对象,Xpath,全局查找,模拟人工点击,显示鼠标移动轨迹,鼠标按键,辅助按键,执行后延迟,点击方式,超时时间)</item.method>
+      <item.desc>点击元素-XPath跨域
+通过XPath，跨域查找元素并点击
+* @param iframe对象，
+* @param Xpath，
+* @param 全局查找，
+* @param 模拟人工点击，
+* @param 显示鼠标移动轨迹，
+* @param 鼠标按键，
+* @param 辅助按键，
+* @param 执行后延迟，
+* @param 点击方式，
+* @param 超时时间，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.iframe2.input_by_xpath" display="input_by_xpath" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/input_by_xpath">
+      <item.method>input_by_xpath(iframe对象,Xpath,输入内容,追加输入,输入方式,输入内容包含快捷键,强制加载美式键盘,按键输入间隔,焦点超时时间,执行后延迟,输入前点击元素,全局查找,超时时间)</item.method>
+      <item.desc>填写输入框-XPath跨域
+XPath跨域查找元素并输入
+* @param iframe对象，
+* @param Xpath，
+* @param 输入内容，
+* @param 追加输入，
+* @param 输入方式，
+* @param 输入内容包含快捷键，
+* @param 强制加载美式键盘，
+* @param 按键输入间隔，
+* @param 焦点超时时间，
+* @param 执行后延迟，
+* @param 输入前点击元素，
+* @param 全局查找，
+* @param 超时时间，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.iframe2.wait_by_xpath" display="wait_by_xpath" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/mo46g9wnwnmi3vvi">
+      <item.method>wait_by_xpath(iframe对象,XPath,等待状态,超时时间,current_global)</item.method>
+      <item.desc>等待元素-XPath跨域
+跨域等待元素
+* @param iframe对象，
+* @param XPath，
+* @param 等待状态，
+* @param 超时时间，
+* @param current_global，
+* @return wait_result，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.iframe2.process2" display="process2" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/iframe2-get_elem_info">
+      <item.method>process2(IFrame对象,XPath,操作,基于当前lFrame全局查找,超时时间)</item.method>
+      <item.desc>获取元素信息-XPath跨域
+通过XPath，跨域查找元素并获取元素信息
+* @param IFrame对象，
+* @param XPath，
+* @param 操作，
+* @param 基于当前lFrame全局查找，
+* @param 超时时间，
+* @return attribute，
+</item.desc>
+    </item>
+    <item name="xbot_extensions.iframe2.process3" display="process3" kind="function" help="https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/iframe2-get_elem_attr">
+      <item.method>process3(IFrame对象,XPath,基于当前lFrame全局查找,超时时间,属性名称)</item.method>
+      <item.desc>获取元素属性-XPath跨域
+通过XPath，跨域查找元素并获取元素属性
+* @param IFrame对象，
+* @param XPath，
+* @param 基于当前lFrame全局查找，
+* @param 超时时间，
+* @param 属性名称，
+* @return attribute，
+</item.desc>
+    </item>
+  </item>
+</root>

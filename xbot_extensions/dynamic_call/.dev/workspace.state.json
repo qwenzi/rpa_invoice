@@ -1,0 +1,31 @@
+{
+  "openedFlows": [
+    "main",
+    "动态调用子流程",
+    "动态调用模块"
+  ],
+  "activeBottomPanel": "流程参数",
+  "activeFlow": "动态调用模块",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "动态调用子流程",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "invoke",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "动态调用模块",
+      "Lines": null,
+      "BlockIds": []
+    }
+  ]
+}

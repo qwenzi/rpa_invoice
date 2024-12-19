@@ -1,0 +1,129 @@
+{
+  "openedFlows": [
+    "main",
+    "select_date",
+    "测试",
+    "auto_drop_selector"
+  ],
+  "activeBottomPanel": "流程参数",
+  "activeFlow": "auto_drop_selector",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "select_date",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "滚动元素至可视区域",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "隐藏元素",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "显示元素",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "删除元素",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "元素长截图",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "获取元素背景颜色",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "获取元素字体颜色",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "js_utility",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "element_core",
+      "Lines": [
+        56
+      ],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "导入常用JS库",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "导入JS库",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "web_page_core",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "获取当前激活的网页对象",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "关闭其他网页",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "浏览器启动配置",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "元素增加边框",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "获取伪元素内容",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "获取伪元素属性",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "auto_drop_selector",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "取消HTML缩放",
+      "Lines": null,
+      "BlockIds": []
+    }
+  ]
+}

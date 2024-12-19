@@ -1,0 +1,1143 @@
+{
+  "types": [],
+  "blocks": [
+    {
+      "name": "xbot_extensions.iframe2.main",
+      "statement": "process.invoke_activity",
+      "title": "XPath跨域获取网页元素",
+      "keywords": "",
+      "description": "改指令集实现了通过XPath跨域的操作",
+      "comment": "",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/06/c1/06c16b0ca19804962ef0741536c6999c.png",
+      "function": "xbot_extensions.iframe2.main",
+      "helpUrl": null,
+      "extension": "XPath跨域获取网页元素",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.iframe2._core",
+      "statement": "process.invoke_activity",
+      "title": "module1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": "BlockIcons/21-2.png",
+      "function": "xbot_extensions.iframe2._core",
+      "helpUrl": null,
+      "extension": "XPath跨域获取网页元素",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.iframe2.A0-初始化iframe",
+      "statement": "process.invoke_activity",
+      "title": "初始化IFrame",
+      "keywords": "",
+      "description": "初始化IFrame，获取IFrame对象，帮助实现跨域操作",
+      "comment": "在网页%web_page%中初始化IFrame，将IFrame对象输出至%iframe_instance%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/17/6b/176b82aae9c558383a036c235fba0f21.png",
+      "function": "xbot_extensions.iframe2.init_iframe",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/init_iframe",
+      "extension": "XPath跨域获取网页元素",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "web_page",
+          "label": "网页对象",
+          "required": true,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "iframe_instance",
+          "label": "保存IFrame对象至",
+          "name": "iframe_instance",
+          "type": "xbot._web.browser.WebBrowser"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.iframe2.A1-切换iframe",
+      "statement": "process.invoke_activity",
+      "title": "切换IFrame",
+      "keywords": "",
+      "description": "根据XPath切换IFrame",
+      "comment": "在IFrame对象%iframe_instance%上，通过XPath%iframe_xpath%，切换IFrame，保存新的IFrame对象至%new_iframe_instance%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/27/1b/271bc682f18af8367d07e7521befc001.png",
+      "function": "xbot_extensions.iframe2.to_iframe",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/to_iframe",
+      "extension": "XPath跨域获取网页元素",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "iframe_instance",
+          "label": "IFrame对象",
+          "required": true,
+          "tips": "IFrame对象或网页对象",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "iframe_xpath",
+          "label": "IFrame_XPath",
+          "required": true,
+          "tips": "如果要一次切换多层路径，可以以数组的形式传递XPath。传入数组，则不会全局查找",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "//iframe"
+          },
+          "category": "general"
+        },
+        {
+          "name": "全局查找",
+          "label": "",
+          "required": false,
+          "tips": "如果勾选，会在基于当前IFrame全局查找元素；\n取消勾选，则只在当前IFrame查找元素；\r\n更加推荐切换IFrame勾选，查找元素取消勾选",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "基于当前IFrame全局查找"
+          },
+          "category": "general"
+        },
+        {
+          "name": "超时时间",
+          "label": "超时时间(s)",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:5",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "new_iframe_instance",
+          "label": "保存IFrame对象至",
+          "name": "new_iframe_instance",
+          "type": "xbot._web.browser.WebBrowser"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.iframe2.A2-切换至父iframe",
+      "statement": "process.invoke_activity",
+      "title": "切换至父IFrame",
+      "keywords": "",
+      "description": "切换至父IFrame",
+      "comment": "在IFrame%iframe对象%上，切换到父IFrame，输出至%new_iframe_instance%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/ac/4c/ac4c2fd2a71fa8088c450d342b086feb.png",
+      "function": "xbot_extensions.iframe2.parent",
+      "helpUrl": null,
+      "extension": "XPath跨域获取网页元素",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "iframe对象",
+          "label": "IFrame对象",
+          "required": false,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "new_iframe_instance",
+          "label": "保存IFrame对象至",
+          "name": "new_iframe_instance",
+          "type": "xbot._web.browser.WebBrowser"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.iframe2.B1-获取元素对象",
+      "statement": "process.invoke_activity",
+      "title": "获取元素对象-XPath跨域",
+      "keywords": "",
+      "description": "获取元素对象-XPath跨域",
+      "comment": "通过IFrame对象%iframe_instance%，跨域获取%xpath%元素，输出至%web_element%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/11/7b/117bd7cda66e35d931f98ba5864aae9e.png",
+      "function": "xbot_extensions.iframe2.find_ele",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/find_ele",
+      "extension": "XPath跨域获取网页元素",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "iframe_instance",
+          "label": "IFrame对象",
+          "required": true,
+          "tips": "IFrame对象或网页对象",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "xpath",
+          "label": "XPath",
+          "required": true,
+          "tips": "支持传入数组，可以实现精确切入多层IFrame查找元素。传入数组，则不会全局查找",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "//*"
+          },
+          "category": "general"
+        },
+        {
+          "name": "全局查找",
+          "label": "",
+          "required": false,
+          "tips": "如果勾选，会在基于当前IFrame全局查找元素；\n取消勾选，则只在当前IFrame查找元素；\r\n更加推荐切换IFrame勾选，查找元素取消勾选",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "基于当前IFrame全局查找"
+          },
+          "category": "general"
+        },
+        {
+          "name": "超时时间",
+          "label": "超时时间(s)",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:5",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "web_element",
+          "label": "保存网页元素至",
+          "name": "web_element",
+          "type": "xbot._web.element.WebElement"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.iframe2.B2-获取相似元素",
+      "statement": "process.invoke_activity",
+      "title": "获取相似元素列表-XPath跨域",
+      "keywords": "",
+      "description": "获取相似元素列表-XPath跨域",
+      "comment": "通过IFrame对象%iframe_instance%，跨域获取一组与%xpath%相似的元素列表，输出至%web_element_list%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/6d/6d/6d6dff34472dee656d52c7549fde9593.png",
+      "function": "xbot_extensions.iframe2.find_all_ele",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/find_all_ele",
+      "extension": "XPath跨域获取网页元素",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "iframe_instance",
+          "label": "IFrame对象",
+          "required": true,
+          "tips": "IFrame对象或网页对象",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "xpath",
+          "label": "XPath",
+          "required": true,
+          "tips": "支持传入数组，可以实现精确切入多层IFrame查找元素。传入数组，则不会全局查找",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "//*"
+          },
+          "category": "general"
+        },
+        {
+          "name": "全局查找",
+          "label": "",
+          "required": false,
+          "tips": "如果勾选，会在基于当前IFrame全局查找元素；\n取消勾选，则只在当前IFrame查找元素；\r\n更加推荐切换IFrame勾选，查找元素取消勾选",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "基于当前IFrame全局查找"
+          },
+          "category": "general"
+        },
+        {
+          "name": "超时时间",
+          "label": "超时时间(s)",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:5",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "web_element_list",
+          "label": "保存网页元素列表至",
+          "name": "web_element_list",
+          "type": "list<xbot._web.element.WebElement>"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.iframe2.api",
+      "statement": "process.invoke_activity",
+      "title": "module1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": "BlockIcons/21-2.png",
+      "function": "xbot_extensions.iframe2.api",
+      "helpUrl": null,
+      "extension": "XPath跨域获取网页元素",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.iframe2.js_code",
+      "statement": "process.invoke_activity",
+      "title": "module1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": "BlockIcons/21-2.png",
+      "function": "xbot_extensions.iframe2.js_code",
+      "helpUrl": null,
+      "extension": "XPath跨域获取网页元素",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.iframe2.C1-点击元素",
+      "statement": "process.invoke_activity",
+      "title": "点击元素-XPath跨域",
+      "keywords": "",
+      "description": "通过XPath，跨域查找元素并点击",
+      "comment": "通过IFrame对象%iframe对象%，跨域点击%Xpath%元素",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/28/0c/280ccaaf41c452c33e76a82dcf0feeaf.png",
+      "function": "xbot_extensions.iframe2.click_by_xpath",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/click_by_xpath",
+      "extension": "XPath跨域获取网页元素",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "iframe对象",
+          "label": "IFrame对象",
+          "required": true,
+          "tips": "IFrame对象或网页对象",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "Xpath",
+          "label": "XPath",
+          "required": true,
+          "tips": "支持传入数组，可以实现精确切入多层IFrame查找元素。传入数组，则不会全局查找",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "//*"
+          },
+          "category": "general"
+        },
+        {
+          "name": "全局查找",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "基于当前IFrame全局查找"
+          },
+          "category": "general"
+        },
+        {
+          "name": "模拟人工点击",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:True",
+          "editor": {
+            "kind": "checkbox",
+            "label": "模拟人工点击"
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "显示鼠标移动轨迹",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "显示鼠标移动轨迹"
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "点击方式",
+          "label": "点击方式",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "单击",
+                "value": "单击",
+                "Unicode": null
+              },
+              {
+                "display": "双击",
+                "value": "双击",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "鼠标按键",
+          "label": "鼠标按键",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:left",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "鼠标左键",
+                "value": "left",
+                "Unicode": null
+              },
+              {
+                "display": "鼠标右键",
+                "value": "right",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "辅助按键",
+          "label": "辅助按键",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:none",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "空",
+                "value": "none",
+                "Unicode": null
+              },
+              {
+                "display": "alt键",
+                "value": "alt",
+                "Unicode": null
+              },
+              {
+                "display": "ctrl键",
+                "value": "ctrl",
+                "Unicode": null
+              },
+              {
+                "display": "shift键",
+                "value": "shift",
+                "Unicode": null
+              },
+              {
+                "display": "win键",
+                "value": "win",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "执行后延迟",
+          "label": "执行后延迟(s)",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:1",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "超时时间",
+          "label": "超时时间(s)",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:5",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.iframe2.C2-填写输入框",
+      "statement": "process.invoke_activity",
+      "title": "填写输入框-XPath跨域",
+      "keywords": "",
+      "description": "XPath跨域查找元素并输入",
+      "comment": "通过IFrame对象%iframe对象%，跨域查找%Xpath%元素并输入%输入内容%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/21/25/212502b7504f32163a46c9cf79df7f6e.png",
+      "function": "xbot_extensions.iframe2.input_by_xpath",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/input_by_xpath",
+      "extension": "XPath跨域获取网页元素",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "iframe对象",
+          "label": "IFrame对象",
+          "required": true,
+          "tips": "IFrame对象或网页对象",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "Xpath",
+          "label": "Xpath",
+          "required": true,
+          "tips": "支持传入数组，可以实现精确切入多层IFrame查找元素。传入数组，则不会全局查找",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "//*"
+          },
+          "category": "general"
+        },
+        {
+          "name": "输入内容",
+          "label": "输入内容",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "memoedit",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "全局查找",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "基于当前IFrame全局查找"
+          },
+          "category": "general"
+        },
+        {
+          "name": "追加输入",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "追加输入"
+          },
+          "category": "general"
+        },
+        {
+          "name": "输入方式",
+          "label": "输入方式",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "模拟人工输入",
+                "value": "模拟人工输入",
+                "Unicode": null
+              },
+              {
+                "display": "剪贴板输入",
+                "value": "剪贴板输入",
+                "Unicode": null
+              },
+              {
+                "display": "自动化接口输入",
+                "value": "自动化接口输入",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "输入内容包含快捷键",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "输入内容包含快捷键"
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "强制加载美式键盘",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "强制加载美式键盘"
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "按键输入间隔",
+          "label": "按键输入间隔(ms)",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:50",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "焦点超时时间",
+          "label": "焦点超时时间(ms)",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:1000",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "执行后延迟",
+          "label": "执行后延迟(s)",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:1",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "输入前点击元素",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:True",
+          "editor": {
+            "kind": "checkbox",
+            "label": "输入前点击元素"
+          },
+          "category": "advanced"
+        },
+        {
+          "name": "超时时间",
+          "label": "超时时间(s)",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:5",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.iframe2.C3-等待元素",
+      "statement": "process.invoke_activity",
+      "title": "等待元素-XPath跨域",
+      "keywords": "",
+      "description": "跨域等待元素",
+      "comment": "在IFrame对象%iframe对象%上等待 元素%XPath% %等待状态%，超时时间：%超时时间%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/c4/74/c474a9c1a9ad25d4584dc4a6dfa506e0.png",
+      "function": "xbot_extensions.iframe2.wait_by_xpath",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/mo46g9wnwnmi3vvi",
+      "extension": "XPath跨域获取网页元素",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "iframe对象",
+          "label": "IFrame对象",
+          "required": true,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "XPath",
+          "label": "XPath",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "等待状态",
+          "label": "等待状态",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "等待元素出现",
+                "value": "appear",
+                "Unicode": null
+              },
+              {
+                "display": "等待元素消失",
+                "value": "disappear",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "general"
+        },
+        {
+          "name": "current_global",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "基于当前IFrame全局查找"
+          },
+          "category": "general"
+        },
+        {
+          "name": "超时时间",
+          "label": "超时时间(s)",
+          "required": false,
+          "tips": "不填则一直等待",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "非必填，不填则一直等待"
+          },
+          "category": "general"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "wait_result",
+          "label": "wait_result",
+          "name": "wait_result",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.iframe2.测试",
+      "statement": "process.invoke_activity",
+      "title": "子流程1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": "BlockIcons/21-2.png",
+      "function": "xbot_extensions.iframe2.process1",
+      "helpUrl": null,
+      "extension": "XPath跨域获取网页元素",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.iframe2.D1-获取元素信息",
+      "statement": "process.invoke_activity",
+      "title": "获取元素信息-XPath跨域",
+      "keywords": "",
+      "description": "通过XPath，跨域查找元素并获取元素信息",
+      "comment": "在IFrame对象%IFrame对象%上通过%XPath%获取元素%操作%信息,输出至%attribute%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/ab/3a/ab3a23cc15f1eed9564e0c487eb99e6c.png",
+      "function": "xbot_extensions.iframe2.process2",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/iframe2-get_elem_info",
+      "extension": "XPath跨域获取网页元素",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "IFrame对象",
+          "label": "IFrame对象",
+          "required": true,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "XPath",
+          "label": "XPath",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "操作",
+          "label": "操作",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": false,
+            "options": [
+              {
+                "display": "获取元素文本内容",
+                "value": "获取元素文本内容",
+                "Unicode": null
+              },
+              {
+                "display": "获取元素源代码",
+                "value": "获取元素源代码",
+                "Unicode": null
+              },
+              {
+                "display": "获取元素值",
+                "value": "获取元素值",
+                "Unicode": null
+              },
+              {
+                "display": "获取元素位置",
+                "value": "获取元素位置",
+                "Unicode": null
+              }
+            ]
+          },
+          "category": "general"
+        },
+        {
+          "name": "基于当前lFrame全局查找",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "基于当前lFrame全局查找"
+          },
+          "category": "general"
+        },
+        {
+          "name": "超时时间",
+          "label": "超时时间",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:5",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "attribute",
+          "label": "attribute",
+          "name": "attribute",
+          "type": "str"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.iframe2.D2-获取元素属性",
+      "statement": "process.invoke_activity",
+      "title": "获取元素属性-XPath跨域",
+      "keywords": "",
+      "description": "通过XPath，跨域查找元素并获取元素属性",
+      "comment": "在IFrame对象%IFrame对象%上通过%XPath%获取元素%属性名称%属性,输出至%attribute%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/0b/74/0b748d11beca9f01b4d67d0320c3dd68.png",
+      "function": "xbot_extensions.iframe2.process3",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/iframe2-get_elem_attr",
+      "extension": "XPath跨域获取网页元素",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "IFrame对象",
+          "label": "IFrame对象",
+          "required": true,
+          "tips": "",
+          "type": "xbot._web.browser.WebBrowser",
+          "default": "13:None",
+          "editor": {
+            "kind": "select",
+            "useVariableOptions": true,
+            "options": []
+          },
+          "category": "general"
+        },
+        {
+          "name": "XPath",
+          "label": "XPath",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "属性名称",
+          "label": "属性名称",
+          "required": true,
+          "tips": "",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "general"
+        },
+        {
+          "name": "基于当前lFrame全局查找",
+          "label": "",
+          "required": false,
+          "tips": "",
+          "type": "bool",
+          "default": "13:False",
+          "editor": {
+            "kind": "checkbox",
+            "label": "基于当前lFrame全局查找"
+          },
+          "category": "general"
+        },
+        {
+          "name": "超时时间",
+          "label": "超时时间",
+          "required": false,
+          "tips": "",
+          "type": "str",
+          "default": "10:5",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": null
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "attribute",
+          "label": "attribute",
+          "name": "attribute",
+          "type": "str"
+        }
+      ]
+    }
+  ]
+}

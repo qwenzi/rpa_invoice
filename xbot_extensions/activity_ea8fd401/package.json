@@ -1,0 +1,52 @@
+{
+  "uuid": "f3a58cde-b6be-4e6e-9764-ff6927ab4bd0",
+  "name": "跨域获取网页元素",
+  "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/06/c1/06c16b0ca19804962ef0741536c6999c.png",
+  "version": "1",
+  "tags": null,
+  "software": null,
+  "software_title": null,
+  "package_version": 2,
+  "description": null,
+  "instruction": null,
+  "use_latest_pip": false,
+  "videoName": null,
+  "startup": "main",
+  "robot_type": "activity",
+  "activity_code": "activity_ea8fd401",
+  "flows": [
+    {
+      "name": "main",
+      "filename": "main",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "_core",
+      "filename": "_core",
+      "kind": "Code",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "iframeElement",
+      "filename": "iframeElement",
+      "kind": "Code",
+      "opened": true,
+      "groupName": null
+    }
+  ],
+  "flow_groups": [],
+  "variables": [],
+  "external_dependencies": [],
+  "internaldependencies": [],
+  "internalautodependencies": [],
+  "databook_columns": [],
+  "authority": "use",
+  "internalautoupgrade": false,
+  "isbrief": false,
+  "uia_type": "PC",
+  "persist_databook": false,
+  "customItems": {}
+}

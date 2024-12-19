@@ -1,0 +1,336 @@
+{
+  "openedFlows": [
+    "main",
+    "module1",
+    "千牛登录"
+  ],
+  "activeBottomPanel": "运行日志",
+  "activeFlow": "千牛登录",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "utils",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "巨量登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "计算滑块距离",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "拖动滑块",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "抖店登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "有赞登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "京东登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "淘宝登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "天猫登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "支付宝登录（嘻嘻嘻）",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "拖动滑块京东",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "滑块拖动",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "巨量纵横登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "法大大登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "获取一组相似元素中可见的元素",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "电商罗盘登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "zfb验证码识别",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "支付宝登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "拼多多登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "alipay_login",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "测试_抖店登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试淘宝登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "test_pdd_login",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "测试_电商罗盘",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试抖店登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试抖店循环登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试巨量纵横登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试_京东登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "taobao_reg",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "测试拼多多登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试爱库存",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "爱库存登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试_淘宝登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试巨量登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "退出巨量纵横登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "utils_douyin",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "测试_支付宝登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试_拼多多登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "旺店通登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "京准通登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "京准通登录后跳转",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "阿里妈妈数智登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "拼多多商家后台登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "_抖音平台登录-文字点选验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "_抖音平台登录-滑块验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "计算滑块距离_xpath",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "巨量引擎邮箱登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "抖音平台登录验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "抖音平台邮箱验证",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-元素可见",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "拼多多推广平台登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试悬停",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试_有赞登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试-验证码",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "京麦登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试京麦",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "测试_数智登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "电商罗盘策略登陆",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "千牛登录",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "qn_login",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "taobao_mini",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "测试淘宝滑块拖动",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "module1",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "子流程1",
+      "Lines": null,
+      "BlockIds": []
+    }
+  ]
+}

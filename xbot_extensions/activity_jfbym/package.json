@@ -1,0 +1,266 @@
+{
+  "uuid": "f70c49b4-c116-4044-a63e-6b069fdba2f1",
+  "name": "云码验证码扩展",
+  "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/c4/92/c492d3379c4b4ed54bd7f1c36506ac7f.png",
+  "version": "24.5.0",
+  "tags": "official",
+  "software": null,
+  "software_title": null,
+  "package_version": 2,
+  "description": "该指令集借助云码平台能力实现验证码自动化操作",
+  "instruction": null,
+  "use_latest_pip": false,
+  "videoName": null,
+  "startup": "main",
+  "robot_type": "activity",
+  "activity_code": "activity_jfbym",
+  "flows": [
+    {
+      "name": "main",
+      "filename": "main",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "jd_rotate_captcha",
+      "filename": "jd_rotate_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "test",
+      "filename": "test",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "test"
+    },
+    {
+      "name": "std_trace_captcha",
+      "filename": "std_trace_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "utils",
+      "filename": "utils",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "src"
+    },
+    {
+      "name": "drag",
+      "filename": "drag",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "src"
+    },
+    {
+      "name": "std_slider_captcha",
+      "filename": "std_slider_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "std_slider_double_captcha",
+      "filename": "std_slider_double_captcha",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "activities"
+    },
+    {
+      "name": "google_captcha",
+      "filename": "google_captcha",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "activities"
+    },
+    {
+      "name": "xtrace",
+      "filename": "xtrace",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "src"
+    },
+    {
+      "name": "std_alphanum_captcha",
+      "filename": "std_alphanum_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "chinatax_captcha",
+      "filename": "chinatax_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "ali_slider_captcha",
+      "filename": "ali_slider_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "std_click_select_captcha",
+      "filename": "std_click_select_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "test_pdd",
+      "filename": "test_pdd",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "test"
+    },
+    {
+      "name": "dy_slider_captcha",
+      "filename": "dy_slider_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "tx_six_squares_captcha",
+      "filename": "tx_six_squares_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "dy_double_rotate_captcha",
+      "filename": "dy_double_rotate_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "cs_space_same_object_captcha",
+      "filename": "cs_space_same_object_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "orangebank_slider_captcha",
+      "filename": "orangebank_slider_captcha",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "activities"
+    },
+    {
+      "name": "xztest",
+      "filename": "process1",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": "test"
+    },
+    {
+      "name": "jd_click_select_captcha",
+      "filename": "jd_click_select_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "cs_oocl_captcha",
+      "filename": "cs_oocl_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "xhs_rotate_captcha",
+      "filename": "xhs_rotate_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "cs_word_order_click_select_captcha",
+      "filename": "cs_word_order_click_select_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "cs_temu_captcha",
+      "filename": "cs_temu_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "dw_drag_captcha",
+      "filename": "dw_drag_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "ali_click_select_captcha",
+      "filename": "ali_click_select_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "jd_click_select_captcha_original",
+      "filename": "jd_click_select_captcha_original",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "jd_trace_captcha",
+      "filename": "jd_trace_captcha",
+      "kind": "Code",
+      "opened": true,
+      "groupName": "activities"
+    },
+    {
+      "name": "ali_click_select_captcha(copy)1",
+      "filename": "ali_click_select_captcha(copy)1",
+      "kind": "Code",
+      "opened": false,
+      "groupName": "activities"
+    }
+  ],
+  "flow_groups": [
+    {
+      "name": "src"
+    },
+    {
+      "name": "activities"
+    },
+    {
+      "name": "test"
+    }
+  ],
+  "variables": [],
+  "external_dependencies": [
+    "base64-to-image==0.0.1"
+  ],
+  "internaldependencies": [
+    "iframe2==24.8.0"
+  ],
+  "selectordependencies": [],
+  "internalautodependencies": [
+    "iframe2"
+  ],
+  "ipaasDependencies": [],
+  "databook_columns": [],
+  "authority": "use",
+  "internalautoupgrade": false,
+  "isbrief": false,
+  "uia_type": "PC",
+  "persist_databook": false,
+  "customItems": {}
+}

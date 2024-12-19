@@ -1,0 +1,133 @@
+{
+  "uuid": "7e7b6c16-5de9-4a39-a046-31be529732cb",
+  "name": "国补发票上传v1",
+  "icon": null,
+  "version": "1",
+  "tags": null,
+  "software": null,
+  "software_title": null,
+  "package_version": 5,
+  "description": null,
+  "instruction": "",
+  "use_latest_pip": false,
+  "videoName": "",
+  "startup": "main",
+  "robot_type": "app",
+  "activity_code": null,
+  "flows": [
+    {
+      "name": "main",
+      "filename": "main",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "ZRPA_Log",
+      "filename": "ZRPA_Log",
+      "kind": "Code",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "D发票2_首次上传",
+      "filename": "process1",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "F发票4_重新上传",
+      "filename": "process2",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "B登录流程",
+      "filename": "process3",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "C发票1_同意申请",
+      "filename": "process4",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "E发票3_点冲红",
+      "filename": "process6",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "A初始化配置",
+      "filename": "process8",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    },
+    {
+      "name": "C发票1_同意申请v1",
+      "filename": "process9",
+      "kind": "Visual",
+      "opened": false,
+      "groupName": null
+    }
+  ],
+  "flow_groups": [],
+  "variables": [
+    {
+      "name": "创建人",
+      "type": "str",
+      "value": "",
+      "kind": "Text"
+    },
+    {
+      "name": "流程名称",
+      "type": "str",
+      "value": "",
+      "kind": "Text"
+    },
+    {
+      "name": "应用名称",
+      "type": "str",
+      "value": "GBFP",
+      "kind": "Text"
+    },
+    {
+      "name": "处理单量",
+      "type": "int",
+      "value": "0",
+      "kind": "Expression"
+    }
+  ],
+  "external_dependencies": [
+    "PyMySQL==1.1.1",
+    "SQLAlchemy==2.0.36"
+  ],
+  "internaldependencies": [
+    "activity_7bca6d==24.12.6"
+  ],
+  "selectordependencies": [],
+  "internalautodependencies": [
+    "activity_7bca6d"
+  ],
+  "ipaasDependencies": [],
+  "databook_columns": [],
+  "authority": "use",
+  "internalautoupgrade": false,
+  "isbrief": false,
+  "uia_type": "PC",
+  "persist_databook": false,
+  "customItems": {
+    "gifUrl": null,
+    "videoUrl": "",
+    "imageUrl": "",
+    "imageName": ""
+  }
+}

@@ -1,0 +1,22 @@
+<root>
+  <item name="xbot_extensions.activity_ea8fd401" display="activity_ea8fd401" kind="module">
+    <item.method />
+    <item.desc>跨域获取网页元素
+</item.desc>
+    <item name="xbot_extensions.activity_ea8fd401.iframeElement" display="iframeElement" kind="function" help="">
+      <item.method />
+      <item.desc />
+      <item name="xbot_extensions.activity_ea8fd401.iframeElement.main" display="main" kind="function" help="">
+        <item.method>main(args)</item.method>
+        <item.desc>跨全局查找xpath元素
+
+* @param web_page，
+* @param xpathSelector，
+* @param 异常处理，
+* @param 失败返回值，
+* @return 元素对象，
+</item.desc>
+      </item>
+    </item>
+  </item>
+</root>

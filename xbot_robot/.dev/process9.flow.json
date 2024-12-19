@@ -1,0 +1,1487 @@
+{
+  "name": "C发票1_同意申请v1",
+  "memo": null,
+  "kind": "visual",
+  "blocks": [
+    {
+      "id": "a3320d19-9daa-4eb7-b8df-6c0f13974fd0",
+      "name": "web.get",
+      "isEnabled": true,
+      "comment": "在%web_type%中匹配当前选中的网页，将网页对象保存到%browser%，网页加载超时后重试此指令",
+      "inputs": {
+        "web_type": {
+          "value": "10:chrome",
+          "display": "Google Chrome浏览器"
+        },
+        "mode": {
+          "value": "10:activated",
+          "display": "匹配当前选中的网页"
+        },
+        "value": {
+          "value": "10:"
+        },
+        "use_wildcard": {
+          "value": "13:False"
+        },
+        "silent_running": {
+          "value": "13:False"
+        },
+        "wait_load_completed": {
+          "value": "13:True"
+        },
+        "load_timeout": {
+          "value": "10:20"
+        },
+        "stop_load_if_load_timeout": {
+          "value": "10:handleExcept",
+          "display": "执行\"错误处理\""
+        },
+        "open_page": {
+          "value": "13:False"
+        },
+        "url": {
+          "value": null
+        }
+      },
+      "outputs": {
+        "browser": {
+          "name": "web_page",
+          "isEnable": true
+        }
+      },
+      "exception_handling": {
+        "logging": true,
+        "mode": "retry",
+        "retryTime": 3,
+        "retryInterval": 3
+      }
+    },
+    {
+      "id": "fe8d648b-cf75-4591-93df-a660ae828e3b",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:给买家开票_全部申请",
+          "display": "给买家开票_全部申请"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "207b9954-e70e-46cb-a266-3707855e0630",
+      "name": "programing.sleep",
+      "isEnabled": true,
+      "inputs": {
+        "random_number": {
+          "value": "13:False"
+        },
+        "seconds": {
+          "value": "10:5"
+        },
+        "start_number": {
+          "value": "10:1"
+        },
+        "stop_number": {
+          "value": "10:5"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "b2fbb491-ce7c-4409-b868-ce3f8e056c95",
+      "name": "excel.launch",
+      "isEnabled": true,
+      "inputs": {
+        "launch_way": {
+          "value": "10:open",
+          "display": "打开已有的Excel"
+        },
+        "driver_way": {
+          "value": "10:auto_check",
+          "display": "自动检测"
+        },
+        "open_filename": {
+          "value": "11:台账文件"
+        },
+        "save_filename": {
+          "value": "10:"
+        },
+        "isvisible": {
+          "value": "13:True"
+        },
+        "ignoreformula": {
+          "value": "13:False"
+        },
+        "password": {
+          "value": null
+        },
+        "write_password": {
+          "value": null
+        },
+        "update_links": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "excel_instance": {
+          "name": "台账文件对象",
+          "variableLabel": "打开的Excel对象",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "f6b0c49b-2bcc-4343-87e1-06ea362340f3",
+      "name": "excel.loop_data_from_workbook",
+      "isEnabled": true,
+      "comment": "循环Excel对象%workbook%第%begin_row_num%行到第%end_row_num%行的内容，将每次循环项保存到%loop_item%，行号保存到%loop_item_rownum%",
+      "foldState": "UnFold",
+      "inputs": {
+        "workbook": {
+          "value": "11:台账文件对象",
+          "display": "台账文件对象"
+        },
+        "loop_way": {
+          "value": "10:loop_row",
+          "display": "循环行"
+        },
+        "range": {
+          "value": null
+        },
+        "begin_row_num": {
+          "value": "10:2"
+        },
+        "end_row_num": {
+          "value": "10:-1"
+        },
+        "begin_column_name": {
+          "value": null
+        },
+        "end_column_name": {
+          "value": null
+        },
+        "has_header_row": {
+          "value": "13:False"
+        },
+        "range_begin_row_num": {
+          "value": "10:2"
+        },
+        "range_begin_column_name": {
+          "value": null
+        },
+        "range_end_row_num": {
+          "value": "10:-1"
+        },
+        "range_end_column_name": {
+          "value": null
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "using_text": {
+          "value": "13:False"
+        },
+        "text_cols": {
+          "value": "10:"
+        },
+        "clear_space": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "loop_item": {
+          "name": "loop_excel",
+          "variableLabel": "当前循环行的数据",
+          "type": "table.row<any>",
+          "isEnable": true
+        },
+        "loop_item_rownum": {
+          "name": "loop_item_rownum",
+          "isEnable": true
+        },
+        "loop_item_columnname": {
+          "name": "loop_item_columnname",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "1bda77cd-835c-45ef-b2da-de1bad46807d",
+      "name": "programing.comment",
+      "isEnabled": true,
+      "inputs": {
+        "content": {
+          "value": "10:获取开始操作时间"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5bbb2362-9bab-4109-9662-9ae96ef382e1",
+      "name": "datetime.now",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {
+        "datetime_instance": {
+          "name": "开始操作时间",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "321dd729-185d-4f6d-b30b-41e15e374f2c",
+      "name": "programing.comment",
+      "isEnabled": true,
+      "inputs": {
+        "content": {
+          "value": "10:判断操作结果列是否为空"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "f7407a36-3938-44ca-ba9a-77ed83c3f61a",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "comment": "如果%operand1%%operator%(None/空字符串/空白符)，则执行以下操作",
+      "foldState": "Fold",
+      "inputs": {
+        "operand1": {
+          "value": "11:loop_excel[7]"
+        },
+        "operator": {
+          "value": "10:not empty value",
+          "display": "不是空值"
+        },
+        "operand2": {
+          "value": "10:"
+        },
+        "operator_options": {
+          "value": "10:{\"values\":\"None,Empty,Blank\"}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "bb48f9d2-7756-403e-8895-b977ab857103",
+      "name": "workflow.continue",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "19b1267b-1328-43b8-b81a-b70ba8954a6b",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "ba749739-305a-4170-b812-2c9134737981",
+      "name": "web.element.input",
+      "isEnabled": true,
+      "comment": "在网页%browser%的%element%中，剪切板复制粘贴输入%text%",
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:给买家开票_全部申请_订单编号输入框",
+          "display": "给买家开票_全部申请_订单编号输入框"
+        },
+        "text": {
+          "value": "11:loop_excel[0]"
+        },
+        "append": {
+          "value": "13:False"
+        },
+        "simulate": {
+          "value": "13:False"
+        },
+        "driver_input": {
+          "value": "13:False"
+        },
+        "save_to_clipboard": {
+          "value": "13:True"
+        },
+        "input_type": {
+          "value": "10:clipboard",
+          "display": "剪切板输入"
+        },
+        "contains_hotkey": {
+          "value": "13:False"
+        },
+        "force_ime_ENG": {
+          "value": "13:False"
+        },
+        "send_key_delay": {
+          "value": "10:50"
+        },
+        "focus_timeout": {
+          "value": "10:1000"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "click_before_input": {
+          "value": "13:True"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "e8a515fc-5d3b-44e7-ba48-5a4445b5adbe",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:给买家开票_全部申请_搜索按钮",
+          "display": "给买家开票_全部申请_搜索按钮"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "ec1e0950-86f7-409e-b450-5ceb58efbc60",
+      "name": "web.browser.element_display",
+      "isEnabled": true,
+      "foldState": "Fold",
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "content_type": {
+          "value": "10:display",
+          "display": "可见"
+        },
+        "selector": {
+          "value": "12:搜索后没有数据",
+          "display": "搜索后没有数据"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "30bdc117-6a69-48eb-9b1a-8553eadc7c67",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:import json\r\nkey_info ={\"order_id\":loop_excel[0],\"invoices_name\":loop_excel[1],\"invoices_code\":loop_excel[2],\"invoices_status\":\"\",\"ART_reason\":\"网页搜索不出该订单号内容\",\"extra_remark\":\"\"}\r\ndescription = json.dumps(key_info,ensure_ascii=False) \r\nglv['处理单量']+=1\r\nremark=\"人工-状态异常\""
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "af1c687d-06ca-4598-8ea1-67c55889ddc5",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:台账文件对象",
+          "display": "台账文件对象"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:loop_item_rownum"
+        },
+        "column_name": {
+          "value": "10:H"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:remark"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "b3e5c8e8-24b9-42c8-8780-e8e3982889ee",
+      "name": "process.invoke_module",
+      "isEnabled": true,
+      "comment": "调用模块%module%中的%function%方法并传入参数%params:WyJhcHBfbmFtZeWAvOS4uiVhcHBfbmFtZSXvvIwiLCJmbG93X25hbWXlgLzkuLolZmxvd19uYW1lJe+8jCIsInN0YXJ0X3RpbWXlgLzkuLolc3RhcnRfdGltZSXvvIwiLCJhY3Rpb25fbWV0aG9k5YC85Li6JWFjdGlvbl9tZXRob2Ql77yMIiwiYWN0aW9uX3Jlc3VsdOWAvOS4uiVhY3Rpb25fcmVzdWx0Je+8jCIsImFjdGlvbl9zdGF0dXPlgLzkuLolYWN0aW9uX3N0YXR1cyXvvIwiLCJjcmVhdG9y5YC85Li6JWNyZWF0b3Il77yMIiwiZGVzY3JpcHRpb27lgLzkuLolZGVzY3JpcHRpb24l77yMIiwicmVtYXJr5YC85Li6JXJlbWFyayXvvIwiXQ==%将结果保存到%invoke_result%",
+      "inputs": {
+        "module": {
+          "value": "10:ZRPA_Log",
+          "display": "ZRPA_Log"
+        },
+        "function": {
+          "value": "10:log_rpa_app_detail"
+        },
+        "params": {
+          "value": "16:[{\"app_name\":\"11:glv['应用名称'].strip()\"},{\"flow_name\":\"11:glv['流程名称'].strip()\"},{\"start_time\":\"13:开始操作时间\"},{\"action_method\":\"10:ART\"},{\"action_result\":\"10:FAIL\"},{\"action_status\":\"10:EXCEPTION\"},{\"creator\":\"11:glv['创建人'].strip()\"},{\"description\":\"13:description\"},{\"remark\":\"13:remark\"}]"
+        },
+        "returnType": {
+          "value": "10:any"
+        }
+      },
+      "outputs": {
+        "invoke_result": {
+          "name": "invoke_result",
+          "type": "any",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "4fe52b7b-f796-4bcf-a26a-5962b12c14ec",
+      "name": "workflow.continue",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "02a73e04-87ab-4dd7-ac13-bcd8d4b88c6c",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "273db815-e74a-4490-ab25-b07cb6bf3512",
+      "name": "web.element.get_all_elements",
+      "isEnabled": true,
+      "comment": "在网页%browser%中获取一组与元素%selector%相似的元素文本内容，将结果保存到%element_list%",
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "select_type": {
+          "value": "10:selector",
+          "display": "默认方式"
+        },
+        "selector": {
+          "value": "12:发票申请状态_相似元素组",
+          "display": "发票申请状态_相似元素组"
+        },
+        "css_selector": {
+          "value": "10:"
+        },
+        "xpath_selector": {
+          "value": "10:"
+        },
+        "is_related_parent": {
+          "value": "13:False"
+        },
+        "parent": {
+          "value": null
+        },
+        "operation": {
+          "value": "10:text",
+          "display": "获取元素文本内容"
+        },
+        "absolute_url": {
+          "value": "13:False"
+        },
+        "attribute_name": {
+          "value": null
+        },
+        "timeout": {
+          "value": "10:20"
+        },
+        "output_with_element_count": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "element_list": {
+          "name": "发票申请状态列表",
+          "variableLabel": "相似元素文本内容列表",
+          "type": "list<str>",
+          "isEnable": true
+        },
+        "element_count": {
+          "name": "web_element_count",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "488c3524-ab4a-490d-9409-801300b24d83",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:发票申请状态列表"
+        },
+        "operator": {
+          "value": "10:not in",
+          "display": "不包含"
+        },
+        "operand2": {
+          "value": "10:待处理申请"
+        },
+        "operator_options": {
+          "value": "10:{\"ignoreCase\":\"False\"}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "3a5f7689-073d-4c9e-9d21-d8acf427b1c9",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:import json\r\nkey_info ={\"order_id\":loop_excel[0],\"invoices_name\":loop_excel[1],\"invoices_code\":loop_excel[2],\"invoices_status\":发票申请状态列表,\"ART_reason\":\"不是待处理申请状态\",\"extra_remark\":\"\"} \r\ndescription = json.dumps(key_info,ensure_ascii=False)\r\nglv['处理单量']+=1\r\nremark = \"人工-处理完成\""
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "eeade951-ea6c-45ef-89e8-af0048f65b17",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:台账文件对象",
+          "display": "台账文件对象"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:loop_item_rownum"
+        },
+        "column_name": {
+          "value": "10:H"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:remark"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "85c20d8c-1f84-4465-ab40-f7bd4bdb7eff",
+      "name": "process.invoke_module",
+      "isEnabled": true,
+      "comment": "调用模块%module%中的%function%方法并传入参数%params:WyJhcHBfbmFtZeWAvOS4uiVhcHBfbmFtZSXvvIwiLCJmbG93X25hbWXlgLzkuLolZmxvd19uYW1lJe+8jCIsInN0YXJ0X3RpbWXlgLzkuLolc3RhcnRfdGltZSXvvIwiLCJhY3Rpb25fbWV0aG9k5YC85Li6JWFjdGlvbl9tZXRob2Ql77yMIiwiYWN0aW9uX3Jlc3VsdOWAvOS4uiVhY3Rpb25fcmVzdWx0Je+8jCIsImFjdGlvbl9zdGF0dXPlgLzkuLolYWN0aW9uX3N0YXR1cyXvvIwiLCJjcmVhdG9y5YC85Li6JWNyZWF0b3Il77yMIiwiZGVzY3JpcHRpb27lgLzkuLolZGVzY3JpcHRpb24l77yMIiwicmVtYXJr5YC85Li6JXJlbWFyayXvvIwiXQ==%将结果保存到%invoke_result%",
+      "inputs": {
+        "module": {
+          "value": "10:ZRPA_Log",
+          "display": "ZRPA_Log"
+        },
+        "function": {
+          "value": "10:log_rpa_app_detail"
+        },
+        "params": {
+          "value": "16:[{\"app_name\":\"11:glv['应用名称'].strip()\"},{\"flow_name\":\"11:glv['流程名称'].strip()\"},{\"start_time\":\"11:开始操作时间\"},{\"action_method\":\"10:RPA\"},{\"action_result\":\"10:PASS\"},{\"action_status\":\"10:NROMAL\"},{\"creator\":\"11:glv['创建人'].strip()\"},{\"description\":\"13:description\"},{\"remark\":\"13:remark\"}]"
+        },
+        "returnType": {
+          "value": "10:any"
+        }
+      },
+      "outputs": {
+        "invoke_result": {
+          "name": "invoke_result",
+          "type": "any",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "b09f64fb-2bc3-4e41-995b-9a5c39e26ce5",
+      "name": "workflow.continue",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "47f77caa-102f-400c-83e6-598858e6ca70",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "8e85eade-73cd-4448-9e37-ad078045f28c",
+      "name": "web.element.foreach_element",
+      "isEnabled": true,
+      "comment": "从网页%browser%中获取相似元素%selector%的对象，将结果依次循环保存到%loop_item%",
+      "foldState": "UnFold",
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "selector": {
+          "value": "12:全部申请_表格",
+          "display": "全部申请_表格"
+        },
+        "operation": {
+          "value": "10:element",
+          "display": "获取元素对象"
+        },
+        "absolute_url": {
+          "value": "13:False"
+        },
+        "attribute_name": {
+          "value": null
+        },
+        "timeout": {
+          "value": "10:20"
+        },
+        "loop_start_index": {
+          "value": "10:0"
+        },
+        "loop_end_index": {
+          "value": "10:-1"
+        },
+        "output_with_index": {
+          "value": "13:False"
+        }
+      },
+      "outputs": {
+        "loop_item": {
+          "name": "当前父元素",
+          "variableLabel": "当前循环项的对象",
+          "type": "xbot._web.element.WebElement",
+          "isEnable": true
+        },
+        "loop_index": {
+          "name": "web_loop_element_index",
+          "isEnable": false
+        }
+      }
+    },
+    {
+      "id": "97751f2e-4bca-42aa-b84f-f55a1ef5dc29",
+      "name": "web.element.get_element",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "select_type": {
+          "value": "10:selector",
+          "display": "默认方式"
+        },
+        "selector": {
+          "value": "12:全部申请_发票申请状态_相似元素组",
+          "display": "全部申请_发票申请状态_相似元素组"
+        },
+        "css_selector": {
+          "value": "10:"
+        },
+        "xpath_selector": {
+          "value": "10:"
+        },
+        "is_related_parent": {
+          "value": "13:True"
+        },
+        "parent": {
+          "value": "11:当前父元素",
+          "display": "当前父元素"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {
+        "element": {
+          "name": "当前子元素_发票申请状态",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "52710cf9-5816-44c5-b568-4a5edd538a0f",
+      "name": "web.element.get_element",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "select_type": {
+          "value": "10:selector",
+          "display": "默认方式"
+        },
+        "selector": {
+          "value": "12:详情_相似元素组",
+          "display": "详情_相似元素组"
+        },
+        "css_selector": {
+          "value": "10:"
+        },
+        "xpath_selector": {
+          "value": "10:"
+        },
+        "is_related_parent": {
+          "value": "13:True"
+        },
+        "parent": {
+          "value": "11:当前父元素",
+          "display": "当前父元素"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {
+        "element": {
+          "name": "当前子元素_详情按钮",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "ba5703e1-f598-4c51-ae1b-3127d31cf9ba",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:当前子元素_发票申请状态.get_text()"
+        },
+        "operator": {
+          "value": "10:in",
+          "display": "包含"
+        },
+        "operand2": {
+          "value": "10:待处理申请"
+        },
+        "operator_options": {
+          "value": "10:{\"ignoreCase\":\"False\"}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "1552bbc3-afc7-4847-afcd-e6506b649c37",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "11:当前子元素_详情按钮",
+          "display": "当前子元素_详情按钮"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "bf420b9a-1336-42fb-a25b-cdef1d147825",
+      "name": "web.element.get_details",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:发票申请详情_订单号",
+          "display": "发票申请详情_订单号"
+        },
+        "operation": {
+          "value": "10:text",
+          "display": "获取元素文本内容"
+        },
+        "absolute_url": {
+          "value": "13:False"
+        },
+        "attribute_name": {
+          "value": null
+        },
+        "relative_to": {
+          "value": "10:screen",
+          "display": "屏幕左上角"
+        },
+        "to96dpi": {
+          "value": "13:True"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {
+        "element_attribute": {
+          "name": "发票详情订单号",
+          "variableLabel": "元素文本内容",
+          "type": "str",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "2addcc8c-2b49-45c8-8ecb-f73378f36985",
+      "name": "workflow.if",
+      "isEnabled": true,
+      "foldState": "UnFold",
+      "inputs": {
+        "operand1": {
+          "value": "11:发票详情订单号"
+        },
+        "operator": {
+          "value": "10:!=",
+          "display": "不等于"
+        },
+        "operand2": {
+          "value": "11:loop_excel[0]"
+        },
+        "operator_options": {
+          "value": "10:{}"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "7082cb54-fd1f-4084-86af-68377c598243",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:import json\r\nkey_info ={\"order_id\":loop_excel[0],\"invoices_name\":loop_excel[1],\"invoices_code\":loop_excel[2],\"invoices_status\":发票申请状态列表,\"ART_reason\":\"网页订单号与Excel订单号不一致\",\"extra_remark\":\"\"} \r\ndescription = json.dumps(key_info,ensure_ascii=False)\r\nglv['处理单量']+=1\r\nremark=\"人工-检验不通过\""
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "56581ff7-83e2-4091-9abe-60570303cbaa",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:台账文件对象",
+          "display": "台账文件对象"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:loop_item_rownum"
+        },
+        "column_name": {
+          "value": "10:H"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:remark"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "1e86fbbf-9282-422c-aa91-a2e6df36d615",
+      "name": "process.invoke_module",
+      "isEnabled": true,
+      "comment": "调用模块%module%中的%function%方法并传入参数%params:WyJhcHBfbmFtZeWAvOS4uiVhcHBfbmFtZSXvvIwiLCJmbG93X25hbWXlgLzkuLolZmxvd19uYW1lJe+8jCIsInN0YXJ0X3RpbWXlgLzkuLolc3RhcnRfdGltZSXvvIwiLCJhY3Rpb25fbWV0aG9k5YC85Li6JWFjdGlvbl9tZXRob2Ql77yMIiwiYWN0aW9uX3Jlc3VsdOWAvOS4uiVhY3Rpb25fcmVzdWx0Je+8jCIsImFjdGlvbl9zdGF0dXPlgLzkuLolYWN0aW9uX3N0YXR1cyXvvIwiLCJjcmVhdG9y5YC85Li6JWNyZWF0b3Il77yMIiwiZGVzY3JpcHRpb27lgLzkuLolZGVzY3JpcHRpb24l77yMIiwicmVtYXJr5YC85Li6JXJlbWFyayXvvIwiXQ==%将结果保存到%invoke_result%",
+      "inputs": {
+        "module": {
+          "value": "10:ZRPA_Log",
+          "display": "ZRPA_Log"
+        },
+        "function": {
+          "value": "10:log_rpa_app_detail"
+        },
+        "params": {
+          "value": "16:[{\"app_name\":\"11:glv['应用名称'].strip()\"},{\"flow_name\":\"11:glv['流程名称'].strip()\"},{\"start_time\":\"11:开始操作时间\"},{\"action_method\":\"10:ART\"},{\"action_result\":\"10:FAIL\"},{\"action_status\":\"10:INVALID\"},{\"creator\":\"11:glv['创建人'].strip()\"},{\"description\":\"13:description\"},{\"remark\":\"13:remark\"}]"
+        },
+        "returnType": {
+          "value": "10:any"
+        }
+      },
+      "outputs": {
+        "invoke_result": {
+          "name": "invoke_result",
+          "type": "any",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "e934337f-7732-46f1-9e7b-6563a1af4dea",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:发票申请详情_关闭按钮",
+          "display": "发票申请详情_关闭按钮"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "03c61e3b-e416-49cc-af5a-212928564ba5",
+      "name": "workflow.continue",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "bb2a58c1-e16e-40d8-9454-d1063b07ca81",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "806cd40d-7745-49a6-a0fe-3635c05d9c51",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:发票申请详情_同意",
+          "display": "发票申请详情_同意"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "b0500d65-3571-4901-a237-0cf63ea96610",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:手动上传发票选项",
+          "display": "手动上传发票选项"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "5f501ae9-454e-4752-916c-b5ea1275c066",
+      "name": "web.element.click",
+      "isEnabled": true,
+      "inputs": {
+        "browser": {
+          "value": "11:web_page",
+          "display": "web_page"
+        },
+        "element": {
+          "value": "12:请选择开票方式_确定按钮",
+          "display": "请选择开票方式_确定按钮"
+        },
+        "simulate": {
+          "value": "13:True"
+        },
+        "move_mouse": {
+          "value": "13:False"
+        },
+        "clicks": {
+          "value": "10:click",
+          "display": "单击"
+        },
+        "button": {
+          "value": "10:left",
+          "display": "鼠标左键"
+        },
+        "keys": {
+          "value": "10:null",
+          "display": "无"
+        },
+        "delay_after": {
+          "value": "10:1"
+        },
+        "anchor_type": {
+          "value": "10:center",
+          "display": "中心点"
+        },
+        "sudoku_part": {
+          "value": "10:MiddleCenter"
+        },
+        "offset_x": {
+          "value": "10:0"
+        },
+        "offset_y": {
+          "value": "10:0"
+        },
+        "timeout": {
+          "value": "10:20"
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "7102b62b-fe86-4648-8f1d-1b3e53974966",
+      "name": "programing.snippet",
+      "isEnabled": true,
+      "inputs": {
+        "snippet": {
+          "value": "10:import json\r\nkey_info ={\"order_id\":loop_excel[0],\"invoices_name\":loop_excel[1],\"invoices_code\":loop_excel[2],\"invoices_status\":发票申请状态列表,\"ART_reason\":\"\",\"extra_remark\":\"\"} \r\ndescription = json.dumps(key_info,ensure_ascii=False)\r\nglv['处理单量']+=1\r\nremark=\"RPA-处理完成\""
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "f94baacc-b463-4e22-9768-749e521736a4",
+      "name": "excel.write_data_to_workbook",
+      "isEnabled": true,
+      "comment": "在Excel对象%workbook%中，从单元格（第%row_num%行，第%column_name%列）开始写入内容%content%",
+      "inputs": {
+        "workbook": {
+          "value": "11:台账文件对象",
+          "display": "台账文件对象"
+        },
+        "write_range": {
+          "value": "10:area",
+          "display": "区域"
+        },
+        "write_way": {
+          "value": "10:append",
+          "display": "追加一行"
+        },
+        "write_column_way": {
+          "value": "10:override",
+          "display": "覆盖一列"
+        },
+        "row_num": {
+          "value": "11:loop_item_rownum"
+        },
+        "column_name": {
+          "value": "10:H"
+        },
+        "begin_row_num": {
+          "value": "10:1"
+        },
+        "begin_column_name": {
+          "value": "10:"
+        },
+        "content": {
+          "value": "13:remark"
+        },
+        "sheet_name": {
+          "value": "10:"
+        },
+        "write_as_text_cols": {
+          "value": null
+        }
+      },
+      "outputs": {}
+    },
+    {
+      "id": "992b9054-bdc2-405d-8802-7334f2774735",
+      "name": "process.invoke_module",
+      "isEnabled": true,
+      "comment": "调用模块%module%中的%function%方法并传入参数%params:WyJhcHBfbmFtZeWAvOS4uiVhcHBfbmFtZSXvvIwiLCJmbG93X25hbWXlgLzkuLolZmxvd19uYW1lJe+8jCIsInN0YXJ0X3RpbWXlgLzkuLolc3RhcnRfdGltZSXvvIwiLCJhY3Rpb25fbWV0aG9k5YC85Li6JWFjdGlvbl9tZXRob2Ql77yMIiwiYWN0aW9uX3Jlc3VsdOWAvOS4uiVhY3Rpb25fcmVzdWx0Je+8jCIsImFjdGlvbl9zdGF0dXPlgLzkuLolYWN0aW9uX3N0YXR1cyXvvIwiLCJjcmVhdG9y5YC85Li6JWNyZWF0b3Il77yMIiwiZGVzY3JpcHRpb27lgLzkuLolZGVzY3JpcHRpb24l77yMIiwicmVtYXJr5YC85Li6JXJlbWFyayXvvIwiXQ==%将结果保存到%invoke_result%",
+      "inputs": {
+        "module": {
+          "value": "10:ZRPA_Log",
+          "display": "ZRPA_Log"
+        },
+        "function": {
+          "value": "10:log_rpa_app_detail"
+        },
+        "params": {
+          "value": "16:[{\"app_name\":\"11:glv['应用名称'].strip()\"},{\"flow_name\":\"11:glv['流程名称'].strip()\"},{\"start_time\":\"11:开始操作时间\"},{\"action_method\":\"10:RPA\"},{\"action_result\":\"10:SUCCESS\"},{\"action_status\":\"10:NORMAL\"},{\"creator\":\"11:glv['创建人'].strip()\"},{\"description\":\"13:description\"},{\"remark\":\"13:remark\"}]"
+        },
+        "returnType": {
+          "value": "10:any"
+        }
+      },
+      "outputs": {
+        "invoke_result": {
+          "name": "invoke_result",
+          "type": "any",
+          "isEnable": true
+        }
+      }
+    },
+    {
+      "id": "7543c7d7-10b5-4365-bbaa-dea1ddae4ced",
+      "name": "workflow.endif",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "2414e2c2-b16c-4512-b55b-fddcdf0cbf2e",
+      "name": "workflow.endloop",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "c50677e0-9e6a-403e-99d9-41e3651f39f9",
+      "name": "workflow.endloop",
+      "isEnabled": true,
+      "inputs": {},
+      "outputs": {}
+    },
+    {
+      "id": "e807b689-fff1-49c8-b1f1-e67d4e330b71",
+      "name": "excel.close",
+      "isEnabled": true,
+      "inputs": {
+        "operation": {
+          "value": "10:close_specified",
+          "display": "关闭指定Excel文件"
+        },
+        "excel_instance": {
+          "value": "11:台账文件对象",
+          "display": "台账文件对象"
+        },
+        "close_way": {
+          "value": "10:save",
+          "display": "保存"
+        },
+        "filename": {
+          "value": null
+        },
+        "overwrite_file": {
+          "value": "13:True"
+        },
+        "close_process": {
+          "value": "10:office",
+          "display": "office"
+        },
+        "task_kill": {
+          "value": "13:True"
+        }
+      },
+      "outputs": {}
+    }
+  ],
+  "parameters": [
+    {
+      "name": "台账文件",
+      "direction": "In",
+      "type": "file",
+      "value": "",
+      "description": "",
+      "kind": "Text"
+    },
+    {
+      "name": "店铺名称",
+      "direction": "In",
+      "type": "str",
+      "value": "",
+      "description": "",
+      "kind": "Text"
+    }
+  ]
+}

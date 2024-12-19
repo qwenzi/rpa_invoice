@@ -1,0 +1,26 @@
+{
+  "openedFlows": [
+    "main",
+    "_core",
+    "iframeElement"
+  ],
+  "activeBottomPanel": "流程参数",
+  "activeFlow": "iframeElement",
+  "breakPoints": [
+    {
+      "FlowName": "main",
+      "Lines": null,
+      "BlockIds": []
+    },
+    {
+      "FlowName": "_core",
+      "Lines": [],
+      "BlockIds": null
+    },
+    {
+      "FlowName": "iframeElement",
+      "Lines": [],
+      "BlockIds": null
+    }
+  ]
+}

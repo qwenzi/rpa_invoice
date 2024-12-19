@@ -1,0 +1,189 @@
+{
+  "types": [],
+  "blocks": [
+    {
+      "name": "xbot_extensions.dynamic_call.main",
+      "statement": "process.invoke_activity",
+      "title": "动态调用子流程",
+      "keywords": "",
+      "description": "根据传入的流程名动态执行流程",
+      "comment": "",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/b1/a0/b1a01f7d55ef892cc57ed6d16ee35cd4.png",
+      "function": "xbot_extensions.dynamic_call.main",
+      "helpUrl": "",
+      "extension": "动态调用子流程",
+      "hidden": true,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.dynamic_call.动态调用子流程",
+      "statement": "process.invoke_activity",
+      "title": "动态调用子流程",
+      "keywords": "",
+      "description": "根据传入的流程名动态执行流程",
+      "comment": "执行流程%流程名%，保存流程输出结果至%process_result%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/85/9c/859c788caf11d9ba5a47f1e18bbb1069.png",
+      "function": "xbot_extensions.dynamic_call.process1",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/tz8aw3y9qi3bf1vi",
+      "extension": "动态调用子流程",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "流程名",
+          "label": "流程名",
+          "required": false,
+          "tips": "需要调用的流程名称",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "需要调用的流程名称"
+          },
+          "category": "general"
+        },
+        {
+          "name": "流程参数",
+          "label": "流程参数",
+          "required": false,
+          "tips": "如果子流程有流程参数，需要以字典的方式传参",
+          "type": "dict",
+          "default": "13:",
+          "editor": {
+            "kind": "memoedit",
+            "placeholder": "如果子流程有流程参数，需要以字典的方式传参"
+          },
+          "category": "general"
+        },
+        {
+          "name": "file_path",
+          "label": "__file__",
+          "required": false,
+          "tips": "保持默认值__file__,不要修改",
+          "type": "str",
+          "default": "13:__file__",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "保持默认值__file__,不要修改"
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "process_result",
+          "label": "保存流程输出结果至",
+          "tips": "流程输出结果。获取输出值可以通过 process_result.xxx  的形式获取",
+          "name": "process_result",
+          "type": "any"
+        }
+      ]
+    },
+    {
+      "name": "xbot_extensions.dynamic_call.invoke",
+      "statement": "process.invoke_activity",
+      "title": "module1",
+      "keywords": "",
+      "description": null,
+      "comment": null,
+      "icon": null,
+      "function": "xbot_extensions.dynamic_call.invoke",
+      "helpUrl": null,
+      "extension": "动态调用子流程",
+      "hidden": true,
+      "canDebug": false,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [],
+      "outputs": []
+    },
+    {
+      "name": "xbot_extensions.dynamic_call.动态调用模块",
+      "statement": "process.invoke_activity",
+      "title": "动态调用模块",
+      "keywords": "",
+      "description": "动态调用应用内其他模块",
+      "comment": "调用模块%module%中的%func_name%方法，保存返回值至%invoke_result%",
+      "icon": "https://winrobot-pub-a.oss-cn-hangzhou.aliyuncs.com/images/2e/f0/2ef0aa2dbc83b518b21688321bc3f4ec.png",
+      "function": "xbot_extensions.dynamic_call.process2",
+      "helpUrl": "https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/gtvays6trry6qbl8",
+      "extension": "动态调用子流程",
+      "hidden": false,
+      "canDebug": true,
+      "isCondition": false,
+      "isLoop": false,
+      "isPseudo": false,
+      "inputs": [
+        {
+          "name": "module",
+          "label": "选择Python模块",
+          "required": false,
+          "tips": "选择Python模块",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "选择Python模块"
+          },
+          "category": "general"
+        },
+        {
+          "name": "func_name",
+          "label": "选择函数",
+          "required": false,
+          "tips": "选择函数",
+          "type": "str",
+          "default": "10:",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "选择函数"
+          },
+          "category": "general"
+        },
+        {
+          "name": "inputs",
+          "label": "流程参数",
+          "required": false,
+          "tips": "如果子流程有流程参数，需要以字典的方式传参",
+          "type": "dict",
+          "default": "13:",
+          "editor": {
+            "kind": "memoedit",
+            "placeholder": "如果子流程有流程参数，需要以字典的方式传参"
+          },
+          "category": "general"
+        },
+        {
+          "name": "file_path",
+          "label": "__file__",
+          "required": false,
+          "tips": "保持默认值__file__,不要修改",
+          "type": "str",
+          "default": "13:__file__",
+          "editor": {
+            "kind": "textbox",
+            "placeholder": "保持默认值__file__,不要修改"
+          },
+          "category": "advanced"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "invoke_result",
+          "label": "保存返回值至",
+          "name": "invoke_result",
+          "type": "any"
+        }
+      ]
+    }
+  ]
+}
